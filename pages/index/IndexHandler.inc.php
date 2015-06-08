@@ -39,6 +39,35 @@ class IndexHandler extends Handler {
 		$journalPath = $router->getRequestedContextPath($request);
 		$templateMgr->assign('helpTopicId', 'user.home');
 		$journal =& $router->getContext($request);
+
+		//Global!
+		//Como uma mesma variável não pode ser iterada duas vezes, 
+		//Foi necessário criar uma copia dos Jornauls (eu em),
+		//Assim o $revistas é utilizado na barra lateral
+		$revistas =& $journalDao->getJournals(
+			true,
+			$rangeInfo,
+			$searchInitial?JOURNAL_FIELD_TITLE:JOURNAL_FIELD_SEQUENCE,
+			$searchInitial?JOURNAL_FIELD_TITLE:null,
+			$searchInitial?'startsWith':null,
+			$searchInitial
+		);
+		$templateMgr->assign_by_ref('revistas', $revistas);
+
+		//Como as sessões não são globais, foi necessário colocar 
+		//Esse trecho de código que permite verificar as sessões 
+		//E passar a URL de login para o formulário da Index (Custom)
+		if (!defined('SESSION_DISABLE_INIT')) {
+			$session =& Request::getSession();
+			$templateMgr->assign_by_ref('userSession', $session);
+			$templateMgr->assign('loggedInUsername', $session->getSessionVar('username'));
+			$loginUrl = Request::url(null, 'login', 'signIn');
+			if (Config::getVar('security', 'force_login_ssl')) {
+				$loginUrl = String::regexp_replace('/^http:/', 'https:', $loginUrl);
+			}
+			$templateMgr->assign('userBlockLoginUrl', $loginUrl);
+		}
+		
 		if ($journal) {
 			// Assign header and content for home page
 			$templateMgr->assign('displayPageHeaderTitle', $journal->getLocalizedPageHeaderTitle(true));
@@ -70,7 +99,10 @@ class IndexHandler extends Handler {
 					$templateMgr->assign('enableAnnouncementsHomepage', $enableAnnouncementsHomepage);
 				}
 			}
-			$templateMgr->display('index/journal.tpl');
+			// $templateMgr->display('index/journal.tpl');
+			$templateMgr->display('portalpadrao/revista/layout.tpl');
+
+
 		} else {
 			$site =& Request::getSite();
 
@@ -100,54 +132,31 @@ class IndexHandler extends Handler {
 				$searchInitial?'startsWith':null,
 				$searchInitial
 			);
-			$revistas =& $journalDao->getJournals(
-				true,
-				$rangeInfo,
-				$searchInitial?JOURNAL_FIELD_TITLE:JOURNAL_FIELD_SEQUENCE,
-				$searchInitial?JOURNAL_FIELD_TITLE:null,
-				$searchInitial?'startsWith':null,
-				$searchInitial
-			);
 
 
-			//Como as sessões não são globais, foi necessário colocar 
-			//Esse trecho de código que permite verificar as sessões 
-			//E passar a URL de login para o formulário da Index (Custom)
-			if (!defined('SESSION_DISABLE_INIT')) {
-				$session =& Request::getSession();
-				$templateMgr->assign_by_ref('userSession', $session);
-				$templateMgr->assign('loggedInUsername', $session->getSessionVar('username'));
-				$loginUrl = Request::url(null, 'login', 'signIn');
-				if (Config::getVar('security', 'force_login_ssl')) {
-					$loginUrl = String::regexp_replace('/^http:/', 'https:', $loginUrl);
-				}
-				$templateMgr->assign('userBlockLoginUrl', $loginUrl);
-			}
+			//DAOs custom (adicionados especificamente para o projeto do portal)
+			$announcementDao =& DAORegistry::getDAO('AnnouncementDAO');
 
+			//Função custom para pegar todas as notícias
+			$announcements =& $announcementDao->getAll();
+
+
+			//Todas as variáveis passadas para a nossa view
 			$templateMgr->assign_by_ref('journals', $journals);
-			$templateMgr->assign_by_ref('revistas', $revistas);
 			$templateMgr->assign_by_ref('site', $site);
-
+			$templateMgr->assign('announcements', $announcements);
 			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 
-			// $templateMgr->setCacheability(CACHEABILITY_PUBLIC);
-			// $templateMgr->display('index/site.tpl');
+
+			//Renderização do layout
 			$templateMgr->display('portalpadrao/layout.tpl');
-			$announcementDao =& DAORegistry::getDAO('AnnouncementDAO');
-			// $announcements =& $announcementDao->getById(2);
-//			$announcements =& $announcementDao->getAll(1);
-			// echo "<pre>", print_r($announcements->_data["id"]);
-			// echo "====";
-			// echo "<pre>", print_r(isSet($announcements));
-			// echo "<pre>", print_r($announcements->records->fields);
+			// $templateMgr->display('index/site.tpl');
+			// $templateMgr->setCacheability(CACHEABILITY_PUBLIC);
 
-			// $announcements =& $announcementDao->getNumAnnouncementsNotExpiredByAssocId(ASSOC_TYPE_JOURNAL, 2, 4);
-			// $templateMgr->assign('announcements', $announcements);
-			// $templateMgr->display('portalpadrao/test.tpl');
-			// echo "<pre>", print_r($announcements);
 
-			// $announcements =& $announcementDao->getAll();
-			// $templateMgr->assign('announcements', $announcements);
+			//Testes
+			
+			// 
 			// $templateMgr->display('portalpadrao/test.tpl');
 
 		}
