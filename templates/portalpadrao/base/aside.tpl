@@ -13,9 +13,26 @@
               <a class="item" href="{url journal=$revista->getPath()}">{$revista->getLocalizedTitle()|escape}</a>
             </li>
             {/iterate}
-
-
         </ul>
+
+        {if $isUserLoggedIn}
+          <!-- Menu de login-->
+          <ul class="menu-bar">
+            <li class="header">Usuário</li>
+            {if $hasOtherJournals}
+              <li>
+                <a class="item" href="{url journal="index" page="user"}">{translate key="plugins.block.user.myJournals"}</a>
+              </li>
+            {/if}
+            <li>
+              <a class="item" href="{url page="user" op="profile"}">{translate key="plugins.block.user.myProfile"}</a>
+            </li>
+            <li>
+              <a class="item" href="{url page="login" op="signOut"}">{translate key="plugins.block.user.logout"}</a>
+            </li>
+          </ul>
+          <!-- Fim Menu de login-->
+        {/if}
 
 
         <!-- Menu da barra -->

@@ -82,15 +82,5 @@
       </div>
     </div> <!-- fim do page-grid -->
   </header>
-  <div class="page-signin">
-    <div class="page-grid">
-      <form action="#/sign-in" title="Faça o login">
-        <span>Acesso do usuário</span>
-        <label for="user-login">Login</label>
-        <input type="text" id="user-login">
-        <label for="user-password">Senha</label>
-        <input type="password" id="user-password">
-        <button class="btn-signin">Acessar</button>
-      </form>
-    </div>
-  </div>
+  {include file="portalpadrao/base/login-bar.tpl"}
+  
