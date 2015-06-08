@@ -590,7 +590,7 @@ li {
     font-size: 1.6rem; }
   .page-search form .btn-search {
     width: 10%;
-    margin-left: -10%;
+    margin-left: -11%;
     padding: 0.8rem;
     border: 0;
     font-size: 1.6rem;
@@ -645,6 +645,8 @@ li {
 
 .news-container {
   width: 100%; }
+  .news-container a {
+    color: #000; }
   .news-container .news-header {
     border-top: 3px solid #195128; }
     .news-container .news-header .header-title {
@@ -659,14 +661,15 @@ li {
       text-transform: uppercase;
       font-size: 1.4rem; }
 
-.news {
-  padding: 0 7.5px; }
-  .news .news-information {
+.news-container .news {
+  padding: 0 7.5px;
+  overflow: hidden; }
+  .news-container .news .news-information {
     display: block;
     color: #195128;
     font-weight: bold;
     font-size: 1.3rem; }
-  .news .news-image {
+  .news-container .news .news-image {
     width: 100%;
     margin: 8px 0;
     -webkit-border-radius: 5px;
@@ -674,16 +677,18 @@ li {
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px; }
-  .news .news-title {
+  .news-container .news .news-title {
     margin: 0;
-    color: #172938; }
-  .news .news-description {
+    color: #172938;
+    text-transform: capitalize; }
+  .news-container .news .news-description {
     margin: 0;
     font-size: 1.4rem;
-    color: #172938; }
+    color: #172938;
+    overflow: hidden; }
   @media (min-width: 768px) {
-    .news {
-      width: 50%;
+    .news-container .news {
+      width: 33%;
       float: left; } }
 
 .partners-container {
@@ -800,7 +805,6 @@ li {
     zoom: 1; }
 
 @media (min-width: 1055px) {
-  .news-container,
   .magazine-container {
     width: 70%;
     float: left; } }
@@ -811,6 +815,89 @@ li {
     float: right;
     width: 27%;
     clear: right; } }
+
+.lastnews-container {
+  width: 100%;
+  padding-left: 30px; }
+  .lastnews-container .header-container h2 {
+    font-size: 2.8rem;
+    color: #195128;
+    text-transform: uppercase;
+    border-bottom: 1px solid #DFDFDF;
+    padding-bottom: 15px; }
+
+.lastnews-container a {
+  text-decoration: none; }
+.lastnews-container .news {
+  padding: 30px 0;
+  border-bottom: 1px solid #DFDFDF; }
+  .lastnews-container .news:after, .lastnews-container .news:before {
+    display: table;
+    clear: both;
+    content: ' ';
+    zoom: 1; }
+  .lastnews-container .news .date {
+    display: none;
+    text-align: center;
+    min-height: 180px; }
+    @media (min-width: 768px) {
+      .lastnews-container .news .date {
+        display: table-cell;
+        vertical-align: middle;
+        float: left;
+        width: 25%; }
+        .lastnews-container .news .date span {
+          display: block;
+          font-size: 1.2rem;
+          color: #a6a6a6; } }
+  .lastnews-container .news .content {
+    min-height: 180px;
+    color: #000; }
+    .lastnews-container .news .content .news-info {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #195128; }
+    .lastnews-container .news .content .news-title {
+      font-family: Arial, "Open-sans", sans-serif;
+      font-size: 1.7rem;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .lastnews-container .news .content p {
+      line-height: 2.1rem; }
+    @media (min-width: 768px) {
+      .lastnews-container .news .content {
+        float: right;
+        width: 75%;
+        padding-left: 17px;
+        border-left: 1px solid #DFDFDF; } }
+
+.news-inner {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-bottom: 3px solid; }
+  .news-inner .news-action {
+    color: #195128;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .news-inner .news-title {
+    font-size: 3.4rem;
+    margin-bottom: 0; }
+  .news-inner .short-description {
+    color: #444A53;
+    font-size: 1.4rem; }
+  .news-inner .news-info {
+    border-top: 1px solid #DFDFDF;
+    padding: 7px 0;
+    font-size: 1.1rem;
+    color: #444A53; }
+  .news-inner p {
+    text-align: justify;
+    font-size: 1.5rem; }
+  .news-inner p:last-child {
+    padding-bottom: 45px; }
 
 .footer-box {
   float: left;
