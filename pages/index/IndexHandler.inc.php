@@ -110,6 +110,19 @@ class IndexHandler extends Handler {
 			);
 
 
+			//Como as sessões não são globais, foi necessário colocar 
+			//Esse trecho de código que permite verificar as sessões 
+			//E passar a URL de login para o formulário da Index (Custom)
+			if (!defined('SESSION_DISABLE_INIT')) {
+				$session =& Request::getSession();
+				$templateMgr->assign_by_ref('userSession', $session);
+				$templateMgr->assign('loggedInUsername', $session->getSessionVar('username'));
+				$loginUrl = Request::url(null, 'login', 'signIn');
+				if (Config::getVar('security', 'force_login_ssl')) {
+					$loginUrl = String::regexp_replace('/^http:/', 'https:', $loginUrl);
+				}
+				$templateMgr->assign('userBlockLoginUrl', $loginUrl);
+			}
 
 			$templateMgr->assign_by_ref('journals', $journals);
 			$templateMgr->assign_by_ref('revistas', $revistas);
@@ -118,8 +131,8 @@ class IndexHandler extends Handler {
 			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 
 			// $templateMgr->setCacheability(CACHEABILITY_PUBLIC);
-			$templateMgr->display('index/site.tpl');
-			// $templateMgr->display('portalpadrao/layout.tpl');
+			// $templateMgr->display('index/site.tpl');
+			$templateMgr->display('portalpadrao/layout.tpl');
 			$announcementDao =& DAORegistry::getDAO('AnnouncementDAO');
 			// $announcements =& $announcementDao->getById(2);
 //			$announcements =& $announcementDao->getAll(1);
