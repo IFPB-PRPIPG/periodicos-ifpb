@@ -41,7 +41,9 @@ class StaticPagesHandler extends Handler {
 			// and assign the template vars needed
 			$templateMgr->assign('title', $staticPage->getStaticPageTitle());
 			$templateMgr->assign('content',  $staticPage->getStaticPageContent());
-			$templateMgr->display($staticPagesPlugin->getTemplatePath().'content.tpl');
+			//$templateMgr->display($staticPagesPlugin->getTemplatePath().'content.tpl');
+			$templateDir = dirname(dirname(dirname(dirname(__FILE__)))) . '/templates/portalpadrao/pages/static.tpl';
+			$templateMgr->display($templateDir);
 		}
 	}
 }
