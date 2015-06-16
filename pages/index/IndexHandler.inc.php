@@ -40,20 +40,6 @@ class IndexHandler extends Handler {
 		$templateMgr->assign('helpTopicId', 'user.home');
 		$journal =& $router->getContext($request);
 
-		//Global!
-		//Como uma mesma variável não pode ser iterada duas vezes, 
-		//Foi necessário criar uma copia dos Jornauls (eu em),
-		//Assim o $revistas é utilizado na barra lateral
-		$revistas =& $journalDao->getJournals(
-			true,
-			$rangeInfo,
-			$searchInitial?JOURNAL_FIELD_TITLE:JOURNAL_FIELD_SEQUENCE,
-			$searchInitial?JOURNAL_FIELD_TITLE:null,
-			$searchInitial?'startsWith':null,
-			$searchInitial
-		);
-		$templateMgr->assign_by_ref('revistas', $revistas);
-
 		//Como as sessões não são globais, foi necessário colocar 
 		//Esse trecho de código que permite verificar as sessões 
 		//E passar a URL de login para o formulário da Index (Custom)

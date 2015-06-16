@@ -64,6 +64,7 @@ class TemplateManager extends PKPTemplateManager {
 			//Assim o $revistas é utilizado na barra lateral
 			$searchInitial = Request::getUserVar('searchInitial');
 			$journalDao =& DAORegistry::getDAO('JournalDAO');
+			$rangeInfo = null;
 			$revistas =& $journalDao->getJournals(
 				true,
 				$rangeInfo,
