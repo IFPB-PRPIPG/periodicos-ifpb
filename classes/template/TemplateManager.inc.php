@@ -58,6 +58,23 @@ class TemplateManager extends PKPTemplateManager {
 
 			$this->assign('siteCategoriesEnabled', $site->getSetting('categoriesEnabled'));
 
+			//Global!
+			//Como uma mesma variável não pode ser iterada duas vezes, 
+			//Foi necessário criar uma copia dos Jornauls (eu em),
+			//Assim o $revistas é utilizado na barra lateral
+			$searchInitial = Request::getUserVar('searchInitial');
+			$journalDao =& DAORegistry::getDAO('JournalDAO');
+			$revistas =& $journalDao->getJournals(
+				true,
+				$rangeInfo,
+				$searchInitial?JOURNAL_FIELD_TITLE:JOURNAL_FIELD_SEQUENCE,
+				$searchInitial?JOURNAL_FIELD_TITLE:null,
+				$searchInitial?'startsWith':null,
+				$searchInitial
+			);
+
+			$this->assign('revistas', $revistas);
+
 			if (isset($journal)) {
 
 				$this->assign_by_ref('currentJournal', $journal);
