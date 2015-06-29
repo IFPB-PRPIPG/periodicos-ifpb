@@ -25,7 +25,7 @@
 
 
   <footer class="news-footer">
-    <a class="more-news" href="#">Mais notícias</a>
+    <a class="more-news" href="index.php/index/announcement/last">Mais notícias</a>
   </footer>
 
 </section> <!-- fim do container das noticias -->

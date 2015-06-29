@@ -37,35 +37,32 @@
 
         <!-- Menu da barra -->
         <ul class="menu-bar">
-          <li class="header">Assuntos</li>
+          <li class="header">Política do Portal</li>
           <li>
-            <a class="item" href="#">Regimento</a>
+            <a class="item" href="/ojs/index.php/praxis/pages/view/portaria-de-criacao">Portaria de Criação do Portal</a>
           </li>
           <li>
-            <a class="item" href="#">Saiba como Publicar</a>
+            <a class="item" href="#">Diretrizes do Portal</a>
           </li>
           <li>
-            <a class="item" href="#">Inscrição de Artigo</a>
+            <a class="item" href="#">Normas</a>
           </li>
         </ul>
 
         <!-- Menu da barra -->
         <ul class="menu-bar">
-          <li class="header">Centrais de conteúdo</li>
+          <li class="header">Links Úteis</li>
           <li>
-            <a class="item video" href="#">Vídeos</a>
+            <a class="item" href="http://www.ifpb.edu.br">Portal IPFB</a>
           </li>
           <li>
-            <a class="item audio" href="#">Áudio</a>
+            <a class="item" href="#">Repositório Digital</a>
           </li>
           <li>
-            <a class="item infographics" href="#">Infográficos</a>
+            <a class="item" href="http://periodicos.capes.gov.br">Portal periódicos Capes</a>
           </li>
           <li>
-            <a class="item publications" href="#">Publicações</a>
-          </li>
-          <li>
-            <a class="item apps" href="#">Aplicativos</a>
+            <a class="item" href="#">Web Qualis</a>
           </li>
         </ul>
       </aside>

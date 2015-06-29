@@ -24,6 +24,7 @@ switch ($op) {
 		break;
 
 	case 'show':
+	case 'last':
 		define('HANDLER_CLASS', 'AnnouncementHandlerCustom');
 		import('pages.announcement.AnnouncementHandlerCustom');
 		break;

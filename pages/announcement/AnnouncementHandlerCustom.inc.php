@@ -46,6 +46,18 @@ class AnnouncementHandlerCustom extends Handler {
 
 	}
 
+	function last($args, &$request) {
+		// return "LISTANDO TODAS AS NOTICIAS";
+		$templateMgr =& TemplateManager::getManager();
+		$announcementDao =& DAORegistry::getDAO('AnnouncementDAO');
+		//Função custom para pegar todas as notícias
+		$announcements =& $announcementDao->getAll();
+		$templateMgr->assign('announcements', $announcements);
+		$templateMgr->display('portalpadrao/news/lastnews.tpl');
+
+
+	}
+
 }
 
 ?>
