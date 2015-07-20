@@ -65,7 +65,19 @@ class AboutHandler extends Handler {
 			}
 
 			$templateMgr->assign('helpTopicId', 'user.about');
-			$templateMgr->display('about/index.tpl');
+			// $templateMgr->display('about/index.tpl');
+			/*
+			* Adicionados para o Portal Padrão Funcionar
+			*/
+			//Invocando o time editorial
+			AboutHandler::editorialTeam();
+			AboutHandler::contact();
+
+			$templateMgr->assign('journalDescription', $journal->getLocalizedSetting('description'));
+			$templateMgr->assign('journalTitle', $journal->getLocalizedTitle());
+			$templateMgr->assign('journalAbout', true);
+			$templateMgr->display('portalpadrao/revista/layout.tpl');
+
 		} else {
 			$site =& $request->getSite();
 			$about = $site->getLocalizedAbout();
@@ -110,7 +122,8 @@ class AboutHandler extends Handler {
 		$templateMgr =& TemplateManager::getManager();
 		$journalSettings =& $journalSettingsDao->getJournalSettings($journal->getId());
 		$templateMgr->assign_by_ref('journalSettings', $journalSettings);
-		$templateMgr->display('about/contact.tpl');
+		//Desabilitando para o funcionamento do Portal Padrão
+		// $templateMgr->display('about/contact.tpl');
 	}
 
 	/**
@@ -155,7 +168,7 @@ class AboutHandler extends Handler {
 			$templateMgr->assign_by_ref('layoutEditors', $layoutEditors);
 			$templateMgr->assign_by_ref('copyEditors', $copyEditors);
 			$templateMgr->assign_by_ref('proofreaders', $proofreaders);
-			$templateMgr->display('about/editorialTeam.tpl');
+			// $templateMgr->display('about/editorialTeam.tpl');
 		} else {
 			// The Editorial Team feature has been enabled.
 			// Generate information using Group data.
@@ -181,7 +194,7 @@ class AboutHandler extends Handler {
 
 			$templateMgr->assign_by_ref('groups', $groups);
 			$templateMgr->assign_by_ref('teamInfo', $teamInfo);
-			$templateMgr->display('about/editorialTeamBoard.tpl');
+			// $templateMgr->display('about/editorialTeamBoard.tpl');
 		}
 	}
 

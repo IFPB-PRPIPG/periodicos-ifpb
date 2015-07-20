@@ -85,6 +85,34 @@ class IndexHandler extends Handler {
 					$templateMgr->assign('enableAnnouncementsHomepage', $enableAnnouncementsHomepage);
 				}
 			}
+
+			/*
+			* $locale, $coverPagePath, $issue (artigo)
+			* Adicionados para conseguirmos buscar a 
+			* imagem do ultimo artigo
+			*/
+			import('classes.file.PublicFileManager');
+			$journalId = $journal->getId();
+			$locale = AppLocale::getLocale();
+			$publicFileManager = new PublicFileManager();
+			$coverPagePath = $request->getBaseUrl() . '/';
+			$coverPagePath .= $publicFileManager->getJournalFilesPath($journalId) . '/';
+			$templateMgr->assign('coverPagePath', $coverPagePath);
+			
+			/*
+			* $issue = Versão da revista
+			*/
+			$issueDao =& DAORegistry::getDAO('IssueDAO');
+			$issue =& $issueDao->getCurrentIssue($journal->getId(), true);
+			$templateMgr->assign_by_ref('issue', $issue);
+			$templateMgr->assign_by_ref('locale', $locale);
+
+			/*
+			* Determinando qual parte do BODY apresentar (variáveis de ambiente)
+			*/
+			$journalIndex = true;
+			$templateMgr->assign('journalIndex', $journalIndex);
+
 			// $templateMgr->display('index/journal.tpl');
 			$templateMgr->display('portalpadrao/revista/layout.tpl');
 

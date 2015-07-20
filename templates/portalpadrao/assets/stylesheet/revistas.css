@@ -1,0 +1,1009 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+/* line 5, ../sass/core/helpers/_helpers.scss */
+.content-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  padding: 0 15px;
+}
+/* line 12, ../../../../../.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.content-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 5, ../sass/core/helpers/_helpers.scss */
+  .content-container {
+    width: 960px;
+    padding: 0;
+  }
+}
+
+/* line 1, ../sass/core/modules/general/_breadcrumbs.scss */
+.page-breadcrumb {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 8pt;
+}
+/* line 12, ../../../../../.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.page-breadcrumb:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 7, ../sass/core/modules/general/_breadcrumbs.scss */
+.page-breadcrumb a {
+  color: #00520f;
+  text-decoration: none;
+}
+
+/*  Itens reutilizaveis
+======================*/
+/*  Header box placeholder
+======================*/
+/* line 7, ../sass/core/modules/reusable/_reusables.scss */
+.content-box .header-box, .page-sidebar .box .header {
+  color: #00520f;
+  background: #edeff1;
+  border-top: 5px solid #00520f;
+  padding-right: 10px;
+}
+
+/* line 14, ../sass/core/modules/reusable/_reusables.scss */
+.content-box .footer-box {
+  background: #edeff1;
+  border-top: 1px solid #00520f;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+/*  Formulários
+======================*/
+/* line 35, ../sass/core/modules/reusable/_reusables.scss */
+.label-control-block, .label-control, .label-control-right {
+  font-size: 11pt;
+  display: inline-block;
+}
+
+/*  Botões
+======================*/
+/* line 43, ../sass/core/modules/reusable/_reusables.scss */
+.btn-register, .btn-submit, .btn-search {
+  text-align: center;
+  border: 1px solid;
+}
+
+/*  Imagen
+======================*/
+/* line 50, ../sass/core/modules/reusable/_reusables.scss */
+.img-float-left {
+  float: left;
+  margin: 10px;
+}
+
+/* line 54, ../sass/core/modules/reusable/_reusables.scss */
+.img-frame {
+  border: 1px solid #d6dcd7;
+}
+
+/*  Bordas
+======================*/
+/* line 60, ../sass/core/modules/reusable/_reusables.scss */
+.border-box {
+  padding-bottom: 45px;
+  border-bottom: 5px solid #00520f;
+}
+
+/* line 64, ../sass/core/modules/reusable/_reusables.scss */
+.border-title-light {
+  border-bottom: 1px solid #d6dcd7;
+  padding-bottom: 15px;
+}
+
+/*  Caixas de conteúdo reutilizaveis
+=====================================*/
+/* line 3, ../sass/core/modules/reusable/_containers.scss */
+.content-box {
+  padding-bottom: 30px;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.content-box:after, .content-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 6, ../sass/core/modules/reusable/_containers.scss */
+.content-box .header-box {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-top: 5px;
+  padding-left: 8px;
+  min-height: 64px;
+  font-size: 20pt;
+  font-weight: lighter;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/core/modules/reusable/_containers.scss */
+.content-box .header-box.default {
+  border-color: #3867b7;
+  color: #3867b7;
+}
+/* line 21, ../sass/core/modules/reusable/_containers.scss */
+.content-box .footer-box {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-size: 8pt;
+  text-align: right;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* line 29, ../sass/core/modules/reusable/_containers.scss */
+.content-box .footer-box a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding-right: 20px;
+}
+/* line 35, ../sass/core/modules/reusable/_containers.scss */
+.content-box .footer-box .footer-content {
+  background: url("../images/footer-seta.png") no-repeat;
+  background-position: right;
+  padding: 5px;
+}
+
+/*  Estilo da caixa de conteúdo
+=====================================*/
+/* line 44, ../sass/core/modules/reusable/_containers.scss */
+.content-box {
+  color: #172938;
+}
+/* line 45, ../sass/core/modules/reusable/_containers.scss */
+.content-box h3 {
+  font-size: 14pt;
+}
+/* line 48, ../sass/core/modules/reusable/_containers.scss */
+.content-box p {
+  font-size: 11pt;
+}
+/* line 51, ../sass/core/modules/reusable/_containers.scss */
+.content-box a {
+  color: #172938;
+  text-decoration: none;
+}
+
+/*  Formatação dos textos
+===============================*/
+/* line 3, ../sass/core/modules/reusable/_texts.scss */
+.text-box .header-title {
+  font-family: Arial, sans-serif;
+  color: #172938;
+  margin-top: 0;
+}
+
+/* line 9, ../sass/core/modules/reusable/_texts.scss */
+.text-box .header-subtitle {
+  font-size: 13pt;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  color: #172938;
+}
+
+/*  Listas
+======================*/
+/* line 4, ../sass/core/modules/reusable/_lists.scss */
+.text-list {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: block;
+}
+
+/* line 10, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item, .text-list-item-header, .text-list-item-simple-header, .text-list-item-indent {
+  display: block;
+  margin: 5px 0;
+  color: #172938;
+}
+
+/* line 16, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-header {
+  font-weight: bold;
+  font-weight: 13pt;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d6dcd7;
+}
+
+/* line 25, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-simple-header {
+  font-weight: bold;
+  font-weight: 13pt;
+}
+
+/* line 31, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-indent {
+  padding-left: 20px;
+}
+
+/*  Listas com tempo
+======================*/
+/* line 42, ../sass/core/modules/reusable/_lists.scss */
+.date-list,
+.date-list-item {
+  display: block;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.date-list:after, .date-list:before,
+.date-list-item:after,
+.date-list-item:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 48, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d6dcd7;
+}
+/* line 52, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 10pt;
+  color: #5d5d5d;
+}
+/* line 57, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date span {
+  display: block;
+}
+/* line 60, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date .year {
+  background: url("../images/data.png") no-repeat;
+  background-position: center left;
+  background-size: 30%;
+  padding: 5px 30px;
+}
+/* line 66, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date .hour {
+  background: url("../images/hora.png") no-repeat;
+  background-position: center left;
+  background-size: 30%;
+  padding: 5px 30px;
+}
+/* line 75, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .image img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 83, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .text {
+  color: #172938;
+}
+
+/* line 1, ../sass/core/modules/reusable/_buttons.scss */
+.btn-register {
+  text-transform: uppercase;
+  font-size: 14pt;
+  background: #3867b7;
+  padding: 8px 30px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/core/modules/reusable/_buttons.scss */
+.btn-submit {
+  font-size: 11pt;
+  background: #3867b7;
+  padding: 5px 15px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  text-align: right;
+}
+
+/*  Caixa de texto externa
+===========================*/
+/* line 3, ../sass/core/modules/pages/_news.scss */
+.text-box {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+/* line 6, ../sass/core/modules/pages/_news.scss */
+.text-box .header-title.large-size {
+  font-size: 28pt;
+}
+/* line 9, ../sass/core/modules/pages/_news.scss */
+.text-box .header-title.mid-size {
+  font-size: 18pt;
+}
+/* line 13, ../sass/core/modules/pages/_news.scss */
+.text-box .header-subtitle {
+  margin-top: 30px;
+}
+
+/*  Caixa de texto interna
+===========================*/
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.text-box-content:after, .text-box-content:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 29, ../sass/core/modules/pages/_news.scss */
+.text-box-title {
+  color: #172938;
+}
+/* line 31, ../sass/core/modules/pages/_news.scss */
+.text-box-title.large-size {
+  font-size: 28pt;
+}
+/* line 34, ../sass/core/modules/pages/_news.scss */
+.text-box-title.mid-size {
+  font-size: 18pt;
+}
+
+/*  Formulários
+======================*/
+/* line 3, ../sass/core/modules/forms/_forms.scss */
+.form-control {
+  display: block;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.form-control:after, .form-control:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 7, ../sass/core/modules/forms/_forms.scss */
+.form-control fieldset {
+  border: 0;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 11, ../sass/core/modules/forms/_forms.scss */
+.form-control fieldset legend {
+  font-size: 15pt;
+  color: #172938;
+  border-bottom: 1px solid #d6dcd7;
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 23, ../sass/core/modules/forms/_forms.scss */
+.form-control-default {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  background: #edeff1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 29, ../sass/core/modules/forms/_forms.scss */
+.form-control-default fieldset {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  border: 0;
+}
+/* line 37, ../sass/core/modules/forms/_forms.scss */
+.form-control-default legend {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/*  Inputs
+======================*/
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.input-container:after, .input-container:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 51, ../sass/core/modules/forms/_forms.scss */
+.input-control, .input-inline {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d6dcd7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 63, ../sass/core/modules/forms/_forms.scss */
+.input-inline {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+
+/*  Labels
+======================*/
+/* line 73, ../sass/core/modules/forms/_forms.scss */
+.label-control-block {
+  display: block;
+}
+
+/* line 82, ../sass/core/modules/forms/_forms.scss */
+.label-control-right {
+  text-align: right;
+}
+
+/* line 87, ../sass/core/modules/forms/_forms.scss */
+.required:before {
+  content: "*";
+  color: #3867b7;
+}
+
+/*  Botões
+======================*/
+/* line 94, ../sass/core/modules/forms/_forms.scss */
+.btn-search {
+  color: #fff;
+  font-size: 10pt;
+  text-transform: uppercase;
+  background: #7d7d7d;
+  border-color: #7d7d7d;
+  padding: 5px 15px;
+}
+
+/*  Colunas utilizaveis em caixas
+=====================================*/
+@media (min-width: 768px) {
+  /* line 4, ../sass/core/helpers/_grid.scss */
+  .mid-8 {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 6, ../sass/core/helpers/_grid.scss */
+  .mid-8.last {
+    width: 66.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 10, ../sass/core/helpers/_grid.scss */
+  .mid-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 12, ../sass/core/helpers/_grid.scss */
+  .mid-6.last {
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 16, ../sass/core/helpers/_grid.scss */
+  .mid-5 {
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 18, ../sass/core/helpers/_grid.scss */
+  .mid-5.last {
+    width: 41.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 22, ../sass/core/helpers/_grid.scss */
+  .mid-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 24, ../sass/core/helpers/_grid.scss */
+  .mid-4.last {
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 28, ../sass/core/helpers/_grid.scss */
+  .mid-3 {
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 30, ../sass/core/helpers/_grid.scss */
+  .mid-3.last {
+    width: 25%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 34, ../sass/core/helpers/_grid.scss */
+  .mid-2 {
+    width: 16.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 36, ../sass/core/helpers/_grid.scss */
+  .mid-2.last {
+    width: 16.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 42, ../sass/core/helpers/_grid.scss */
+.image-responsible {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* line 47, ../sass/core/helpers/_grid.scss */
+  .xs-1 {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 2, ../sass/core/containers/_header.scss */
+.magazine {
+  color: #5d5d5d;
+}
+/* line 4, ../sass/core/containers/_header.scss */
+.magazine a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 9, ../sass/core/containers/_header.scss */
+.portal {
+  color: #fff;
+}
+/* line 11, ../sass/core/containers/_header.scss */
+.portal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/core/containers/_header.scss */
+.language-bar {
+  width: 100%;
+  text-align: right;
+  font-size: 10pt;
+}
+@media (min-width: 768px) {
+  /* line 18, ../sass/core/containers/_header.scss */
+  .language-bar {
+    width: 100%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 30, ../sass/core/containers/_header.scss */
+.link-list {
+  display: inline-block;
+  margin: 0 0 0 24px;
+  padding: 0;
+}
+/* line 34, ../sass/core/containers/_header.scss */
+.link-list .item {
+  display: inline-block;
+  margin-left: 13px;
+  margin-right: 0;
+  padding: 0;
+}
+
+/*
+Container das redes sociais
+============================*/
+/* line 45, ../sass/core/containers/_header.scss */
+.media-container {
+  margin-top: -40px;
+}
+@media (min-width: 768px) {
+  /* line 45, ../sass/core/containers/_header.scss */
+  .media-container {
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 53, ../sass/core/containers/_header.scss */
+.social {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: right;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 64, ../sass/core/containers/_header.scss */
+.facebook {
+  background: url("../images/facebook.png") no-repeat;
+}
+
+/* line 67, ../sass/core/containers/_header.scss */
+.twitter {
+  background: url("../images/twitter.png") no-repeat;
+}
+
+/* line 70, ../sass/core/containers/_header.scss */
+.youtube {
+  background: url("../images/youtube-magazine.png") no-repeat;
+}
+
+/* line 74, ../sass/core/containers/_header.scss */
+.flikr {
+  background: url("../images/flikr-magazine.png") no-repeat;
+}
+
+/*Container do header
+============================*/
+/* line 80, ../sass/core/containers/_header.scss */
+.page-header {
+  padding-top: 15px;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.page-header:after, .page-header:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/*  Conteúdo central do header
+============================*/
+/* line 88, ../sass/core/containers/_header.scss */
+.center-content {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+/* line 12, ../../../../../.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.center-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 92, ../sass/core/containers/_header.scss */
+.center-content .header-logo {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+@media (min-width: 768px) {
+  /* line 92, ../sass/core/containers/_header.scss */
+  .center-content .header-logo {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/*  Barra de Login-Logout
+============================*/
+/* line 102, ../sass/core/containers/_header.scss */
+.actions-bar {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 4px 0;
+  margin-top: 15px;
+  font-size: 10pt;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 102, ../sass/core/containers/_header.scss */
+  .actions-bar {
+    text-align: right;
+  }
+}
+
+/* line 112, ../sass/core/containers/_header.scss */
+.magazine .actions-bar {
+  background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9);
+}
+
+/*  Formulário de login
+============================*/
+/* line 120, ../sass/core/containers/_header.scss */
+.form-login label {
+  font-size: 10pt;
+  margin-right: 5px;
+  margin-left: 10px;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 120, ../sass/core/containers/_header.scss */
+  .form-login label {
+    display: inline-block;
+  }
+}
+/* line 130, ../sass/core/containers/_header.scss */
+.form-login input {
+  padding: 3px;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 130, ../sass/core/containers/_header.scss */
+  .form-login input {
+    display: inline-block;
+    width: auto;
+  }
+}
+/* line 144, ../sass/core/containers/_header.scss */
+.form-login .btn-submit {
+  background: #f0f0f0;
+  color: inherit;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 9pt;
+}
+@media (min-width: 768px) {
+  /* line 118, ../sass/core/containers/_header.scss */
+  .form-login {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/*  Formulário de busca
+============================*/
+/* line 162, ../sass/core/containers/_header.scss */
+.form-search-header {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  /* line 162, ../sass/core/containers/_header.scss */
+  .form-search-header {
+    width: 41.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.form-search-header:after, .form-search-header:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 173, ../sass/core/containers/_header.scss */
+.search-input-header {
+  width: 91.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00520f;
+}
+@media (min-width: 768px) {
+  /* line 173, ../sass/core/containers/_header.scss */
+  .search-input-header {
+    width: 91.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 183, ../sass/core/containers/_header.scss */
+.search-button {
+  width: 8.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 15px 0;
+  background: url("../images/search-button.gif") no-repeat;
+  background-position: center center;
+  border: 0;
+}
+
+/* line 1, ../sass/core/containers/_sidebar.scss */
+.page-sidebar {
+  display: none;
+}
+/* line 3, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .sidebar-top {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/core/containers/_sidebar.scss */
+  .page-sidebar {
+    max-width: 220px;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+  }
+}
+
+/* line 14, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 40px;
+}
+/* line 20, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item {
+  display: block;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6dcd7;
+  font-size: 12pt;
+}
+/* line 27, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item a {
+  display: block;
+  color: #5d5d5d;
+  text-decoration: none;
+}
+/* line 34, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .header {
+  padding-top: 5px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*  Caixa central (míolo)
+===============================*/
+@media (min-width: 768px) {
+  /* line 3, ../sass/core/containers/_content.scss */
+  .main-content {
+    width: 75%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 1, ../sass/core/containers/_footer.scss */
+.page-footer {
+  background: #00520f;
+  color: #fff;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.page-footer:after, .page-footer:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 7, ../sass/core/containers/_footer.scss */
+.sub-footer {
+  background: #00420c;
+  padding: 15px 0;
+}
+
+/* line 12, ../sass/core/containers/_footer.scss */
+.footer-box {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.footer-box:after, .footer-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 18, ../sass/core/containers/_footer.scss */
+.footer-box .title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 21, ../sass/core/containers/_footer.scss */
+.footer-box .title h4 {
+  margin: 0;
+  padding-top: 0;
+}
+/* line 27, ../sass/core/containers/_footer.scss */
+.footer-box .title,
+.footer-box .item {
+  list-style: none;
+  display: block;
+}
+/* line 33, ../sass/core/containers/_footer.scss */
+.footer-box .item {
+  font-size: 9pt;
+  padding-bottom: 5px;
+  display: block;
+}
+/* line 40, ../sass/core/containers/_footer.scss */
+.footer-box .footer-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 21, ../../../../../.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/core/_application.scss */
+html, body {
+  height: 100%;
+  font-size: 10pt;
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
