@@ -40,7 +40,11 @@ class RegistrationForm extends Form {
 	 * Constructor.
 	 */
 	function RegistrationForm() {
-		parent::Form('user/register.tpl');
+		/*
+		* Modificando o formulário (página) que será exibida no registro
+		*/
+		parent::Form('portalpadrao/revista/layout.tpl');
+		// parent::Form('user/register.tpl');
 		$this->implicitAuth = Config::getVar('security', 'implicit_auth');
 
 		if ($this->implicitAuth) {

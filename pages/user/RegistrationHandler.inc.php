@@ -47,7 +47,15 @@ class RegistrationHandler extends UserHandler {
 			} else {
 				$regForm->initData();
 			}
+			/*
+			* Adicionado para mostrar a página de registro de usuário
+			* utilizando o portal padrão
+			*/
+			$templateMgr =& TemplateManager::getManager();
+			$templateMgr->assign('journalRegister', true);
 			$regForm->display();
+			
+
 
 		} else {
 			$journalDao =& DAORegistry::getDAO('JournalDAO');
@@ -75,6 +83,13 @@ class RegistrationHandler extends UserHandler {
 			$regForm =& new RegistrationForm();
 		}
 		$regForm->readInputData();
+		/*
+		* Adicionado para mostrar a página de erro no registro de usuário
+		* utilizando o portal padrão
+		*/
+		$templateMgr =& TemplateManager::getManager();
+		$templateMgr->assign('journalRegister', true);
+
 
 		if ($regForm->validate()) {
 			$regForm->execute();
