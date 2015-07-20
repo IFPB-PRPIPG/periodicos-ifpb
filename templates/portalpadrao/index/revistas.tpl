@@ -20,7 +20,7 @@
       {/if}
       {if $site->getSetting('showDescription')}
         {if $journal->getLocalizedDescription()}
-        <p class="magazine-description">{$journal->getLocalizedDescription()|nl2br|escape}</p>
+        <p class="magazine-description">{$journal->getLocalizedDescription()|nl2br}</p>
         {/if}
       {/if}
     </a>
