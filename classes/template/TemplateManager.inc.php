@@ -19,6 +19,7 @@
 import('classes.search.ArticleSearch');
 import('classes.file.PublicFileManager');
 import('lib.pkp.classes.template.PKPTemplateManager');
+import('classes.handler.Handler');
 
 class TemplateManager extends PKPTemplateManager {
 	/**
@@ -26,6 +27,7 @@ class TemplateManager extends PKPTemplateManager {
 	 * Initialize template engine and assign basic template variables.
 	 * @param $request PKPRequest FIXME: is optional for backwards compatibility only - make mandatory
 	 */
+
 	function TemplateManager($request = null) {
 		parent::PKPTemplateManager($request);
 
@@ -90,13 +92,13 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign('userBlockLoginUrl', $loginUrl);
 			}
 
+
 			if (isset($journal)) {
 
 				$this->assign_by_ref('currentJournal', $journal);
 				$journalTitle = $journal->getLocalizedTitle();
 				$this->assign('siteTitle', $journalTitle);
 				$this->assign('publicFilesDir', $this->request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($journal->getId()));
-
 				$this->assign('primaryLocale', $journal->getPrimaryLocale());
 				$this->assign('alternateLocales', $journal->getSetting('alternateLocales'));
 
@@ -106,7 +108,10 @@ class TemplateManager extends PKPTemplateManager {
 
 				// Assign journal page header
 				$this->assign('displayPageHeaderTitle', $journal->getLocalizedPageHeaderTitle());
-				$this->assign('displayPageHeaderLogo', $journal->getLocalizedPageHeaderLogo());
+				/*
+				* Mudança de param na mostra do Logo (true) (portal padrão)
+				*/
+				$this->assign('displayPageHeaderLogo', $journal->getLocalizedPageHeaderLogo(true));
 				$this->assign('displayPageHeaderTitleAltText', $journal->getLocalizedSetting('pageHeaderTitleImageAltText'));
 				$this->assign('displayPageHeaderLogoAltText', $journal->getLocalizedSetting('pageHeaderLogoImageAltText'));
 				$this->assign('displayFavicon', $journal->getLocalizedFavicon());
