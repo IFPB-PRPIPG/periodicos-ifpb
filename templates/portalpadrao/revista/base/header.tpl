@@ -36,7 +36,7 @@
     <div class="actions-bar">
       <div class="content-container">
       {if $isUserLoggedIn}
-        {translate key="plugins.block.user.loggedInAs"} <strong>{$loggedInUsername|escape}
+        {translate key="plugins.block.user.loggedInAs"} <strong>{$loggedInUsername|escape}</strong>
       {else}
         <span>Acesso do usuário</span>
         <form class="form-control form-login" action="{$userBlockLoginUrl}" method="post">
