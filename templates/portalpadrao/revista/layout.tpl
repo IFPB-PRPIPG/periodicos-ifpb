@@ -11,7 +11,6 @@
 
 {include file="portalpadrao/revista/base/header.tpl"}
 	{include file="portalpadrao/revista/body.tpl"}
-{include file="portalpadrao/base/footer.tpl"}
-
+{include file="portalpadrao/revista/base/footer.tpl"}
 </body>
 </html>
