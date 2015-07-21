@@ -18,7 +18,9 @@
     <div class="center-content">
       <div class="header-logo">
         {if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+        <a href="{url page="index"}" target="_parent">
         <img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+        </a>
         {/if}
       </div>
     </div>

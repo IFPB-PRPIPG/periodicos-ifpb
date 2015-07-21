@@ -447,7 +447,15 @@ class AboutHandler extends Handler {
 		$templateMgr->assign('submissionChecklist', $submissionChecklist);
 		$templateMgr->assign_by_ref('journalSettings', $journalSettings);
 		$templateMgr->assign('helpTopicId','submission.authorGuidelines');
-		$templateMgr->display('about/submissions.tpl');
+		// $templateMgr->display('about/submissions.tpl');
+		/*
+		* Adicionada chamada para a página de ajuda, diretrizes, etc.
+		* Portal padrão
+		*/
+		$templateMgr->assign('journalHelp', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
+
+
 	}
 
 	/**

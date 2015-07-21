@@ -82,13 +82,94 @@
               {fieldLabel class="label-control-right mid-6" name="lastName" required="true" key="user.lastName"}
               <input type="text" id="lastName" name="lastName" value="{$lastName|escape}" size="20" maxlength="90" class="input-control mid-6" />
             </div>
+
             <!-- Iniciais -->
             <div class="input-container">
               {fieldLabel class="label-control-right mid-6" name="initials" key="user.initials"}
               <input type="text" id="initials" name="initials" value="{$initials|escape}" size="5" maxlength="5" class="input-control mid-6" />
               <small style="text-align: right;display: block">{translate key="user.initialsExample"}</small>
             </div>
+            
+            <!-- sexo -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="gender-m" key="user.gender"}
+              <select name="gender" id="gender" size="1" class="input-control mid-6">
+                {html_options_translate options=$genderOptions selected=$gender}
+              </select>
+            </div>
 
+            <!-- Instituição/afiliação -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="affiliation" key="user.affiliation"}
+              <textarea id="affiliation" name="affiliation[{$formLocale|escape}]" rows="5" cols="40" class="input-control mid-6">{$affiliation[$formLocale]|escape}</textarea>
+              <small style="display: block; text-align: right;">{translate key="user.affiliation.description"}</small>
+            </div>
+
+            <!-- Assinatura -->
+            <div class="input-container">
+            {fieldLabel class="label-control-right mid-6" name="signature" key="user.signature"}
+            <textarea name="signature[{$formLocale|escape}]" id="signature" rows="5" cols="40" class="input-control mid-6">{$signature[$formLocale]|escape}</textarea>
+            </div>
+            
+            <!-- Email -->
+            <div class="input-container">
+            {fieldLabel class="label-control-right mid-6" name="email" required="true" key="user.email"}
+            <input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="input-control mid-6" /> {if $privacyStatement}<a class="action" href="#privacyStatement">{translate key="user.register.privacyStatement"}</a>{/if}
+            </div>
+
+            <!-- Confirmar email -->
+            <div class="input-container">
+            {fieldLabel class="label-control-right mid-6" name="confirmEmail" required="true" key="user.confirmEmail"}
+            <input type="text" id="confirmEmail" name="confirmEmail" value="{$confirmEmail|escape}" size="30" maxlength="90" class="input-control mid-6" />
+            </div>
+
+            <!-- ORCID -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="orcid" key="user.orcid"}
+              <input type="text" id="orcid" name="orcid" value="{$orcid|escape}" size="40" maxlength="255" class="input-control mid-6" />
+              <small>{translate key="user.orcid.description"}</small>
+            </div>
+
+            <!-- URL -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="userUrl" key="user.url"}
+              <input type="text" id="userUrl" name="userUrl" value="{$userUrl|escape}" size="30" maxlength="255" class="input-control mid-6" />
+            </div>
+
+            <!-- Telefone -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="phone" key="user.phone"}
+              <input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="input-control mid-6" />
+            </div>
+
+            <!-- FAX -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="fax" key="user.fax"}
+              <input type="text" name="fax" id="fax" value="{$fax|escape}" size="15" maxlength="24" class="input-control mid-6" />
+            </div>
+            
+            <!-- Endereço Postal -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="mailingAddress" key="common.mailingAddress"}
+              <textarea name="mailingAddress" id="mailingAddress" rows="3" cols="40" class="input-control mid-6">{$mailingAddress|escape}</textarea>
+            </div>
+            
+            <!-- Biografia -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="biography" key="user.biography"}
+              {translate key="" user.biography.description"}
+              <textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="input-control mid-6">{$biography[$formLocale]|escape}</textarea>
+            </div>
+            
+            <!-- País -->
+            <div class="input-container">
+              {fieldLabel class="label-control-right mid-6" name="country" key="common.country"}
+              
+                <select name="country" id="country" class="input-control mid-6">
+                  <option value="">Selecione</option>
+                  {html_options options=$countries selected=$country}
+                </select>
+            </div>
         </fieldset>
 
 				{if !$existingUser}
@@ -107,84 +188,14 @@
 							<td class="value">
 								<img src="{url page="user" op="viewCaptcha" path=$captchaId}" alt="{translate key="common.captchaField.altText"}" /><br />
 								<span class="instruct">{translate key="common.captchaField.description"}</span><br />
-								<input name="captcha" id="captcha" value="" size="20" maxlength="32" class="textField" />
+								<input name="captcha" id="captcha" value="" size="20" maxlength="32" class="input-control mid-6" />
 								<input type="hidden" name="captchaId" value="{$captchaId|escape:"quoted"}" />
 							</td>
 							{/if}
 						</tr>
 					{/if}{* $captchaEnabled *}
 
-					<tr valign="top">
-						<td class="label">{fieldLabel name="gender-m" key="user.gender"}</td>
-						<td class="value">
-							<select name="gender" id="gender" size="1" class="selectMenu">
-								{html_options_translate options=$genderOptions selected=$gender}
-							</select>
-						</td>
-					</tr>
 
-					<tr valign="top">
-						<td class="label">{fieldLabel name="affiliation" key="user.affiliation"}</td>
-						<td class="value">
-							<textarea id="affiliation" name="affiliation[{$formLocale|escape}]" rows="5" cols="40" class="textArea">{$affiliation[$formLocale]|escape}</textarea><br/>
-							<span class="instruct">{translate key="user.affiliation.description"}</span>
-						</td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="signature" key="user.signature"}</td>
-						<td class="value"><textarea name="signature[{$formLocale|escape}]" id="signature" rows="5" cols="40" class="textArea">{$signature[$formLocale]|escape}</textarea></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="email" required="true" key="user.email"}</td>
-						<td class="value"><input type="text" id="email" name="email" value="{$email|escape}" size="30" maxlength="90" class="textField" /> {if $privacyStatement}<a class="action" href="#privacyStatement">{translate key="user.register.privacyStatement"}</a>{/if}</td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="confirmEmail" required="true" key="user.confirmEmail"}</td>
-						<td class="value"><input type="text" id="confirmEmail" name="confirmEmail" value="{$confirmEmail|escape}" size="30" maxlength="90" class="textField" /></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="orcid" key="user.orcid"}</td>
-						<td class="value"><input type="text" id="orcid" name="orcid" value="{$orcid|escape}" size="40" maxlength="255" class="textField" /><br />{translate key="user.orcid.description"}</td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="userUrl" key="user.url"}</td>
-						<td class="value"><input type="text" id="userUrl" name="userUrl" value="{$userUrl|escape}" size="30" maxlength="255" class="textField" /></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="phone" key="user.phone"}</td>
-						<td class="value"><input type="text" name="phone" id="phone" value="{$phone|escape}" size="15" maxlength="24" class="textField" /></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="fax" key="user.fax"}</td>
-						<td class="value"><input type="text" name="fax" id="fax" value="{$fax|escape}" size="15" maxlength="24" class="textField" /></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="mailingAddress" key="common.mailingAddress"}</td>
-						<td class="value"><textarea name="mailingAddress" id="mailingAddress" rows="3" cols="40" class="textArea">{$mailingAddress|escape}</textarea></td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="country" key="common.country"}</td>
-						<td class="value">
-							<select name="country" id="country" class="selectMenu">
-								<option value=""></option>
-								{html_options options=$countries selected=$country}
-							</select>
-						</td>
-					</tr>
-
-					<tr valign="top">
-						<td class="label">{fieldLabel name="biography" key="user.biography"}<br />{translate key="user.biography.description"}</td>
-						<td class="value"><textarea name="biography[{$formLocale|escape}]" id="biography" rows="5" cols="40" class="textArea">{$biography[$formLocale]|escape}</textarea></td>
-					</tr>
 
 					<tr valign="top">
 						<td class="label">{fieldLabel name="sendPassword" key="user.sendPassword"}</td>
@@ -239,5 +250,19 @@
 			</form>
 </div> <!-- fecha a div do form -->
 
-{include file="common/footer.tpl"}
-
+{if $isUserLoggedIn}
+{else}
+<div class="content-box mid-4">
+  <div class="header-box default">Tenho cadastro</div>
+  <form action="{$userBlockLoginUrl}" method="post" class="form-control-default">
+    <fieldset>
+      <legend>Acesso do usuário</legend>
+      <label for="login-sub" class="label-control">{translate key="user.username"}</label>
+      <input type="text" id="login-sub" class="input-control" name="username">
+      <label for="password-sub" class="label-control">{translate key="user.password"}</label>
+      <input type="text" id="password-sub" class="input-control" name="password" value="{$password|escape}">
+    </fieldset>
+    <button class="btn-submit">Acessar</button>
+  </form>
+</div>
+{/if}

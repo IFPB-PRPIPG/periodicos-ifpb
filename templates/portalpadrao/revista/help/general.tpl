@@ -1,0 +1,60 @@
+<div class="text-box" id="authorGuidelines">
+	{if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
+	<h2 class="header-title mid-size border-title-light">{translate key="about.authorGuidelines"}</h2>
+	{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
+	{/if}
+</div>
+
+{if $submissionChecklist}
+<div class="text-box" id="submissionPreparationChecklist">
+	<h2 class="header-title mid-size border-title-light">
+		{translate key="about.submissionPreparationChecklist"}
+	</h2>
+		<p>{translate key="about.submissionPreparationChecklist.description"}</p>
+		<ol>
+			{foreach from=$submissionChecklist item=checklistItem}
+				<li>{$checklistItem.content|nl2br}</li>
+			{/foreach}
+		</ol>
+</div>
+{/if}
+
+
+{if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
+<div class="text-box">
+	<h3 class="header-title mid-size border-title-light">{translate key="about.copyrightNotice"}</h3>
+	<p>{$currentJournal->getLocalizedSetting('copyrightNotice')|nl2br}</p>
+</div>
+{/if}
+
+{if $currentJournal->getLocalizedSetting('privacyStatement') != ''}
+<div class="text-box" id="privacyStatement">
+	<h3 class="header-title mid-size border-title-light">
+		{translate key="about.privacyStatement"}
+	</h3>
+	<p>{$currentJournal->getLocalizedSetting('privacyStatement')|nl2br}</p>
+</div>
+{/if}
+
+{if $authorFees}
+
+<div class="text-box">
+	<h3 class="header-title mid-size border-title-light">{translate key="manager.payment.authorFees"}</h3>
+		<p>{translate key="about.authorFeesMessage"}</p>
+		{if $currentJournal->getSetting('submissionFeeEnabled')}
+			<p>{$currentJournal->getLocalizedSetting('submissionFeeName')|escape}: {$currentJournal->getSetting('submissionFee')|string_format:"%.2f"} ({$currentJournal->getSetting('currency')})<br />
+			{$currentJournal->getLocalizedSetting('submissionFeeDescription')|nl2br}<p>
+		{/if}
+		{if $currentJournal->getSetting('fastTrackFeeEnabled')}
+			<p>{$currentJournal->getLocalizedSetting('fastTrackFeeName')|escape}: {$currentJournal->getSetting('fastTrackFee')|string_format:"%.2f"} ({$currentJournal->getSetting('currency')})<br />
+			{$currentJournal->getLocalizedSetting('fastTrackFeeDescription')|nl2br}<p>
+		{/if}
+		{if $currentJournal->getSetting('publicationFeeEnabled')}
+			<p>{$currentJournal->getLocalizedSetting('publicationFeeName')|escape}: {$currentJournal->getSetting('publicationFee')|string_format:"%.2f"} ({$currentJournal->getSetting('currency')})<br />
+			{$currentJournal->getLocalizedSetting('publicationFeeDescription')|nl2br}<p>
+		{/if}
+		{if $currentJournal->getLocalizedSetting('waiverPolicy') != ''}
+			<p>{$currentJournal->getLocalizedSetting('waiverPolicy')|nl2br}</p>
+		{/if}
+</div>
+{/if}

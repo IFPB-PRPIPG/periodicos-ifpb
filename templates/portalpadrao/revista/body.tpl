@@ -32,6 +32,13 @@
           {if $journalIssue}
             {include file="portalpadrao/revista/arquivo/issue.tpl"}
           {/if}
+
+          {* Página de ajuda /diretrizes *}
+
+          {if $journalHelp}
+            {include file="portalpadrao/revista/help/general.tpl"}
+          {/if}
+
         </main>
       </div>
    </div> <!-- /page content -->

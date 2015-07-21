@@ -24,7 +24,7 @@
   {/iterate}
   <div class="footer-box">
     <div class="footer-content">
-      <a href="#">Mais notícias</a>
+      <a href="{url page="announcement"}">{translate key="announcement.moreAnnouncements"}</a>
     </div>
   </div>
 </div>
