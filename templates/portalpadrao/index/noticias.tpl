@@ -2,6 +2,7 @@
 <!-- Container de nóticias -->
 <section class="news-container">
   <!-- Header do container -->
+  {include file="portalpadrao/index/slide.tpl"}
   <header class="news-header">
     <h3 class="header-title">Notícias </h3>
   </header>
@@ -11,8 +12,6 @@
   <a href="{url page="announcement" op="show" path=$announcement->getId()}">
   {/if}
   <article class="news">
-    <!-- <span class="news-information">Publicação de periódicos</span> -->
-    <!-- <img class="news-image" src="http://placehold.it/250x150" alt="Nóticia um"> -->
     <h4 class="news-title">{$announcement->getLocalizedTitle()|escape}</h4>
     <p class="news-description">
       {$announcement->getLocalizedDescriptionShort()|nl2br}

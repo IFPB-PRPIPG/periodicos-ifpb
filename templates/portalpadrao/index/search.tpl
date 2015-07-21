@@ -3,7 +3,17 @@
   <header class="search-header">
     <h3 class="header-title">Pesquisa</h3>
   </header>
-  <form action="#/search">
+ 
+
+    <form id="simpleSearchForm" method="post" action="{url page="search" op="search"}">
+    <table id="simpleSearchInput">
+      <tr>
+        <td>
+        {capture assign="filterInput"}{call_hook name="Templates::Search::SearchResults::FilterInput" filterName="simpleQuery" filterValue="" size=15}{/capture}
+        {if empty($filterInput)}
+          
+            
+            <form action="#/search">
     <section class="search-body">
       <label for="search-magazine">Conteúdo da Revista</label>
       <input id="search-magazine" type="text">
@@ -37,5 +47,16 @@
         <button>Pesquisar</button>
       </footer>
     </ul>
+  </form>
+
+        </label>
+        {else}
+          {$filterInput}
+        {/if}
+        </td>
+      </tr>
+      
+      
+    </table>
   </form>
 </section>
