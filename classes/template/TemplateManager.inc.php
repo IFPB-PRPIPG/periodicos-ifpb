@@ -76,6 +76,20 @@ class TemplateManager extends PKPTemplateManager {
 
 			$this->assign('revistas', $revistas);
 
+			/*
+			* Adicionada chamada global para login (userBlockLoginURL)
+			*/			
+			if (!defined('SESSION_DISABLE_INIT')) {
+				$session =& Request::getSession();
+				$this->assign_by_ref('userSession', $session);
+				$this->assign('loggedInUsername', $session->getSessionVar('username'));
+				$loginUrl = Request::url(null, 'login', 'signIn');
+				if (Config::getVar('security', 'force_login_ssl')) {
+					$loginUrl = String::regexp_replace('/^http:/', 'https:', $loginUrl);
+				}
+				$this->assign('userBlockLoginUrl', $loginUrl);
+			}
+
 			if (isset($journal)) {
 
 				$this->assign_by_ref('currentJournal', $journal);
