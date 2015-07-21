@@ -1,0 +1,50 @@
+<div class="text-box">
+	<h2 class="header-title large-size border-title-light">Publicações</h2>
+
+	{iterate from=issues item=issue}
+		{if $issue->getYear() != $lastYear}
+			{if !$notFirstYear}
+				{assign var=notFirstYear value=1}
+			{else}
+				</div>
+				<br />
+				<div class="separator" style="clear:left;"></div>
+			{/if}
+			<div style="float: left; width: 100%;">
+			<h3>{$issue->getYear()|escape}</h3>
+			{assign var=lastYear value=$issue->getYear()}
+		{/if}
+
+    <ul class="date-list mid-8">
+      <!-- Entrada dos itens -->
+      <li class="date-list-item" id="issue-{$issue->getId()}">
+        <div class="date mid-3">
+          <span class="year">{$issue->getDatePublished()|escape}</span>
+        </div>
+        <div class="image mid-3">
+		{if $issue->getLocalizedFileName() && $issue->getShowCoverPage($locale) && !$issue->getHideCoverPageArchives($locale)}
+          <img src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $issue->getCoverPageAltText($locale) != ''} alt="{$issue->getCoverPageAltText($locale)|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
+        {/if}
+        </div>
+        <div class="text mid-6">
+          <h4 class="title">
+          	<a class="title" href="{url op="view" path=$issue->getBestIssueId($currentJournal)}">{$issue->getIssueIdentification()|escape}</a>
+          </h4>
+          <p>{$issue->getLocalizedDescription()|strip_unsafe_html}</p>
+        </div>
+      </li>
+      </ul>
+	{/iterate}
+
+	<div class="mid-8">
+	{if $notFirstYear}<br/>{/if}
+	{if !$issues->wasEmpty()}
+		{page_info iterator=$issues}&nbsp;&nbsp;&nbsp;&nbsp;
+		{page_links anchor="issues" name="issues" iterator=$issues}
+	{else}
+		{translate key="current.noCurrentIssueDesc"}
+	{/if}
+	<br/><br/><br/><br/><br/><br/>
+	</div>
+</div> <!-- /text box -->
+

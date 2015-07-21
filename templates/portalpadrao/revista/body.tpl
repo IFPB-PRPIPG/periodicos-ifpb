@@ -22,6 +22,16 @@
           {if $journalRegister}
             {include file="portalpadrao/revista/register/register.tpl"}
           {/if}
+
+          {* Página de Anteriores / Atual*}
+          {if $journalArchive}
+            {include file="portalpadrao/revista/arquivo/list.tpl"}
+          {/if}
+
+          {* Página da edição corrente da revista + editorial*}
+          {if $journalIssue}
+            {include file="portalpadrao/revista/arquivo/issue.tpl"}
+          {/if}
         </main>
       </div>
    </div> <!-- /page content -->

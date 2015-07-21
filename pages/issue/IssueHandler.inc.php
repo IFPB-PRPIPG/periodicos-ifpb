@@ -72,7 +72,7 @@ class IssueHandler extends Handler {
 		// consider public identifiers
 		$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', true);
 		$templateMgr->assign('pubIdPlugins', $pubIdPlugins);
-		$templateMgr->display('issue/viewPage.tpl');
+		// $templateMgr->display('issue/viewPage.tpl');
 	}
 
 	/**
@@ -97,7 +97,13 @@ class IssueHandler extends Handler {
 		// consider public identifiers
 		$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', true);
 		$templateMgr->assign('pubIdPlugins', $pubIdPlugins);
-		$templateMgr->display('issue/viewPage.tpl');
+		// $templateMgr->display('issue/viewPage.tpl');
+		/*
+		* Adicionada chamada para o editorial da revista (portao padrão)
+		*/
+		$templateMgr->assign('journalIssue', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
+
 
 	}
 
@@ -126,7 +132,10 @@ class IssueHandler extends Handler {
 		$templateMgr->assign('locale', AppLocale::getLocale());
 		$templateMgr->assign_by_ref('issues', $publishedIssuesIterator);
 		$templateMgr->assign('helpTopicId', 'user.currentAndArchives');
-		$templateMgr->display('issue/archive.tpl');
+		// $templateMgr->display('issue/archive.tpl');
+		$templateMgr->assign('journalArchive', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
+
 	}
 
 	/**
@@ -446,7 +455,22 @@ class IssueHandler extends Handler {
 				$templateMgr->assign('coverPageAltText', $issue->getCoverPageAltText($locale));
 				$templateMgr->assign('originalFileName', $issue->getOriginalFileName($locale));
 
-				$showToc = false;
+				// $showToc = false;
+				/*
+				* Adicionado o show toc para economizar 1 click na busca dos artigos
+				* Portal padrão
+				*/
+				$issueGalleyDao =& DAORegistry::getDAO('IssueGalleyDAO');
+				$issueGalleys =& $issueGalleyDao->getGalleysByIssue($issue->getId());
+				$templateMgr->assign_by_ref('issueGalleys', $issueGalleys);
+
+				// Published articles
+				$publishedArticleDao =& DAORegistry::getDAO('PublishedArticleDAO');
+				$publishedArticles =& $publishedArticleDao->getPublishedArticlesInSections($issue->getId(), true);
+
+				$publicFileManager = new PublicFileManager();
+				$templateMgr->assign_by_ref('publishedArticles', $publishedArticles);
+				$showToc = true;
 			} else {
 				// Issue galleys
 				$issueGalleyDao =& DAORegistry::getDAO('IssueGalleyDAO');
