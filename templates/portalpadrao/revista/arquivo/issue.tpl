@@ -2,7 +2,7 @@
 <h2 class="header-title large-size border-title-light">Editorial</h2>
 
 <!-- Section para ser utilizada como sub section em páginas de texto -->
-<div class="text-box-section border-box">
+<div class="text-box-content border-box">
 
 {if $issue}
 	{if $issueId}
@@ -20,7 +20,7 @@
   <p>{$issue->getLocalizedDescription()|strip_unsafe_html}</p>
 </div>
 
-<div class="text-box-section">
+<div class="text-box-content">
   <h3 class="text-box-title large-size border-title-light">{translate key="issue.toc"}</h3>
 {foreach name=sections from=$publishedArticles item=section key=sectionId}
 

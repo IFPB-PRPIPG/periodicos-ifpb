@@ -326,18 +326,26 @@
 ===========================*/
 /* line 3, ../sass/core/modules/pages/_news.scss */
 .text-box {
+  display: block;
   font-size: 15px;
   margin-bottom: 30px;
 }
-/* line 6, ../sass/core/modules/pages/_news.scss */
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.text-box:after, .text-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 8, ../sass/core/modules/pages/_news.scss */
 .text-box .header-title.large-size {
   font-size: 28pt;
 }
-/* line 9, ../sass/core/modules/pages/_news.scss */
+/* line 11, ../sass/core/modules/pages/_news.scss */
 .text-box .header-title.mid-size {
   font-size: 18pt;
 }
-/* line 13, ../sass/core/modules/pages/_news.scss */
+/* line 15, ../sass/core/modules/pages/_news.scss */
 .text-box .header-subtitle {
   margin-top: 30px;
 }
@@ -352,15 +360,15 @@
   zoom: 1;
 }
 
-/* line 29, ../sass/core/modules/pages/_news.scss */
+/* line 31, ../sass/core/modules/pages/_news.scss */
 .text-box-title {
   color: #172938;
 }
-/* line 31, ../sass/core/modules/pages/_news.scss */
+/* line 33, ../sass/core/modules/pages/_news.scss */
 .text-box-title.large-size {
   font-size: 28pt;
 }
-/* line 34, ../sass/core/modules/pages/_news.scss */
+/* line 36, ../sass/core/modules/pages/_news.scss */
 .text-box-title.mid-size {
   font-size: 18pt;
 }
@@ -434,6 +442,7 @@
   display: block;
   width: 100%;
   padding: 8px;
+  margin-bottom: 5px;
   border: 1px solid #d6dcd7;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -442,7 +451,7 @@
   border-radius: 5px;
 }
 
-/* line 63, ../sass/core/modules/forms/_forms.scss */
+/* line 64, ../sass/core/modules/forms/_forms.scss */
 .input-inline {
   padding-left: 0;
   padding-right: 0;
@@ -452,17 +461,17 @@
 
 /*  Labels
 ======================*/
-/* line 73, ../sass/core/modules/forms/_forms.scss */
+/* line 74, ../sass/core/modules/forms/_forms.scss */
 .label-control-block {
   display: block;
 }
 
-/* line 82, ../sass/core/modules/forms/_forms.scss */
+/* line 83, ../sass/core/modules/forms/_forms.scss */
 .label-control-right {
   text-align: right;
 }
 
-/* line 87, ../sass/core/modules/forms/_forms.scss */
+/* line 88, ../sass/core/modules/forms/_forms.scss */
 .required:before {
   content: "*";
   color: #3867b7;
@@ -470,7 +479,7 @@
 
 /*  Botões
 ======================*/
-/* line 94, ../sass/core/modules/forms/_forms.scss */
+/* line 95, ../sass/core/modules/forms/_forms.scss */
 .btn-search {
   color: #fff;
   font-size: 10pt;
@@ -723,6 +732,7 @@ Container das redes sociais
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+  min-height: 80px;
 }
 @media (min-width: 768px) {
   /* line 92, ../sass/core/containers/_header.scss */
@@ -736,7 +746,7 @@ Container das redes sociais
 
 /*  Barra de Login-Logout
 ============================*/
-/* line 102, ../sass/core/containers/_header.scss */
+/* line 103, ../sass/core/containers/_header.scss */
 .actions-bar {
   width: 100%;
   float: left;
@@ -744,39 +754,40 @@ Container das redes sociais
   padding-right: 0.83333%;
   padding: 4px 0;
   margin-top: 15px;
-  font-size: 10pt;
+  font-size: 9pt;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 102, ../sass/core/containers/_header.scss */
+  /* line 103, ../sass/core/containers/_header.scss */
   .actions-bar {
     text-align: right;
   }
 }
 
-/* line 112, ../sass/core/containers/_header.scss */
+/* line 113, ../sass/core/containers/_header.scss */
 .magazine .actions-bar {
   background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9);
 }
 
 /*  Formulário de login
 ============================*/
-/* line 120, ../sass/core/containers/_header.scss */
+/* line 121, ../sass/core/containers/_header.scss */
 .form-login label {
-  font-size: 10pt;
+  font-size: 9pt;
   margin-right: 5px;
   margin-left: 10px;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/core/containers/_header.scss */
+  /* line 121, ../sass/core/containers/_header.scss */
   .form-login label {
     display: inline-block;
   }
 }
-/* line 130, ../sass/core/containers/_header.scss */
+/* line 131, ../sass/core/containers/_header.scss */
 .form-login input {
-  padding: 3px;
+  padding: 0 3px;
+  font-size: 9pt;
   border: 0;
   outline: none;
   border-radius: 10px;
@@ -784,13 +795,13 @@ Container das redes sociais
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 130, ../sass/core/containers/_header.scss */
+  /* line 131, ../sass/core/containers/_header.scss */
   .form-login input {
     display: inline-block;
     width: auto;
   }
 }
-/* line 144, ../sass/core/containers/_header.scss */
+/* line 146, ../sass/core/containers/_header.scss */
 .form-login .btn-submit {
   background: #f0f0f0;
   color: inherit;
@@ -800,7 +811,7 @@ Container das redes sociais
   font-size: 9pt;
 }
 @media (min-width: 768px) {
-  /* line 118, ../sass/core/containers/_header.scss */
+  /* line 119, ../sass/core/containers/_header.scss */
   .form-login {
     display: inline-block;
     margin-left: 20px;
@@ -809,7 +820,7 @@ Container das redes sociais
 
 /*  Formulário de busca
 ============================*/
-/* line 162, ../sass/core/containers/_header.scss */
+/* line 164, ../sass/core/containers/_header.scss */
 .form-search-header {
   width: 100%;
   float: left;
@@ -820,7 +831,7 @@ Container das redes sociais
   margin-bottom: 5px;
 }
 @media (min-width: 768px) {
-  /* line 162, ../sass/core/containers/_header.scss */
+  /* line 164, ../sass/core/containers/_header.scss */
   .form-search-header {
     width: 41.66667%;
     float: right;
@@ -836,7 +847,7 @@ Container das redes sociais
   zoom: 1;
 }
 
-/* line 173, ../sass/core/containers/_header.scss */
+/* line 175, ../sass/core/containers/_header.scss */
 .search-input-header {
   width: 91.66667%;
   float: left;
@@ -847,7 +858,7 @@ Container das redes sociais
   border: 1px solid #00520f;
 }
 @media (min-width: 768px) {
-  /* line 173, ../sass/core/containers/_header.scss */
+  /* line 175, ../sass/core/containers/_header.scss */
   .search-input-header {
     width: 91.66667%;
     float: left;
@@ -856,7 +867,7 @@ Container das redes sociais
   }
 }
 
-/* line 183, ../sass/core/containers/_header.scss */
+/* line 185, ../sass/core/containers/_header.scss */
 .search-button {
   width: 8.33333%;
   float: left;
