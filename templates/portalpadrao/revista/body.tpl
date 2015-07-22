@@ -39,6 +39,11 @@
             {include file="portalpadrao/revista/help/general.tpl"}
           {/if}
 
+          {* Página de visualização dos artigos*}
+          {if $journalArticle}
+            {include file="portalpadrao/revista/article/article.tpl"}
+          {/if}
+
         </main>
       </div>
    </div> <!-- /page content -->

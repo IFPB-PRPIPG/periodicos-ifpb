@@ -223,7 +223,11 @@ class ArticleHandler extends Handler {
 		// consider public identifiers
 		$pubIdPlugins =& PluginRegistry::loadCategory('pubIds', true);
 		$templateMgr->assign('pubIdPlugins', $pubIdPlugins);
-		$templateMgr->display('article/article.tpl');
+		// $templateMgr->display('article/article.tpl');
+		// adicionada chamada para o portal padrão
+		$templateMgr->assign('journalArticle', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
+
 	}
 
 	/**
