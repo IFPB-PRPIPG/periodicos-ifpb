@@ -21,7 +21,7 @@
 
 
 {if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
-<div class="text-box">
+<div class="text-box" id="copyrightNotice">
 	<h3 class="header-title mid-size border-title-light">{translate key="about.copyrightNotice"}</h3>
 	<p>{$currentJournal->getLocalizedSetting('copyrightNotice')|nl2br}</p>
 </div>

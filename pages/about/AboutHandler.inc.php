@@ -550,8 +550,13 @@ class AboutHandler extends Handler {
 			if (file_exists($edProcessFile)) break;
 		}
 		$templateMgr->assign('edProcessFile', $edProcessFile);
+		// $templateMgr->display('about/aboutThisPublishingSystem.tpl');
+		/*
+		* Adicionada chamada ao portal padrão
+		*/
+		$templateMgr->assign('journalPublishing', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
 
-		$templateMgr->display('about/aboutThisPublishingSystem.tpl');
 	}
 
 	/**

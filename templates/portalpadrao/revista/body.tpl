@@ -44,6 +44,12 @@
             {include file="portalpadrao/revista/article/article.tpl"}
           {/if}
 
+          {* Página de visualização do processo de submissão *}
+          {if $journalPublishing}
+            {include file="portalpadrao/revista/help/publishingsystem.tpl"}
+          {/if}
+
+
         </main>
       </div>
    </div> <!-- /page content -->
