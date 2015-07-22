@@ -5,6 +5,7 @@
       {include file="portalpadrao/base/aside.tpl"}
       <!-- Parte central da página -->
       <section class="l-page-content">
+        {include file="portalpadrao/index/slide.tpl"}
         {include file="portalpadrao/index/noticias.tpl"}
         {include file="portalpadrao/index/revistas.tpl"}
         {include file="portalpadrao/index/search.tpl"}

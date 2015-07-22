@@ -2,7 +2,6 @@
 <!-- Container de nóticias -->
 <section class="news-container">
   <!-- Header do container -->
-  {include file="portalpadrao/index/slide.tpl"}
   <header class="news-header">
     <h3 class="header-title">Notícias </h3>
   </header>
