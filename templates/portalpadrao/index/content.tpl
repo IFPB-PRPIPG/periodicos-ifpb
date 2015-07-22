@@ -5,6 +5,7 @@
       {include file="portalpadrao/base/aside.tpl"}
       <!-- Parte central da página -->
       <section class="l-page-content">
+        <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner.png" style="width: 100%;">
         {include file="portalpadrao/index/slide.tpl"}
         {include file="portalpadrao/index/noticias.tpl"}
         {include file="portalpadrao/index/revistas.tpl"}
