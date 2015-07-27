@@ -1,7 +1,7 @@
 config.inc.php
 .DS_Store
-files/
-public/
+/files/
+/public/
 cache/t_compile/*.tpl.php
 cache/t_config/*.php
 cache/t_cache/*.php
