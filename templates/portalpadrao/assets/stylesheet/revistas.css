@@ -75,7 +75,7 @@
 /*  Botões
 ======================*/
 /* line 43, ../sass/core/modules/reusable/_reusables.scss */
-.btn-register, .btn-submit, .btn-search {
+.btn-register, .btn-submit, .btn-default, .btn-search {
   text-align: center;
   border: 1px solid;
 }
@@ -182,6 +182,47 @@
 .content-box a {
   color: #172938;
   text-decoration: none;
+}
+
+/*  Barra de ferramentas
+=====================================*/
+/* line 61, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar {
+  width: 100%;
+}
+/* line 17, ../sass/core/helpers/_helpers.scss */
+.tool-bar:after, .tool-bar:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 65, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar .tool-align {
+  padding-top: 10px;
+}
+/* line 68, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar .tool-item {
+  display: block;
+  font-size: 10pt;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 0 10px 25px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+/* line 77, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar .tool-item.print {
+  background-image: url("../images/impressora.png");
+  padding-left: 27px;
+}
+/* line 82, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar .tool-item.metadata {
+  background-image: url("../images/metadados.png");
+}
+/* line 86, ../sass/core/modules/reusable/_containers.scss */
+.tool-bar .tool-item.document {
+  background-image: url("../images/documento.png");
 }
 
 /*  Formatação dos textos
@@ -320,6 +361,17 @@
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
   text-align: right;
+}
+
+/* line 27, ../sass/core/modules/reusable/_buttons.scss */
+.btn-default {
+  background: #7d7d7d;
+  border: #7d7d7d;
+  color: #fff;
+  font-size: 10pt;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px 20px;
 }
 
 /*  Caixa de texto externa
@@ -589,6 +641,14 @@
 
 @media (max-width: 768px) {
   /* line 47, ../sass/core/helpers/_grid.scss */
+  .xs-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 50, ../sass/core/helpers/_grid.scss */
   .xs-1 {
     width: 100%;
     float: left;
@@ -801,7 +861,7 @@ Container das redes sociais
     width: auto;
   }
 }
-/* line 146, ../sass/core/containers/_header.scss */
+/* line 145, ../sass/core/containers/_header.scss */
 .form-login .btn-submit {
   background: #f0f0f0;
   color: inherit;
@@ -820,7 +880,7 @@ Container das redes sociais
 
 /*  Formulário de busca
 ============================*/
-/* line 164, ../sass/core/containers/_header.scss */
+/* line 163, ../sass/core/containers/_header.scss */
 .form-search-header {
   width: 100%;
   float: left;
@@ -831,7 +891,7 @@ Container das redes sociais
   margin-bottom: 5px;
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/core/containers/_header.scss */
+  /* line 163, ../sass/core/containers/_header.scss */
   .form-search-header {
     width: 41.66667%;
     float: right;
@@ -847,7 +907,7 @@ Container das redes sociais
   zoom: 1;
 }
 
-/* line 175, ../sass/core/containers/_header.scss */
+/* line 174, ../sass/core/containers/_header.scss */
 .search-input-header {
   width: 91.66667%;
   float: left;
@@ -858,7 +918,7 @@ Container das redes sociais
   border: 1px solid #00520f;
 }
 @media (min-width: 768px) {
-  /* line 175, ../sass/core/containers/_header.scss */
+  /* line 174, ../sass/core/containers/_header.scss */
   .search-input-header {
     width: 91.66667%;
     float: left;
@@ -867,7 +927,7 @@ Container das redes sociais
   }
 }
 
-/* line 185, ../sass/core/containers/_header.scss */
+/* line 184, ../sass/core/containers/_header.scss */
 .search-button {
   width: 8.33333%;
   float: left;
