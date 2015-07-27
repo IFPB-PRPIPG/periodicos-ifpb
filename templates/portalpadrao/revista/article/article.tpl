@@ -4,8 +4,21 @@
 {else}
 	{assign var=pubObject value=$article}
 {/if}
+	<!-- Script necessários para o view do pdf -->
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	{literal}
+			google.load("jquery", "{/literal}{$smarty.const.CDN_JQUERY_VERSION}{literal}");
+			google.load("jqueryui", "{/literal}{$smarty.const.CDN_JQUERY_UI_VERSION}{literal}");
+	{/literal}
+	</script>
 {/strip}
-
+	<!-- Compiled scripts -->
+	{if $useMinifiedJavaScript}
+		<script type="text/javascript" src="{$baseUrl}/js/pkp.min.js"></script>
+	{else}
+		{include file="common/minifiedScripts.tpl"}
+	{/if}
 {if $galley}
 	{if $galley->isHTMLGalley()}
 		{$galley->getHTMLContents()}
@@ -73,13 +86,8 @@
       <h3 class="text-box-title border-title-light">{translate key="reader.fullText"}</h3>
 		{if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
 			{foreach from=$article->getGalleys() item=galley name=galleyList}
-				<a href="{url page="article" op="view" path=$article->getBestArticleId($currentJournal)|to_array:$galley->getBestGalleyId($currentJournal)}" class="file" {if $galley->getRemoteURL()}target="_blank"{else}target="_parent"{/if}>{$galley->getGalleyLabel()|escape}</a>
+				<!--a href="{url page="article" op="view" path=$article->getBestArticleId($currentJournal)|to_array:$galley->getBestGalleyId($currentJournal)}" class="file" {if $galley->getRemoteURL()}target="_blank"{else}target="_parent"{/if}>{$galley->getGalleyLabel()|escape}</a-->
 				{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
-					{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
-						<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
-					{else}
-						<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
-					{/if}
 				{/if}
 			{/foreach}
 			{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
@@ -116,10 +124,73 @@
 		{assign var=pubId value=$pubIdPlugin->getPubId($pubObject, true)}{* Preview rather than assign a pubId *}
 	{/if}
 	{if $pubId}
-		<br />
-		<br />
 		{$pubIdPlugin->getPubIdDisplayType()|escape}: {if $pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}<a id="pub-id::{$pubIdPlugin->getPubIdType()|escape}" href="{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}">{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}</a>{else}{$pubId|escape}{/if}
 	{/if}
 {/foreach}
-{call_hook name="Templates::Article::MoreInfo"}
-{include file="article/comments.tpl"}
+{*call_hook name="Templates::Article::MoreInfo"*}
+{*include file="article/comments.tpl"*}
+
+{* PDF view *}
+{url|assign:"pdfUrl" op="viewFile" path=$articleId|to_array:$galley->getBestGalleyId($currentJournal) escape=false}
+{translate|assign:"noPluginText" key='article.pdf.pluginMissing'}
+<script type="text/javascript"><!--{literal}
+	$(document).ready(function(){
+		if ($.browser.webkit) { // PDFObject does not correctly work with safari's built-in PDF viewer
+			var embedCode = "<object id='pdfObject' type='application/pdf' data='{/literal}{$pdfUrl|escape:'javascript'}{literal}' width='100%' height='300px'><div id='pluginMissing'>{/literal}{$noPluginText|escape:'javascript'}{literal}</div></object>";
+			$("#inlinePdf").html(embedCode);
+			if($("#pluginMissing").is(":hidden")) {
+				$('#fullscreenShow').show();
+				$("#inlinePdf").resizable({ containment: 'parent', handles: 'se' });
+			} else { // Chrome Mac hides the embed object, obscuring the text.  Reinsert.
+				$("#inlinePdf").html('{/literal}<div id="pluginMissing">{$noPluginText|escape:"javascript"}</div>{literal}');
+			}
+		} else {
+			var success = new PDFObject({ url: "{/literal}{$pdfUrl|escape:'javascript'}{literal}" }).embed("inlinePdf");
+			if (success) {
+				// PDF was embedded; enbale fullscreen mode and the resizable widget
+				$('#fullscreenShow').show();
+				$("#inlinePdfResizer").resizable({ containment: 'parent', handles: 'se' });
+			}
+		}
+	});
+{/literal}
+// -->
+</script>
+<div id="inlinePdfResizer">
+	<div id="inlinePdf" class="ui-widget-content">
+		<div id='pluginMissing'>{translate key="article.pdf.pluginMissing"}</div>
+	</div>
+</div>
+
+
+{* Tool Bar *}
+{if $journalRt && $journalRt->getEnabled()}
+<div class="tool-bar">
+	<div class="xs-6 mid-3 tool-align">
+		<a class="btn-default" target="_parent" href="{url op="download" path=$articleId|to_array:$galley->getBestGalleyId($currentJournal)}">
+			Download do PDF
+		</a>
+	</div>
+	{* Imprimir o artigo *}
+	{if $journalRt->getPrinterFriendly()}
+	<div class="xs-6 mid-3">
+		<a class="tool-item print" href="{if !$galley || $galley->isHtmlGalley()}javascript:openRTWindow('{url page="rt" op="printerFriendly" path=$articleId|to_array:$galleyId}');{else}{url page="article" op="download" path=$articleId|to_array:$galleyId}{/if}">{translate key="plugins.block.readingTools.printThisArticle"}</a>
+	</div>
+	{/if}
+
+	{* Exibir os meta dados*}
+	{if $journalRt->getViewMetadata()}
+	<div class="xs-6 mid-3">
+		<a class="tool-item metadata" href="javascript:openRTWindow('{url page="rt" op="metadata" path=$articleId|to_array:$galleyId}');">{translate key="rt.viewMetadata"}</a>
+	</div>
+	{/if}
+
+	{* Como citar o artigo *}
+	{if $journalRt->getCaptureCite()}
+	<div class="xs-6 mid-3">
+		<a class="tool-item document" href="javascript:openRTWindow('{url page="rt" op="captureCite" path=$articleId|to_array:$galleyId}');">{translate key="rt.captureCite"}</a>
+	</div>
+	{/if}
+</div>
+{/if}
+
