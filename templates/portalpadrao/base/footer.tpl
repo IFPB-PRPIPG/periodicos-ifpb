@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="assets/stylesheet/footer.css">
+<link rel="stylesheet" type="text/css" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/footer.css">
       </section> <!-- fim do page content -->
     </div> <!-- fim do page-grid -->
   </main> <!-- fim do page-grid geral -->
@@ -30,9 +30,9 @@
       </ul>
 
       <ul class="footer-box">
-        <li class="title"><h4>Fale com a Lorem?!</h4></li>
-        <li class="item">contato@ifpb.edu.br</li>
-        <li class="item">(83) 3279-8800</li>
+        <li class="title"><h4>Fale com o Editor do Portal</h4></li>
+        <li class="item">portalperiodicos@ifpb.edu.br</li>
+        
       </ul>
 
       <ul class="footer-box">
@@ -62,6 +62,18 @@
   </footer>
   <section class="sub-footer">
     <div class="page-grid">
-      <img src="assets/images/acesso-a-infornacao.png" alt="Acesso a informação">
+      <a href="http://www.acessoainformacao.gov.br/">
+          <span class="logo-acesso-informacao">
+              <img src="{$baseUrl}/templates/portalpadrao/assets/images/acesso-a-infornacao.png" alt="Acesso a informação" width="107">
+          </span>
+      </a>
+      <a href="http://www.brasil.gov.br/">
+        <span class="logo-brasil">
+            <img src="{$baseUrl}/templates/portalpadrao/assets/images/brasil.png" alt="Acesso a informação" width="107">          
+        </span>  
+          
+
+      </a>
+        
     </div>
   </section>  
