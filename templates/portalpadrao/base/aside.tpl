@@ -56,7 +56,7 @@
             <a class="item" href="http://www.ifpb.edu.br">Portal IPFB</a>
           </li>
           <li>
-            <a class="item" href="#">Repositório Digital</a>
+            <a class="item" href="http://repositorio.ifpb.edu.br">Repositório Digital</a>
           </li>
           <li>
             <a class="item" href="http://periodicos.capes.gov.br">Portal periódicos Capes</a>
