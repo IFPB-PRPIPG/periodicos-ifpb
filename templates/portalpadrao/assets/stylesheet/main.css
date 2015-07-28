@@ -686,7 +686,9 @@ li {
     border-radius: 5px; }
   .news-container .news .news-title {
     margin: 0;
-    color: #172938; }
+    color: #172938;
+    font-weight: bold;
+  }
   .news-container .news .news-description {
     margin: 0;
     font-size: 1.4rem;
