@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
+  <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/main.css">
+
 
   <!-- Base Jquery -->
   {if $allowCDN}<script type="text/javascript" src="//www.google.com/jsapi"></script>
@@ -121,28 +123,7 @@
   {$additionalHeadData}
 </head>
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
-<div id="container">
-<h1>x</h1>
-<div id="header">
-<div id="headerTitle">
-<h1>
-{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-  <img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" width="{$displayPageHeaderLogo.width|escape}" height="{$displayPageHeaderLogo.height|escape}" {if $displayPageHeaderLogoAltText != ''}alt="{$displayPageHeaderLogoAltText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
-{/if}
-{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
-  <img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" width="{$displayPageHeaderTitle.width|escape}" height="{$displayPageHeaderTitle.height|escape}" {if $displayPageHeaderTitleAltText != ''}alt="{$displayPageHeaderTitleAltText|escape}"{else}alt="{translate key="common.pageHeader.altText"}"{/if} />
-{elseif $displayPageHeaderTitle}
-  {$displayPageHeaderTitle}
-{elseif $alternatePageHeader}
-  {$alternatePageHeader}
-{elseif $siteTitle}
-  {$siteTitle}
-{else}
-  {$applicationName}
-{/if}
-</h1>
-</div>
-</div>
+{include file="portalpadrao/base/header.tpl"}
 
 <div id="body">
 
