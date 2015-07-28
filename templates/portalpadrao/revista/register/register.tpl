@@ -234,7 +234,9 @@
 			</table>
 
 			<br />
-			<p><input type="submit" value="{translate key="user.register"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="index" escape=false}'" /></p>
+			<p style="text-align: right;">
+        <input type="submit" value="{translate key="user.register"}" class="btn-register" style="display: inline-block;"/>
+        <input type="button" value="{translate key="common.cancel"}" class="btn-default" onclick="document.location.href='{url page="index" escape=false}'" /></p>
 
 			{if ! $implicitAuth}
 				<p><span class="formRequired">{translate key="common.requiredField"}</span></p>
