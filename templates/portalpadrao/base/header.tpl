@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/social-home.css">
   <!-- barra de identidade visual do governo -->
   <div class="l-identity-bar">
     <div class="page-grid">
@@ -72,14 +73,22 @@
           <input type="text" placeholder="Buscar" title="Busque no portal de periódicos do IFPB" id="busca">
           <button class="btn-search"></button>
         </form>
-
-<!--         <div class="social-icons">
-          <span>F</span>
-          <span>T</span>
-          <span>Y</span>
-          <span>Fi</span>
-        </div> -->
+        <div class="social-icons" style="float: left">
+            <a href="https://www.flickr.com/search/?text=ifpb">
+                <div class="social flikr"></div>
+            </a>
+            <a href="https://www.youtube.com/user/TVIFPB">
+                <div class="social youtube"></div>
+            </a>  
+            <a href="https://twitter.com/ifpboficial">
+                <div class="social twitter"></div>
+            </a>  
+            <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">
+                <div class="social facebook" style="border-radius: 5px"></div>
+            </a>
       </div>
+      </div>
+
     </div> <!-- fim do page-grid -->
   </header>
   {include file="portalpadrao/base/login-bar.tpl"}
