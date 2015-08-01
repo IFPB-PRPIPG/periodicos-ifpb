@@ -160,19 +160,12 @@ class IndexHandler extends Handler {
 			$templateMgr->assign_by_ref('site', $site);
 			$templateMgr->assign('announcements', $announcements);
 			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
+			$templateMgr->assign('portalIndex', true);
 
 
 			//Renderização do layout
 			$templateMgr->display('portalpadrao/layout.tpl');
 			// $templateMgr->display('index/site.tpl');
-			// $templateMgr->setCacheability(CACHEABILITY_PUBLIC);
-
-
-			//Testes
-			
-			// 
-			// $templateMgr->display('portalpadrao/test.tpl');
-
 		}
 	}
 }

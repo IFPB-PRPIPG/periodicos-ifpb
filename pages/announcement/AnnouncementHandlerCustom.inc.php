@@ -39,7 +39,9 @@ class AnnouncementHandlerCustom extends Handler {
 				$templateMgr->assign('announcementTitle', $announcement->getAnnouncementTypeName() . ": " . $announcement->getLocalizedTitle());
 			}
 			$templateMgr->append('pageHierarchy', array($request->url(null, 'announcement'), 'announcement.announcements'));
-			$templateMgr->display('portalpadrao/news/news.tpl');
+			
+			$templateMgr->assign('readNews', true);
+			$templateMgr->display('portalpadrao/layout.tpl');
 		} else {
 			$request->redirect(null, 'announcement');
 		}
@@ -53,9 +55,8 @@ class AnnouncementHandlerCustom extends Handler {
 		//Função custom para pegar todas as notícias
 		$announcements =& $announcementDao->getAll();
 		$templateMgr->assign('announcements', $announcements);
-		$templateMgr->display('portalpadrao/news/lastnews.tpl');
-
-
+		$templateMgr->assign('listNews', true);
+		$templateMgr->display('portalpadrao/layout.tpl');
 	}
 
 }

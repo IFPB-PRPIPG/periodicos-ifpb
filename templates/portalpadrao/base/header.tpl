@@ -1,95 +1,82 @@
-<link rel="stylesheet" type="text/css" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/social-home.css">
-  <!-- barra de identidade visual do governo -->
-  <div class="l-identity-bar">
-    <div class="page-grid">
-      <div class="brazil-flag">
-        <a href="http://brasil.gov.br" target="_blank">Brasil</a>  
+    <!-- header -->
+    <div class="government-bar">
+      <div class="content-container">
+        <a href="http://brasil.gov.br/" class="brazil-flag mid-1">Brasil</a>
+        <a href="http://brasil.gov.br/barra#acesso-informacao" class="mid-7">Acesso à informação</a>
+        <a href="http://brasil.gov.br/barra#participe" class="mid-1">Participe</a>
+        <a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="mid-1">Serviços</a>
+        <a href="http://www.planalto.gov.br/legislacao" class="mid-1">Legislação</a>
+        <a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="mid-1">Canais</a>
+
       </div>
     </div>
-  </div>
+    <header class="page-header portal">
+      <div class="content-container">
 
-  <!-- Header do portal -->
-  <header class="l-page-header">
+        <!-- barra de idiomas -->
+        <div class="accessibility-bar">
+          <ul class="link-list first">
+          {if $portalIndex}
+            <li class="item first"><a href="#revistas">Ir para revistas</a></li>
+          {/if}
+            <li class="item"><a href="#menu">Ir para menu</a></li>
+            <li class="item"><a href="#busca">Ir para busca</a></li>
+            <li class="item"><a href="#rodape">Ir para rodapé</a></li>
+          </ul>
+        </div>
 
-    <div class="page-grid">
+        <!-- barra de idiomas -->
+        <div class="language-bar">
+          <ul class="link-list">
+            <li class="item"><a href="#">Acessibilidade</a></li>
+            <li class="item"><a href="#">Contraste</a></li>
+            <li class="item"><a href="#">Mapa do site</a></li>
+          </ul>
+          <ul class="link-list">
+            <li class="item"><a href="#">English</a></li>
+            <li class="item"><a href="#">Español</a></li>
+          </ul>
+        </div>
+        
+        <!-- page logo -->
+        <div class="center-content">
+          <div class="header-logo">
+            <span>Portal de</span>
+            <h1 class="page-name">Periódicos</h1>
+            <span>Instituto Federal de educação, ciência e Tecnologia da Paraíba</span>
+          </div>
+          <form class="form-control form-search-header" action="#">
+            <input id="busca" class="search-input-header" type="text">
+            <button class="search-button"></button>
+          </form>
+        </div>
 
-      <div class="header-upper-container">
-        <!-- barra de acessibilidade -->
-        <ul class="accessible-bar">
-          <li>
-            <a href="#revistas" title="Ir para as revistas" accesskey="1">Ir para as revistas <span class="accesskey">1</span></a>
-          </li>
-          <li>
-            <a href="#menu" title="Ir para o menu" accesskey="2">Ir para o Menu <span class="accesskey">2</span></a>
-          </li>
-          <li>
-            <a href="#busca" title="Ir para a busca" accesskey="3">Ir para a busca <span class="accesskey">3</span></a>
-          </li>
-          <li>
-            <a href="#page-footer" title="Ir para o rodapé" accesskey="4">Ir para o rodapé<span class="accesskey">4</span></a>
-          </li>
-        </ul>
-
-        <!-- Barra de idiomas -->
-        <ul class="language-bar">
-          <li>
-            <a href="#" title="English" accesskey="9">Enlish</a>
-          </li>
-          <li>
-            <a href="#" title="Español" accesskey="10">Español</a>
-          </li>
-        </ul>
-
-        <!-- Barra com ações do portal /acessibilidade/alto contraste -->
-        <ul class="page-actions">
-          <li>
-            <a href="#" title="Acessibilidade" accesskey="5">Acessibilidade</a>
-          </li>
-          <li>
-            <a href="#" title="Alto contraste" accesskey="6">Alto contraste</a>
-          </li>
-
-          <li>
-            <a href="#" title="Acessibilidade" accesskey="9">Acessibilidade</a>
-          </li>
-
-          <li>
-            <a href="#" title="Mapa do site" accesskey="8">Mapa do site</a>
-          </li>
-        </ul>
-
+        <!-- social media -->
+        <div class="media-container">
+          <div class="social flikr"></div>
+          <div class="social youtube"></div>
+          <div class="social twitter"></div>
+          <div class="social facebook"></div>
+        </div>
       </div>
 
-      <!-- Container do logo -->
-      <div class="page-logo">
-        <span class="logo-title-upper">Portal de</span>
-        <h1 class="logo-title" title="Portal de periõdicos do IFPB">Periódicos</h1>
-        <span class="logo-title-under">Instituto Federal de educação, ciência e tecnologia da Paraíba</span>
+      <!-- actions-bar login/logout-->
+      <div class="actions-bar">
+        <div class="content-container">
+          {if $isUserLoggedIn}
+          {translate key="plugins.block.user.loggedInAs"} <strong>{$loggedInUsername|escape}</strong>
+          {else}
+          <span>Acesso do usuário</span>
+          <form class="form-control form-login" action="{$userBlockLoginUrl}" method="post">
+            <label for="login">{translate key="user.username"}
+              <input id="login" type="text" name="username">
+            </label>
+            <label for="password">{translate key="user.password"}
+              <input id="password" type="password" name="password" value="{$password|escape}">
+            </label>
+            <button class="btn btn-submit">Acessar</button>
+          </form>
+          {/if}
+        </div>
       </div>
-
-      <!-- Container da Busca e redes sociais -->
-      <div class="page-search page-social-network">
-        <form action="#/search">
-          <input type="text" placeholder="Buscar" title="Busque no portal de periódicos do IFPB" id="busca">
-          <button class="btn-search"></button>
-        </form>
-        <div class="social-icons" style="float: left">
-            <a href="https://www.flickr.com/search/?text=ifpb">
-                <div class="social flikr"></div>
-            </a>
-            <a href="https://www.youtube.com/user/TVIFPB">
-                <div class="social youtube"></div>
-            </a>  
-            <a href="https://twitter.com/ifpboficial">
-                <div class="social twitter"></div>
-            </a>  
-            <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">
-                <div class="social facebook" style="border-radius: 5px"></div>
-            </a>
-      </div>
-      </div>
-
-    </div> <!-- fim do page-grid -->
-  </header>
-  {include file="portalpadrao/base/login-bar.tpl"}
-  
+    </header> <!-- fim do header -->
