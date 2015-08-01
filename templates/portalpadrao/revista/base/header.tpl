@@ -1,4 +1,15 @@
 <!-- header -->
+<div class="government-bar">
+  <div class="content-container">
+    <a href="http://brasil.gov.br/" class="brazil-flag mid-1">Brasil</a>
+    <a href="http://brasil.gov.br/barra#acesso-informacao" class="mid-7">Acesso à informação</a>
+    <a href="http://brasil.gov.br/barra#participe" class="mid-1">Participe</a>
+    <a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil" class="mid-1">Serviços</a>
+    <a href="http://www.planalto.gov.br/legislacao" class="mid-1">Legislação</a>
+    <a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="mid-1">Canais</a>
+
+  </div>
+</div>
 <header class="page-header magazine">
   <div class="content-container">
     <!-- barra de idiomas -->
