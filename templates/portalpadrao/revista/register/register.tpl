@@ -1,5 +1,12 @@
 <div class="text-box">
-	<h2 class="header-title large-size border-title-light">Submissão Online</h2>
+{if $isUserLoggedIn}
+<div class="text-box-section">
+  <div class="content-box mid-12">
+    <div class="header-box default">Submissão Online</div>
+  </div>
+  <a class="btn-submit" href="{url page="author" op="submit"}">Clique aqui para submeter</a>
+</div>
+{else}
     <!-- Section Utilizada para descrição -->
     <div class="text-box-section">
       <p>O cadastro no sistema e posterior acesso são obrigatórios para a publicação de trabalhos, bem como para acompanhar o processo editorial em curso. Caso não tenha cadastrado, preencha o formulário para se cadastrar no sistema e submeter trabalhos.</p>
@@ -235,8 +242,8 @@
 
 			<br />
 			<p style="text-align: right;">
-        <input type="submit" value="{translate key="user.register"}" class="btn-register" style="display: inline-block;"/>
-        <input type="button" value="{translate key="common.cancel"}" class="btn-default" onclick="document.location.href='{url page="index" escape=false}'" /></p>
+        <input type="submit" value="{translate key="user.register"}" class="btn-submit" style="display: inline-block;"/>
+        <input type="button" value="{translate key="common.cancel"}" class="btn-default btn-large" onclick="document.location.href='{url page="index" escape=false}'" /></p>
 
 			{if ! $implicitAuth}
 				<p><span class="formRequired">{translate key="common.requiredField"}</span></p>
@@ -252,8 +259,6 @@
 			</form>
 </div> <!-- fecha a div do form -->
 
-{if $isUserLoggedIn}
-{else}
 <div class="content-box mid-4">
   <div class="header-box default">Tenho cadastro</div>
   <form action="{$userBlockLoginUrl}" method="post" class="form-control-default">
@@ -262,7 +267,7 @@
       <label for="login-sub" class="label-control">{translate key="user.username"}</label>
       <input type="text" id="login-sub" class="input-control" name="username">
       <label for="password-sub" class="label-control">{translate key="user.password"}</label>
-      <input type="text" id="password-sub" class="input-control" name="password" value="{$password|escape}">
+      <input type="password" id="password-sub" class="input-control" name="password" value="{$password|escape}">
     </fieldset>
     <button class="btn-submit">Acessar</button>
   </form>
