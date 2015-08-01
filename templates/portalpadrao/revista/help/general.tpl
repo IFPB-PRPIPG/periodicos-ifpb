@@ -5,20 +5,6 @@
 	{/if}
 </div>
 
-{if $submissionChecklist}
-<div class="text-box" id="submissionPreparationChecklist">
-	<h2 class="header-title mid-size border-title-light">
-		{translate key="about.submissionPreparationChecklist"}
-	</h2>
-		<p>{translate key="about.submissionPreparationChecklist.description"}</p>
-		<ol>
-			{foreach from=$submissionChecklist item=checklistItem}
-				<li>{$checklistItem.content|nl2br}</li>
-			{/foreach}
-		</ol>
-</div>
-{/if}
-
 
 {if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
 <div class="text-box" id="copyrightNotice">
