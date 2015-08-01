@@ -1,31 +1,29 @@
 {if !$journals->wasEmpty()}
-<!-- Container de Revistas -->
-<section class="magazine-container" id="revistas">
-  <!-- Header do container -->
-  <header class="magazine-header">
-    <h3 class="header-title">Revistas</h3>
-  </header>
+
+<!-- Caixa de revistas -->
+<div class="content-box mid-8">
+  <div id="revistas" class="header-box alert">Revistas</div>
   {iterate from=journals item=journal}
-  <article class="magazine">
-    <a class="is-link" href="{url journal=$journal->getPath()}">
-      <span class="magazine-information">Extensão</span>
+  <div class="xs-1 mid-6">
+    <a href="{url journal=$journal->getPath()}">
       {if $site->getSetting('showThumbnail')}
         {assign var="displayJournalThumbnail" value=$journal->getLocalizedSetting('journalThumbnail')}
         {if $displayJournalThumbnail && is_array($displayJournalThumbnail)}
-          <img class="magazine-image" src="{$journalFilesPath}{$journal->getId()}/{$displayJournalThumbnail.uploadName|escape:"url"}" alt="Nóticia um">
+          <img class="image-responsible" src="{$journalFilesPath}{$journal->getId()}/{$displayJournalThumbnail.uploadName|escape:"url"}">
         {/if}
       {/if}
       {if $site->getSetting('showTitle')}
-        <h4 class="magazine-title">{$journal->getLocalizedTitle()|escape}</h4>
+      <h3>{$journal->getLocalizedTitle()|escape}</h3>
       {/if}
       {if $site->getSetting('showDescription')}
         {if $journal->getLocalizedDescription()}
-        <p class="magazine-description">{$journal->getLocalizedDescription()|nl2br}</p>
+        <p>{$journal->getLocalizedDescription()|strip_tags|nl2br|truncate:150}</p>
         {/if}
       {/if}
     </a>
-  </article>
+  </div>
   {/iterate}
-  <footer class="magazine-footer"></footer>
-</section> <!-- fim do container das revistas -->
+  <div class="footer-box alert"></div>
+</div>
+
 {/if}

@@ -1,30 +1,26 @@
 {if !$announcements->wasEmpty()}
-<!-- Container de nóticias -->
-<section class="news-container">
-  <!-- Header do container -->
-  <header class="news-header">
-    <h3 class="header-title">Notícias </h3>
-  </header>
+<!-- Caixa de nóticias -->
+<div class="content-box">
+  <div class="header-box">Notícias</div>
   {iterate from=announcements item=announcement}
-
-  {if $announcement->getLocalizedDescription() != null}
-  <a href="{url page="announcement" op="show" path=$announcement->getId()}">
-  {/if}
-  <article class="news">
-    <h4 class="news-title">{$announcement->getLocalizedTitle()|escape}</h4>
-    <p class="news-description">
-      {$announcement->getLocalizedDescriptionShort()|nl2br}
-    </p>
-  </article>
-  {if $announcement->getLocalizedDescription() != null}
-  </a>
-  {/if}
+  <div class="xs-1 mid-4">
+    {if $announcement->getTypeId()}
+      <small class="small-type">{$announcement->getAnnouncementTypeName()|escape}</small>
+    {/if}
+    {if $announcement->getLocalizedDescription() != null}
+    <a href="{url page="announcement" op="show" path=$announcement->getId()}">
+    {/if}
+      <h3>{$announcement->getLocalizedTitle()|escape}</h3>
+      <p>{$announcement->getLocalizedDescriptionShort()|nl2br}</p>
+    {if $announcement->getLocalizedDescription() != null}
+    </a>
+    {/if}
+  </div>
   {/iterate}
-
-
-  <footer class="news-footer">
-    <a class="more-news" href="index.php/index/announcement/last">Mais notícias</a>
-  </footer>
-
-</section> <!-- fim do container das noticias -->
+  <div class="footer-box">
+    <div class="footer-content">
+      <a href="index.php/index/announcement/last">Mais notícias</a>
+    </div>
+  </div>
+</div>
 {/if}
