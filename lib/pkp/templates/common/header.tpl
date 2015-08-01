@@ -30,9 +30,6 @@
   <link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
-  <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/main.css">
-
-
   <!-- Base Jquery -->
   {if $allowCDN}<script type="text/javascript" src="//www.google.com/jsapi"></script>
     <script type="text/javascript">{literal}
@@ -121,10 +118,26 @@
   {/if}{* hasSystemNotifications *}
 
   {$additionalHeadData}
+
+  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
+  <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/style.css">
+  {literal}
+  <style>
+    html, body {
+      font-size: 13pt;
+    }
+  </style>
+  {/literal}  
 </head>
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
-{include file="portalpadrao/base/header.tpl"}
 
+{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+  {include file="portalpadrao/revista/base/header.tpl"}
+{elseif $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+  {include file="portalpadrao/revista/base/header.tpl"}
+{else}
+  {include file="portalpadrao/base/header.tpl"}
+{/if}
 <div id="body">
 
 {if $leftSidebarCode || $rightSidebarCode}
