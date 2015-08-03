@@ -46,23 +46,23 @@
           </ul>
 
           <ul class="footer-box">
-            <li class="title"><h4>Fale com a Lorem?!</h4></li>
+            <li class="title"><h4>Fale com o IFPB</h4></li>
             <li class="item">portalperiodicos@ifpb.edu.br</li>
           </ul>
 
           <ul class="footer-box">
             <li class="title"><h4>Redes Sociais</h4></li>
             <li class="item">
-              <a href="">Facebook</a>
+              <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">Facebook</a>
             </li>
             <li class="item">
-              <a href="">Twitter</a>
+              <a href="https://twitter.com/ifpboficial">Twitter</a>
             </li>
             <li class="item">
-              <a href="">Youtube</a>
+              <a href="https://www.youtube.com/user/TVIFPB">Youtube</a>
             </li>
             <li class="item">
-              <a href="">Flickr</a>
+              <a href="https://www.flickr.com/search/?text=ifpb">Flickr</a>
             </li>
             <li class="item">
               <ul class="footer-box">
