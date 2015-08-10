@@ -53,10 +53,10 @@
 
         <!-- social media -->
         <div class="media-container">
-          <a href="https://www.flickr.com/search/?text=ifpb"><div class="social flikr"></div></a>
-          <a href="https://www.youtube.com/user/TVIFPB"><div class="social youtube"></div></a>
-          <a href="https://twitter.com/ifpboficial"><div class="social twitter"></div></a>
-          <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349"><div class="social facebook"></div></a>
+          <a href="https://www.flickr.com/search/?text=ifpb" target="_blank"><div class="social flikr"></div></a>
+          <a href="https://www.youtube.com/user/TVIFPB" target="_blank"><div class="social youtube"></div></a>
+          <a href="https://twitter.com/ifpboficial" target="_blank"><div class="social twitter"></div></a>
+          <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349" target="_blank"><div class="social facebook"></div></a>
         </div>
       </div>
 

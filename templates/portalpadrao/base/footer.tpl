@@ -4,34 +4,34 @@
           <ul class="footer-box">
             <li class="title"><h4>Assuntos</h4></li>
             <li class="item">
-              <a href="http://www.agricultura.gov.br/">Agropecuária</a>
+              <a href="http://www.agricultura.gov.br/" target="_blank">Agropecuária</a>
             </li>
             <li class="item">
-              <a href="http://www.cultura.gov.br/scdc/">Cidadania</a>
+              <a href="http://www.cultura.gov.br/scdc/" target="_blank">Cidadania</a>
             </li>
             <li class="item">
-              <a href="http://www.mct.gov.br/">Ciência e Tecnologia</a>
+              <a href="http://www.mct.gov.br/" target="_blank">Ciência e Tecnologia</a>
             </li>
             <li class="item">
-              <a href="http://www.mc.gov.br/">Comunicações</a>
+              <a href="http://www.mc.gov.br/" target="_blank">Comunicações</a>
             </li>
             <li class="item">
-              <a href="http://www.cultura.gov.br/">Cultura</a>
+              <a href="http://www.cultura.gov.br/" target="_blank">Cultura</a>
             </li>
             <li class="item">
-              <a href="http://www.fazenda.gov.br/">Economia</a>
+              <a href="http://www.fazenda.gov.br/" target="_blank">Economia</a>
             </li>
             <li class="item">
-              <a href="http://www.mec.gov.br/">Educação</a>
+              <a href="http://www.mec.gov.br/" target="_blank">Educação</a>
             </li>
             <li class="item">
-              <a href="http://www.mme.gov.br/">Energia</a>
+              <a href="http://www.mme.gov.br/" target="_blank">Energia</a>
             </li>
             <li class="item">
-              <a href="http://www.senado.gov.br/noticias/Jornal/emdiscussao/dependencia-quimica/iniciativas-do-governo-no-combate-as-drogas/plano-de-enfrentamento-ao-crack-tem-orcamento-modesto.aspx">Enfrentamento às drogas</a>
+              <a href="http://www.senado.gov.br/noticias/Jornal/emdiscussao/dependencia-quimica/iniciativas-do-governo-no-combate-as-drogas/plano-de-enfrentamento-ao-crack-tem-orcamento-modesto.aspx" target="_blank">Enfrentamento às drogas</a>
             </li>
             <li class="item">
-              <a href="http://www.esporte.gov.br/">Esporte</a>
+              <a href="http://www.esporte.gov.br/" target="_blank">Esporte</a>
             </li>
           </ul>
           <ul class="footer-box">
@@ -53,16 +53,16 @@
           <ul class="footer-box">
             <li class="title"><h4>Redes Sociais</h4></li>
             <li class="item">
-              <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349">Facebook</a>
+              <a href="https://pt-br.facebook.com/pages/IFPB-Oficial/261855270518349" target="_blank">Facebook</a>
             </li>
             <li class="item">
-              <a href="https://twitter.com/ifpboficial">Twitter</a>
+              <a href="https://twitter.com/ifpboficial" target="_blank">Twitter</a>
             </li>
             <li class="item">
-              <a href="https://www.youtube.com/user/TVIFPB">Youtube</a>
+              <a href="https://www.youtube.com/user/TVIFPB" target="_blank">Youtube</a>
             </li>
             <li class="item">
-              <a href="https://www.flickr.com/search/?text=ifpb">Flickr</a>
+              <a href="https://www.flickr.com/search/?text=ifpb" target="_blank">Flickr</a>
             </li>
             <li class="item">
               <ul class="footer-box">
