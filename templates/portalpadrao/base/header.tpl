@@ -43,7 +43,7 @@
           <div class="header-logo">
             <span>Portal de</span>
             <h1 class="page-name">Periódicos</h1>
-            <span>Instituto Federal de educação, ciência e Tecnologia da Paraíba</span>
+            <span>Instituto Federal da Paraíba</span>
           </div>
           <form class="form-control form-search-header" action="#">
             <input id="busca" class="search-input-header" type="text">
