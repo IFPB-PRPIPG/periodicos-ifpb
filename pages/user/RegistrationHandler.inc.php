@@ -53,8 +53,12 @@ class RegistrationHandler extends UserHandler {
 			*/
 			$templateMgr =& TemplateManager::getManager();
 			$templateMgr->assign('journalRegister', true);
-			$regForm->display();
 			
+			$source = $request->getUserVar('source');
+			if (isset($source) && !empty($source)) {
+				$templateMgr->assign('source', $request->getUserVar('source'));
+			}
+			$regForm->display();
 
 
 		} else {
@@ -116,6 +120,14 @@ class RegistrationHandler extends UserHandler {
 				$templateMgr->assign('backLink', $request->url(null, 'login'));
 				$templateMgr->assign('backLinkLabel', 'user.login');
 				return $templateMgr->display('common/error.tpl');
+			}
+			/*
+			* Fluxo de registro para submissão, se houver um source no link o usuário
+			* será redirecionado para o link (portal padrão)
+			*/
+			if ($request->getUserVar('source')) {
+				$request->redirectUrl($request->getUserVar('source'));
+				return true;
 			}
 			if ($source = $request->getUserVar('source')) $request->redirectUrl($source);
 			else $request->redirect(null, 'login');

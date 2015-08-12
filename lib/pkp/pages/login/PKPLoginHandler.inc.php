@@ -57,7 +57,20 @@ class PKPLoginHandler extends Handler {
 		}
 		$templateMgr->assign('loginUrl', $loginUrl);
 
-		$templateMgr->display('user/login.tpl');
+		/*
+		* Alterado o local onde o usuário fará o login
+		* registerLogin define qual template será exibido
+		*/
+		$templateMgr->assign('registerLogin', true);
+		$templateMgr->display('portalpadrao/revista/layout.tpl');
+		// $templateMgr->display('user/login.tpl');
+
+
+		$source = $request->getUserVar('source');
+		if (isset($source) && !empty($source)) {
+			print_r($source);
+		}
+
 	}
 
 	/**
