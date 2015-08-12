@@ -49,6 +49,10 @@
             {include file="portalpadrao/revista/help/publishingsystem.tpl"}
           {/if}
 
+          {if $registerLogin}
+            {include file="portalpadrao/revista/register/register.tpl"}
+          {/if}
+
 
         </main>
       </div>

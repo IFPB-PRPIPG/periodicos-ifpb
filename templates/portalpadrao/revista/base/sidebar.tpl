@@ -5,7 +5,9 @@
   <!-- Caixa de conteúdo -->
   <ul class="box">
     <li class="item header">Submissão</li>
-    <li class="item"><a href="{url page="user" op="register"}">Submissão online</a></li>
+    <li class="item">
+      <a href="{url journal=$journalPath page="author" op="submit"}">Submissão online</a>
+    </li>
     {if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
     <li class="item"><a href="{url page="about" op="submissions" anchor="authorGuidelines"}">{translate key="about.authorGuidelines"}</a>
     </li>{/if}

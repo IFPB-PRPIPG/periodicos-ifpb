@@ -1,3 +1,8 @@
+{strip}
+{assign var="helpTopicId" value="user.registerAndProfile"}
+{assign var="registerOp" value="register"}
+{assign var="registerLocaleKey" value="user.login.registerNewAccount"}
+{/strip}
 <div class="text-box">
 {if $isUserLoggedIn}
 <div class="text-box-section">
@@ -13,7 +18,7 @@
     </div>
 	<div class="content-box mid-8">
 		<div class="header-box default">Não tenho cadastro</div>
-			<form class="form-control" id="registerForm" method="post" action="{url op="registerUser"}">
+			<form class="form-control" id="registerForm" method="post" action="{url page="user" op="registerUser"}">
 			{if !$implicitAuth}
 				{if !$existingUser}
 					{url|assign:"url" page="user" op="register" existingUser=1}
@@ -227,7 +232,10 @@
 					<td class="label">{fieldLabel suppressId="true" name="registerAs" key="user.register.registerAs"}</td>
 					<td class="value">{if $allowRegReader || $allowRegReader === null}<input type="checkbox" name="registerAsReader" id="registerAsReader" value="1"{if $registerAsReader} checked="checked"{/if} /> <label for="registerAsReader">{translate key="user.role.reader"}</label>: {translate key="user.register.readerDescription"}<br />{/if}
 					{if $currentJournal && $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $enableOpenAccessNotification}<input type="checkbox" name="openAccessNotification" id="openAccessNotification" value="1"{if $openAccessNotification} checked="checked"{/if} /> <label for="openAccessNotification">{translate key="user.role.reader"}</label>: {translate key="user.register.openAccessNotificationDescription"}<br />{/if}
-					{if $allowRegAuthor || $allowRegAuthor === null}<input type="checkbox" name="registerAsAuthor" id="registerAsAuthor" value="1"{if $registerAsAuthor} checked="checked"{/if} /> <label for="registerAsAuthor">{translate key="user.role.author"}</label>: {translate key="user.register.authorDescription"}<br />{/if}
+					{if $allowRegAuthor || $allowRegAuthor === null}
+            <input type="checkbox" name="registerAsAuthor" id="registerAsAuthor" value="1"checked="checked" />
+            <label for="registerAsAuthor">{translate key="user.role.author"}</label>: {translate key="user.register.authorDescription"}<br />
+          {/if}
 					{if $allowRegReviewer || $allowRegReviewer === null}<input type="checkbox" name="registerAsReviewer" id="registerAsReviewer" value="1"{if $registerAsReviewer} checked="checked"{/if} /> <label for="registerAsReviewer">{translate key="user.role.reviewer"}</label>: {if $existingUser}{translate key="user.register.reviewerDescriptionNoInterests"}{else}{translate key="user.register.reviewerDescription"}{/if}
 					<br /><div id="reviewerInterestsContainer" style="margin-left:25px;">
 						<label class="desc">{translate key="user.register.reviewerInterests"}</label>
@@ -262,6 +270,7 @@
 <div class="content-box mid-4">
   <div class="header-box default">Tenho cadastro</div>
   <form action="{$userBlockLoginUrl}" method="post" class="form-control-default">
+    <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
     <fieldset>
       <legend>Acesso do usuário</legend>
       <label for="login-sub" class="label-control">{translate key="user.username"}</label>
