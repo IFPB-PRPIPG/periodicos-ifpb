@@ -1,0 +1,67 @@
+   html, body {
+    font-size: 13pt;
+  }
+
+  html, body {
+    height: 100%;
+    font-size: 13pt;
+    font-family: 'Open Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #172938;
+    background: #fff;
+  }
+  #body {
+    font-family: 'Open Sans', Arial, sans-serif !important;
+  }
+  #body a:link,
+  #body a:hover,
+  #body a {
+    text-decoration: none;
+    text-decoration: none !important;
+    background: none !important;
+    color: #01430c;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+
+  #content {
+    border-top: none;
+  }
+
+  #main h2 {
+    width: 100%;
+    border-bottom: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #01430c;
+    background: #edeff1;
+    border-top: 5px solid #01430c;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 8px;
+    min-height: 64px;
+    font-size: 20pt;
+    font-weight: lighter;
+    text-transform: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  #main h3 {
+    width: 100%;
+    background: #edeff1;
+    border-top: 1px solid #01430c;
+    padding-right: 10px;
+    font-size: 11pt;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+  }
+
+  div.separator {
+    border: 0;
+  }
+
+  .actions-bar > * {
+    text-align: right !important;
+  }

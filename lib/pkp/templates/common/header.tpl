@@ -116,18 +116,12 @@
       {rdelim});
     </script>
   {/if}{* hasSystemNotifications *}
-
   {$additionalHeadData}
+<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/style.css">
+<link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/default.css">
 
-  <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
-  <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/style.css">
-  {literal}
-  <style>
-    html, body {
-      font-size: 13pt;
-    }
-  </style>
-  {/literal}  
 </head>
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
 
