@@ -45,8 +45,12 @@
             <h1 class="page-name">Periódicos</h1>
             <span>Instituto Federal da Paraíba</span>
           </div>
-          <form class="form-control form-search-header" action="#">
-            <input id="busca" class="search-input-header" type="text">
+          <form id="simpleSearchForm" method="post" action="{url page="search" op="search"}" class="form-control form-search-header">
+            {capture assign="filterInput"}{call_hook name="Templates::Search::SearchResults::FilterInput" filterName="simpleQuery" filterValue="" size=15}{/capture}
+            <input name="query" class="search-input-header" type="text">
+            <select id="searchField" name="searchField" size="1" style="display: none;">
+              {html_options_translate options=$articleSearchByOptions}
+            </select>
             <button class="search-button"></button>
           </form>
         </div>
