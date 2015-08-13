@@ -16,12 +16,17 @@
         <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
 
         <!-- slide -->
-        <div class="slide-content">
-          <div class="fotorama" data-autoplay="true" data-arrows="false" data-navwidth="15%">
-            <img src="{$baseUrl}/templates/portalpadrao/assets/images/imagem3.jpeg" data-caption="Bem vindo ao portal de periódicos do IFPB">
-            <img src="{$baseUrl}/templates/portalpadrao/assets/images/imagem1.jpeg" data-caption="Bem vindo ao portal de periódicos do IFPB">
+        {if $showSlide == "true"}
+          <div class="slide-content">
+            <div class="fotorama" data-autoplay="true" data-arrows="true" data-navwidth="15%" data-max-width="100%">
+            {foreach from=$slideItems key=key item=item}
+              <div data-img="{$item.imagem}" data-caption="Bem vindo ao portal de periódicos do IFPB">
+                <a href="{$item.link}"></a>
+              </div>
+            {/foreach}
+            </div>
           </div>
-        </div>
+        {/if}
 
         {include file="portalpadrao/index/noticias.tpl"}
         {include file="portalpadrao/index/revistas.tpl"}
@@ -34,6 +39,10 @@
 
       {if $listNews}
         {include file="portalpadrao/news/list.tpl"}
+      {/if}
+
+      {if $adminSlider}
+        {include file="portalpadrao/admin/index.tpl"}
       {/if}
 
     </main> <!-- /main-container -->

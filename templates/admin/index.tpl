@@ -17,6 +17,8 @@
 <div class="warningMessage">{translate key="site.upgradeAvailable.admin" currentVersion=$currentVersion latestVersion=$latestVersion}</div>
 {/if}
 
+<a href="{url op="slider"}">Configurar os slides do Portal</a>
+
 <div id="siteManagement">
 <h3>{translate key="admin.siteManagement"}</h3>
 

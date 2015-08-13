@@ -145,7 +145,7 @@ class IndexHandler extends Handler {
 				$searchInitial?JOURNAL_FIELD_TITLE:null,
 				$searchInitial?'startsWith':null,
 				$searchInitial
-			);
+				);
 
 
 			//DAOs custom (adicionados especificamente para o projeto do portal)
@@ -162,12 +162,43 @@ class IndexHandler extends Handler {
 			$templateMgr->assign('alphaList', explode(' ', __('common.alphaList')));
 			$templateMgr->assign('portalIndex', true);
 
-
+			IndexHandler::getSlides();
 			//Renderização do layout
 			$templateMgr->display('portalpadrao/layout.tpl');
 			// $templateMgr->display('index/site.tpl');
 		}
 	}
+
+	function getSlides() {
+		$templateMgr =& TemplateManager::getManager();
+
+		$data = Array();
+    /*
+    * Lendo o XML e salvando as tags na array;
+    */
+    $xml = new DOMDocument();
+    $xml->load('slideconfig.xml');
+    $items = $xml->getElementsByTagName('item');
+    $container = $xml->getElementsByTagName('container');
+    
+    if ($items->length > 0) {
+    	foreach($items as $key => $item) {
+    		$data[$key] = Array(
+    			'imagem' => $item->getAttribute('img'),
+    			'link' => $item->getAttribute('link')
+    			);
+    	}
+    }
+    foreach ($container as $key => $c) {
+      $showSlideValue = $c->getAttribute('showslide');
+    }
+    $templateMgr->assign('showSlide', $showSlideValue);
+    $templateMgr->assign('slideItems', $data);
+  }
+
 }
+
+
+
 
 ?>

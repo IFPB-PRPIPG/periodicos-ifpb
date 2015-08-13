@@ -18,6 +18,14 @@
 
 switch ($op) {
 	//
+	// Slider
+	case 'slider':
+	case 'saveSlider':
+		define('HANDLER_CLASS', 'AdminSliderHandler');
+		import('pages.admin.AdminSliderHandler');
+		break;
+	//
+	//
 	// Settings
 	//
 	case 'settings':
