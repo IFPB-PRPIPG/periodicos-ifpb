@@ -36,13 +36,10 @@
           </ul>
           <ul class="footer-box">
             <li class="title"><h4>Sobre</h4></li>
-            <li class="item">Lorem ipsum</li>
-            <li class="item">Dolor sit amet</li>
-            <li class="item">Consectetur adipisicing</li>
-            <li class="item">Elit</li>
-            <li class="item">Assumenda explicabo</li>
-            <li class="item">Accusamus perferendis</li>
-            <li class="item">Rerum aperiam in rem</li>
+            <li class="item"><a href="">Regimento</a></li>
+            <li class="item"><a href="">Saiba como publicar</a></li>
+            <li class="item"><a href="">Inscrição de Artigo</a></li>
+            
           </ul>
 
           <ul class="footer-box">
@@ -81,10 +78,16 @@
         <div class="sub-footer">
           <div class="content-container">
             <div class="left">
-              <img src="{$baseUrl}/templates/portalpadrao/assets/images/acesso-a-informacao.png" alt="">
+              <a href="http://www.brasil.gov.br/" target="_blank">
+                  <img src="{$baseUrl}/templates/portalpadrao/assets/images/acesso-a-informacao.png" alt="">  
+              </a>
+              
             </div>
             <div class="right">
-              <img src="{$baseUrl}/templates/portalpadrao/assets/images/brasil.png" alt="">
+              <a href="http://www2.planalto.gov.br/" target="_blank">
+                <img src="{$baseUrl}/templates/portalpadrao/assets/images/brasil.png" alt="">  
+              </a>
+              
             </div>
           </div>
         </div>
