@@ -87,6 +87,14 @@ class IndexHandler extends Handler {
 			}
 
 			/*
+			* Adicionada as configurações do jornal na sua index
+			* Agora o item de contato é mostrado na index.
+			*/
+
+			$journalSettingsDao =& DAORegistry::getDAO('JournalSettingsDAO');
+			$templateMgr->assign_by_ref('journalSettings', $journalSettingsDao->getJournalSettings($journal->getId()));
+
+			/*
 			* $locale, $coverPagePath, $issue (artigo)
 			* Adicionados para conseguirmos buscar a 
 			* imagem do ultimo artigo

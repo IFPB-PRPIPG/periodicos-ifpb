@@ -57,6 +57,27 @@
 						<a href="{url page="article" op="view" path=$articlePath}">{$article->getLocalizedTitle()|strip_unsafe_html}</a>
 					{else}
 						{$article->getLocalizedTitle()|strip_unsafe_html}
+
+						{if $hasAccess || ($subscriptionRequired && $showGalleyLinks)}
+							{foreach from=$article->getGalleys() item=galley name=galleyList}
+								<a href="{url page="article" op="view" path=$articlePath|to_array:$galley->getBestGalleyId($currentJournal)}" {if $galley->getRemoteURL()}target="_blank" {/if}class="file">{$galley->getGalleyLabel()|escape}</a>
+								{if $subscriptionRequired && $showGalleyLinks && $restrictOnlyPdf}
+									{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN || !$galley->isPdfGalley()}
+										<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+									{else}
+										<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+									{/if}
+								{/if}
+							{/foreach}
+							{if $subscriptionRequired && $showGalleyLinks && !$restrictOnlyPdf}
+								{if $article->getAccessStatus() == $smarty.const.ARTICLE_ACCESS_OPEN}
+									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_open_medium.gif" alt="{translate key="article.accessLogoOpen.altText"}" />
+								{else}
+									<img class="accessLogo" src="{$baseUrl}/lib/pkp/templates/images/icons/fulltext_restricted_medium.gif" alt="{translate key="article.accessLogoRestricted.altText"}" />
+								{/if}
+							{/if}
+						{/if}
+
 					{/if}
 				</li>
 				<li class="text-list-item-indent">
