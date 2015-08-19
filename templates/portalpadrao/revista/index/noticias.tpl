@@ -1,4 +1,9 @@
 {if $enableAnnouncementsHomepage}
+
+<a href="{url journal="index" page="index"}">
+    <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
+</a>
+
 <div class="content-box">
   <div class="header-box">{translate key="announcement.announcementsHome"}</div>
   {counter start=1 skip=1 assign="count"}
