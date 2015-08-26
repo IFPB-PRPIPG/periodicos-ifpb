@@ -1,6 +1,7 @@
 <!-- sidebar -->
 <sidebar id="menu" class="page-sidebar left">
   <div class="sidebar-top">
+    <a href="http://www.ifpb.edu.br/" target="_blank">
     <img src="{$baseUrl}/templates/portalpadrao/assets/images/ifpb.png" alt="Portal IFPB">
   </div>
   <!-- Caixa de conteúdo -->
