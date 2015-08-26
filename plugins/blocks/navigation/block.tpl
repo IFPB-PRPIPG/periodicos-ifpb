@@ -26,15 +26,10 @@
 				</td>
 			</tr>
 			<tr>
-				<td><label for="searchField">
-				{translate key="plugins.block.navigation.searchScope"}
-				<br />
-				<select id="searchField" name="searchField" size="1" class="selectMenu">
-					{html_options_translate options=$articleSearchByOptions}
-				</select></label>
+				<td>
 				{foreach from=$articleSearchByOptions key=chave item=foo}
 					<div>
-					    <input id="{$chave}" type="checkbox" value="{$chave}">
+					    <input id="{$chave}" type="radio" name="searchField" value="{$chave}">
 					    <label for="{$chave}">{translate key="$foo"}</label>
 					</div>
 				{/foreach}
