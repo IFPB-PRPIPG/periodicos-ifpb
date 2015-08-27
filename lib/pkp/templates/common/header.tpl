@@ -123,35 +123,73 @@
 <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/default.css">
 
 </head>
+{literal}
+  <style>
+    #body {
+      width: 960px;
+      margin: 0 auto;
+    }
+    #body:after,
+    #body:before {
+      clear: both;
+      display: table;
+      content: ' ';
+      zoom: 1;
+    }
+
+    #sidebar,
+    #leftSidebar {
+      float: left;
+    }
+
+    div#leftSidebar {
+      width: 100%;
+    }
+    #leftSidebar > #menu {
+      width: 100% !important;
+    }
+
+    #main {
+      margin-left: 1% !important;
+      border: 0;
+      width: 75%;
+      padding-left: 0.83333%;
+    }
+
+  </style>
+{/literal}
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
 
-{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-  {include file="portalpadrao/revista/base/header.tpl"}
-{elseif $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+{if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
   {include file="portalpadrao/revista/base/header.tpl"}
 {else}
   {include file="portalpadrao/base/header.tpl"}
 {/if}
+
+<div class="page-breadcrumb">
+  <div class="content-container">
+    <span></span>
+  </div>
+</div>
+
 <div id="body">
 
 {if $leftSidebarCode || $rightSidebarCode}
-  <div id="sidebar">
-    {if $leftSidebarCode}
-      <div id="leftSidebar">
-        {$leftSidebarCode}
+  <div id="sidebar mid-3">
+      <div id="leftSidebar mid-12">
+        {*$leftSidebarCode*}
+          {if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+            {include file="portalpadrao/revista/base/sidebar.tpl"}
+          {else}
+            {include file="portalpadrao/base/aside.tpl"}
+          {/if}
       </div>
-    {/if}
-    {if $rightSidebarCode}
-      <div id="rightSidebar">
-        {$rightSidebarCode}
-      </div>
-    {/if}
   </div>
 {/if}
 
+
 <div id="main">
 {include file="common/navbar.tpl"}
-
 {include file="common/breadcrumbs.tpl"}
 
 <h2>{$pageTitleTranslated}</h2>
