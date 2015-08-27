@@ -5,32 +5,34 @@
     </a>
   </div>
   <!-- Caixa de conteúdo -->
-  <ul class="box">
-    <li class="item header">Submissão</li>
-    <li class="item">
-      <a href="{url journal=$journalPath page="author" op="submit"}">Submissão online</a>
-    </li>
-    {if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
-    <li class="item"><a href="{url page="about" op="submissions" anchor="authorGuidelines"}">{translate key="about.authorGuidelines"}</a>
-    </li>{/if}
-
-    {if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
-      <li class="item"><a href="{url page="about" op="submissions" anchor="copyrightNotice"}">{translate key="about.copyrightNotice"}</a>
+  {if $currentJournal}
+    <ul class="box">
+      <li class="item header">Submissão</li>
+      <li class="item">
+        <a href="{url journal=$journalPath page="author" op="submit"}">Submissão online</a>
       </li>
-    {/if}
+      {if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
+      <li class="item"><a href="{url page="about" op="submissions" anchor="authorGuidelines"}">{translate key="about.authorGuidelines"}</a>
+      </li>{/if}
 
-    {if $currentJournal->getLocalizedSetting('privacyStatement') != ''}
-      <li class="item"><a href="{url page="about" op="submissions" anchor="privacyStatement"}">{translate key="about.privacyStatement"}</a>
-      </li>
-    {/if}
+      {if $currentJournal->getLocalizedSetting('copyrightNotice') != ''}
+        <li class="item"><a href="{url page="about" op="submissions" anchor="copyrightNotice"}">{translate key="about.copyrightNotice"}</a>
+        </li>
+      {/if}
 
-    {if $authorFees}
-      <li class="item"><a href="{url page="about" op="submissions" anchor="authorFees"}">{translate key="about.authorFees"}</a>
-      </li>
-    {/if}
+      {if $currentJournal->getLocalizedSetting('privacyStatement') != ''}
+        <li class="item"><a href="{url page="about" op="submissions" anchor="privacyStatement"}">{translate key="about.privacyStatement"}</a>
+        </li>
+      {/if}
 
-    <li class="item"><a href="{url page="about" op="aboutThisPublishingSystem"}">{translate key="about.aboutThisPublishingSystem"}</a></li>
-  </ul>
+      {if $authorFees}
+        <li class="item"><a href="{url page="about" op="submissions" anchor="authorFees"}">{translate key="about.authorFees"}</a>
+        </li>
+      {/if}
+
+      <li class="item"><a href="{url page="about" op="aboutThisPublishingSystem"}">{translate key="about.aboutThisPublishingSystem"}</a></li>
+    </ul>
+  {/if}
 {if $isUserLoggedIn}
   <!-- Menu de login-->
   <ul class="box">

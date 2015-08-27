@@ -160,8 +160,17 @@
 {/literal}
 <body id="pkp-{$pageTitle|replace:'.':'-'}">
 
+{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+  {include file="portalpadrao/revista/base/header.tpl"}
+{/if}
 {if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
   {include file="portalpadrao/revista/base/header.tpl"}
+{elseif $displayPageHeaderTitle}
+  {*$displayPageHeaderTitle*}
+{elseif $alternatePageHeader}
+  {*$alternatePageHeader*}
+{elseif $siteTitle}
+  {*$siteTitle*}
 {else}
   {include file="portalpadrao/base/header.tpl"}
 {/if}
@@ -178,7 +187,9 @@
   <div id="sidebar mid-3">
       <div id="leftSidebar mid-12">
         {*$leftSidebarCode*}
-          {if $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
+          {if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+            {include file="portalpadrao/revista/base/sidebar.tpl"}
+          {elseif $displayPageHeaderTitle && is_array($displayPageHeaderTitle)}
             {include file="portalpadrao/revista/base/sidebar.tpl"}
           {else}
             {include file="portalpadrao/base/aside.tpl"}
