@@ -6,6 +6,18 @@
   </div>
   <!-- Caixa de conteúdo -->
   {if $currentJournal}
+  <ul class="box">
+    <li class="item header">Sobre a revista</li>
+    <li class="item i-home">
+      <a href="{url page="index"}">{translate key="navigation.home"}</a>
+    </li>
+    <li class="item i-editions">
+      <a href="{url page="issue" op="archive"}">{translate key="navigation.archives"}</a>
+    </li>
+    <li class="item i-search">
+      <a href="{url page="search"}">{translate key="navigation.search"}</a>
+    </li>
+  </ul>
     <ul class="box">
       <li class="item header">Submissão</li>
       <li class="item">
