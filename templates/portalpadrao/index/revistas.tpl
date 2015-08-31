@@ -2,7 +2,7 @@
 
 <!-- Caixa de revistas -->
 <div class="content-box mid-8">
-  <div id="revistas" class="header-box alert">Revistas</div>
+  <div id="revistas" class="header-box alert">Periódicos</div>
   {iterate from=journals item=journal}
   <div class="xs-1 mid-6">
     <a href="{url journal=$journal->getPath()}">
