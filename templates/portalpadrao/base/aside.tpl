@@ -8,7 +8,7 @@
   <!-- Caixa de conteúdo -->
   {if $revistas}
     <ul class="box">
-      <li class="item header">Revistas</li>
+      <li class="item header">Periodicos</li>
       {iterate from=revistas item=revista}
         <li class="item">
           <a href="{url journal=$revista->getPath()}">{$revista->getLocalizedTitle()|escape}</a>
