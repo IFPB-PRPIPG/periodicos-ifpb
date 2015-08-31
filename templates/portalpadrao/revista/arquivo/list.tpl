@@ -1,4 +1,9 @@
 <div class="text-box">
+
+	<a href="{url journal="index" page="index"}">
+    	<img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
+	</a>
+
 	<h2 class="header-title large-size border-title-light">Publicações</h2>
 
 	{iterate from=issues item=issue}

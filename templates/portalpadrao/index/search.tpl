@@ -13,27 +13,27 @@
       <fieldset>
         <label class="label-control-block label-header">Filtro</label>
         <label class="label-control-block">
-          <input id="all-options" name="all-options" type="checkbox"> <label for="all-options"> Todos
+          <input id="all-options" name="searchField" type="radio"> <label for="all-options"> Todos
         </label>
 
         <label class="label-control-block">
-          <input id="author-options" name="author-options" type="checkbox"> Autor
+          <input id="author-options" name="searchField" type="radio"> Autor
         </label>
 
         <label class="label-control-block">
-          <input id="title-options" name="title-options" type="checkbox"> Título
+          <input id="title-options" name="searchField" type="radio"> Título
         </label>
 
         <label class="label-control-block">
-          <input id="summary-options" name="summary-options" type="checkbox"> Resumo
+          <input id="summary-options" name="searchField" type="radio"> Resumo
         </label>
 
         <label class="label-control-block">
-          <input id="index-options" name="index-options" type="checkbox"> Termo Indexado
+          <input id="index-options" name="searchField" type="radio"> Termo Indexado
         </label>
 
         <label class="label-control-block">
-          <input id="text-options" name="text-options" type="checkbox"> Texto Completo
+          <input id="text-options" name="searchField" type="radio"> Texto Completo
         </label>
       </fieldset>
 
