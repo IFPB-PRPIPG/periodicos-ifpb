@@ -8,9 +8,7 @@
         <!-- Meio -->
         <main class="main-content">
 
-          <a href="{url journal="index" page="index"}">
-            <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
-          </a>
+          
 
           {* Página inicial *}
           {if $journalIndex}

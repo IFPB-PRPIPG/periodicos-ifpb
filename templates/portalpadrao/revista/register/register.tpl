@@ -15,10 +15,6 @@
     <!-- Section Utilizada para descrição -->
     <div class="text-box-section">
 
-       <a href="{url journal="index" page="index"}">
-        <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
-      </a> 
-
       <p>O cadastro no sistema e posterior acesso são obrigatórios para a publicação de trabalhos, bem como para acompanhar o processo editorial em curso. Caso não tenha cadastrado, preencha o formulário para se cadastrar no sistema e submeter trabalhos.</p>
     </div>
 	<div class="content-box mid-8">
