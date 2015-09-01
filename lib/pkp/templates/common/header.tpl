@@ -200,6 +200,11 @@
 
 
 <div id="main">
+
+  <a href="{url journal="index" page="index"}">
+    <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
+  </a>
+
 {include file="common/navbar.tpl"}
 {include file="common/breadcrumbs.tpl"}
 
