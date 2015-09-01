@@ -23,9 +23,9 @@
     <ul class="date-list mid-8">
       <!-- Entrada dos itens -->
       <li class="date-list-item" id="issue-{$issue->getId()}">
-        <div class="date mid-3">
-          <span class="year">{$issue->getDatePublished()|date_format:"%d/%m/%Y"}</span> <!-- date_format incluido para resolver problema da hora errada -->
-        </div>
+        <!--<div class="date mid-3">
+          <span class="year">{$issue->getDatePublished()|date_format:"%d/%m/%Y"}</span>  date_format incluido para resolver problema da hora errada
+        </div>--> <!-- Remoção da data das publicações -->
         <div class="image mid-3">
 		{if $issue->getLocalizedFileName() && $issue->getShowCoverPage($locale) && !$issue->getHideCoverPageArchives($locale)}
           <img src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $issue->getCoverPageAltText($locale) != ''} alt="{$issue->getCoverPageAltText($locale)|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
