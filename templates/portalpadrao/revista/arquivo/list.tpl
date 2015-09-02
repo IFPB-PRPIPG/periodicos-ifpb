@@ -20,18 +20,18 @@
 			{assign var=lastYear value=$issue->getYear()}
 		{/if}
 
-    <ul class="date-list mid-8">
+    <ul class="date-list mid-12">
       <!-- Entrada dos itens -->
       <li class="date-list-item" id="issue-{$issue->getId()}">
         <!--<div class="date mid-3">
           <span class="year">{$issue->getDatePublished()|date_format:"%d/%m/%Y"}</span>  date_format incluido para resolver problema da hora errada
         </div>--> <!-- Remoção da data das publicações -->
-        <div class="image mid-3">
+        <div class="image mid-4">
 		{if $issue->getLocalizedFileName() && $issue->getShowCoverPage($locale) && !$issue->getHideCoverPageArchives($locale)}
           <img src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $issue->getCoverPageAltText($locale) != ''} alt="{$issue->getCoverPageAltText($locale)|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
         {/if}
         </div>
-        <div class="text mid-6">
+        <div class="text mid-8">
           <h4 class="title">
           	<a class="title" href="{url op="view" path=$issue->getBestIssueId($currentJournal)}">{$issue->getIssueIdentification()|escape}</a>
           </h4>
