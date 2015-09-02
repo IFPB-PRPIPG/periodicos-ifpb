@@ -7,7 +7,7 @@
   <!-- Caixa de conteúdo -->
   {if $currentJournal}
   <ul class="box">
-    <li class="item header">Sobre a revista</li>
+    <li class="item header">Sobre o periódico</li>
     <li class="item i-home">
       <a href="{url page="index"}">{translate key="navigation.home"}</a>
     </li>
@@ -45,6 +45,17 @@
       <li class="item"><a href="{url page="about" op="aboutThisPublishingSystem"}">{translate key="about.aboutThisPublishingSystem"}</a></li>
     </ul>
   {/if}
+
+  <ul class="box">
+    <li class="item header">Sobre</li>
+    <li class="item">
+      <a href="{url page="about"}">{translate key="navigation.about"}</a>
+    </li>
+    <li class="item"><a href="{url page="about"}">{translate key="about.editorialTeam"}</a></li>    
+    {if not (empty($journalSettings.mailingAddress) && empty($journalSettings.contactName) && empty($journalSettings.contactAffiliation) && empty($journalSettings.contactMailingAddress) && empty($journalSettings.contactPhone) && empty($journalSettings.contactFax) && empty($journalSettings.contactEmail) && empty($journalSettings.supportName) && empty($journalSettings.supportPhone) && empty($journalSettings.supportEmail))}
+      <li class="item"><a href="{url page="about"}">{translate key="about.contact"}</a></li>
+    {/if}
+  </ul>
 {if $isUserLoggedIn}
   <!-- Menu de login-->
   <ul class="box">
@@ -63,15 +74,4 @@
   </ul>
   <!-- Fim Menu de login-->
 {/if}
-
-  <ul class="box">
-    <li class="item header">Sobre</li>
-    <li class="item">
-      <a href="{url page="about"}">{translate key="navigation.about"}</a>
-    </li>
-    <li class="item"><a href="{url page="about"}">{translate key="about.editorialTeam"}</a></li>    
-    {if not (empty($journalSettings.mailingAddress) && empty($journalSettings.contactName) && empty($journalSettings.contactAffiliation) && empty($journalSettings.contactMailingAddress) && empty($journalSettings.contactPhone) && empty($journalSettings.contactFax) && empty($journalSettings.contactEmail) && empty($journalSettings.supportName) && empty($journalSettings.supportPhone) && empty($journalSettings.supportEmail))}
-      <li class="item"><a href="{url page="about"}">{translate key="about.contact"}</a></li>
-    {/if}
-  </ul>
 </sidebar>

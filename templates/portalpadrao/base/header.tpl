@@ -43,7 +43,7 @@
           <div class="header-logo">
             <span>Portal de</span>
             <h1 class="page-name">Periódicos</h1>
-            <span>Instituto Federal da Paraíba</span>
+            <span>Instituto Federal de Educação Ciência e Tecnologia da Paraíba</span>
           </div>
           <form id="simpleSearchForm" method="post" action="{url page="search" op="search"}" class="form-control form-search-header">
             {capture assign="filterInput"}{call_hook name="Templates::Search::SearchResults::FilterInput" filterName="simpleQuery" filterValue="" size=15}{/capture}

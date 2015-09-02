@@ -4,7 +4,7 @@
 
 {if $issue}
   <div class="content-box">
-    <div class="header-box">Revista</div>
+    <div class="header-box">Periódico</div>
     <a href="{url page="issue" op="view" path=$issue->getBestIssueId($currentJournal)}">
     {if $coverPagePath}
       <div class="xs-1 mid-6">

@@ -55,7 +55,9 @@
             {include file="portalpadrao/revista/register/register.tpl"}
           {/if}
 
-
+          <!-- footer -->
+	    <div class="content-box">{include file="common/footer.tpl"}</div>
+		
         </main>
       </div>
    </div> <!-- /page content -->
