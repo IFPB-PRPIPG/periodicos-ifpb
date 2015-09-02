@@ -48,6 +48,11 @@
 	{/if}
 	{call_hook name="Templates::Article::Article::ArticleCoverImage"}
   <!-- titulo e sub titulo -->
+  
+	<a href="{url journal="index" page="index"}">
+      <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
+    </a>	
+
   <h2 class="header-title border-title-light mid-size">
     {$article->getLocalizedTitle()|strip_unsafe_html}
   </h2>
