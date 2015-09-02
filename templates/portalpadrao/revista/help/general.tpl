@@ -1,4 +1,7 @@
 <div class="text-box" id="authorGuidelines">
+	<a href="{url journal="index" page="index"}">
+      <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
+    </a>
 	{if $currentJournal->getLocalizedSetting('authorGuidelines') != ''}
 	<h2 class="header-title mid-size border-title-light">{translate key="about.authorGuidelines"}</h2>
 	{$currentJournal->getLocalizedSetting('authorGuidelines')|nl2br}
@@ -14,11 +17,7 @@
 {/if}
 
 {if $currentJournal->getLocalizedSetting('privacyStatement') != ''}
-<div class="text-box" id="privacyStatement">
-
-	<a href="{url journal="index" page="index"}">
-      <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
-    </a>	
+<div class="text-box" id="privacyStatement">	
 
 	<h3 class="header-title mid-size border-title-light">
 		{translate key="about.privacyStatement"}
