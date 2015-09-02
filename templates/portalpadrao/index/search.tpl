@@ -4,10 +4,17 @@
     <div class="header-box">Pesquisa</div>
   {capture assign="filterInput"}{call_hook name="Templates::Search::SearchResults::FilterInput" filterName="simpleQuery" filterValue="" size=15}{/capture}
   {if empty($filterInput)}  
-    <form class="form-control" method="post" action="{url page="search" op="search"}">
+    <form class="form-control" id="simpleSearchForm" method="post" action="{url page="search" op="search"}">
+
+      {capture assign="filterInput"}{call_hook name="Templates::Search::SearchResults::FilterInput" filterName="simpleQuery" filterValue="" size=15}{/capture}
+            
+            <select id="searchField" name="searchField" size="1" style="display: none;">
+              {html_options_translate options=$articleSearchByOptions}
+            </select>
+
       <fieldset>
         <label class="label-control-block label-header"> Conteúdo da pesquisa</label>
-        <input type="text" class="input-control">
+        <input type="text" class="input-control" name="query">
       </fieldset>
 
       <fieldset>
@@ -38,7 +45,7 @@
       </fieldset>
 
       <div class="footer-box text-right">
-        <button class="btn-default btn-large">Pesquisar</button>
+        <button class="btn-default btn-large" type="submit">Pesquisar</button>
       </div>
     </form>
   {else}
