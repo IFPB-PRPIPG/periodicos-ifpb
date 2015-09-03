@@ -1,7 +1,2045 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);.content-container{max-width:100%;margin-left:auto;margin-right:auto;clear:both;padding:0 15px}.content-container:after{content:" ";display:block;clear:both}@media (min-width: 768px){.content-container{width:960px;padding:0 15px}}@media (min-width: 960px){.content-container{width:960px;padding:0}}.img-responsible{max-width:100%}.page-breadcrumb{max-width:100%;margin-left:auto;margin-right:auto;padding-top:35px;padding-bottom:25px;text-transform:uppercase;font-size:8pt}.page-breadcrumb:after{content:" ";display:block;clear:both}.page-breadcrumb a{color:#00520f;text-decoration:none}.image-responsible{width:100%}.banner-content{width:100%;padding-bottom:26px}.slide-content{padding-bottom:30px}.fotorama__caption__wrap{font-weight:bold;background-color:#fff;background-color:rgba(0,0,0,0.4);padding:5px 10px;width:100%;color:#fff;padding:15px}.fotorama__nav--dots .fotorama__nav__frame{background:#1f6012;padding:0 4px}.fotorama__nav--dots .fotorama__nav__frame .fotorama__dot{background:#fff;display:block;width:6px;height:6px;position:relative;top:12px;left:6px;border-radius:6px;border:1px solid #fff}.fotorama__nav--dots .fotorama__nav__frame.fotorama__active{background:#ffb400}.fotorama__nav--dots .fotorama__nav__frame.fotorama__active .fotorama__dot{background:#1f6012;display:block;width:6px;height:6px;position:relative;top:12px;left:6px;border-radius:6px;border:1px solid #1f6012}.fotorama__nav-wrap{margin-top:-30px;float:right}.fotorama__nav .fotorama__nav--dots{float:right;width:auto !important}.government-bar{background:#edeff1;font-size:9pt}.government-bar:after,.government-bar:before{clear:both;display:table;content:' ';zoom:1}.government-bar.repositorio{border-bottom:1px solid #195229}.government-bar a{padding:7px 5px;color:#5d5d5d;border-right:1px solid #d6dcd7;text-decoration:none;display:inline-block;font-weight:bold}.government-bar a:nth-child(1n+3){text-align:center}.government-bar .brazil-flag{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAMAAAC5m+00AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACrUExURQCXSF27iQCWRQOWSQCWSRCdVACSSgCWRwCVSRKcVv/oAP/yAAIvh/bjBQKVTP/rAK3PF/3sARZBkg05ima2LCqiPg+ZRR9JoermBbGwLwEqkgCST1GwMRqdQZfIHdzgCSdSlTlYbEWrNyNKeouUPHOgtEJsn2WOrSClX2m/lF+6i3q8JsDVEBpCgWN2WefTD8i/IYSstzKmO3eIUaa2h3SOjfvlHjVfq6OmNShvDYIAAAFISURBVCjPbVHXksMgDNQBljC4l9iOndjp5VKv//+XnXByb7fDADO7rNAK9v4DngPv/h/24BHBuEhqB3pCeUxJIAWKtMZlIVCTciogH3yhWMpinM2t7ZctS5UgAR74kVICpMauNrfmaucTpMj5e+4VUNTOEvuzCoL8EvZLJCH1SIHAqKjtehowposwTmbIcqZIt+UpNV/3zWa3HYLp2sZ1gegoPXkNU5M238Ow3d132cIYEyel9MHDLo2NcX4519puPkPmbOIowrdTbGyTZXk2BEH1kZo4LPSjFgq2DFcVc3lWNZbt2rGWIIiwTOztzJZV9W77glCp8RsSNHdc1NfL6rxoxp5JCcmUC1cJjdx0GKZ1hxq0eqYBkuPlzLHrjXuiOAwaDUGQFJyWBpyU7EUaQI/xckGeA98jksqNQLmp8BnB4Xh8+ReHX640GNLt25uiAAAAAElFTkSuQmCC");background-repeat:no-repeat;background-position:0% 50%;padding-left:30px;padding-right:30px;text-transform:uppercase}.page-banners{padding-bottom:30px}.element-box,.content-box .header-box,.page-sidebar .box .header{color:#00520f;background:#edeff1;border-top:5px solid #00520f;padding-right:10px}.content-box .footer-box{background:#edeff1;border-top:1px solid #00520f;text-transform:uppercase;padding-right:10px}.label-control-block,.label-control,.label-control-right{font-size:11pt;display:inline-block}.btn-register,.btn-submit,.btn-default,.btn-search{text-align:center;border:1px solid;text-decoration:none}.text-box .header-title{font-family:Arial, sans-serif;color:#172938;margin-top:0}.text-box .header-subtitle{font-size:13pt;font-family:Arial, sans-serif;font-weight:lighter;color:#172938}.text-list{padding:0;margin:0 0 30px 0;display:block;font-size:10pt}.text-list-menu{display:block;margin:0 5px}.text-list-menu a{color:#000;display:block}.text-list-menu a.active{color:#00520f;font-size:20pt;font-weight:bold}@media (min-width: 768px){.text-list-menu{display:inline-block}}.text-list-item,.text-list-item-header,.text-list-item-simple-header,.text-list-item-indent{display:block;margin:5px 0;color:#172938}.text-list-item-header{font-weight:bold;font-weight:13pt;padding-bottom:10px;margin-bottom:20px;border-bottom:1px solid #d6dcd7}.text-list-item-simple-header{font-weight:bold;font-weight:13pt}.text-list-item-indent{padding-left:20px}.date-list,.date-list-item{display:block;font-size:11pt;padding:0;margin:0}.date-list:after,.date-list:before,.date-list-item:after,.date-list-item:before{clear:both;display:table;content:' ';zoom:1}.date-list-item{padding-bottom:10px;margin-bottom:30px;border-bottom:1px solid #d6dcd7}.date-list-item .date{padding:30px 0;text-align:left;font-size:9pt;color:#5d5d5d}@media (min-width: 768px){.date-list-item .date{border-right:1px solid #d6dcd7}}.date-list-item .date span{display:block;margin-bottom:5px;display:inline-block;font-size:9pt}.date-list-item .date .year{background:url("../images/data.png") no-repeat;background-position:center left;background-size:30px;padding:5px 30px}.date-list-item .date .hour{background:url("../images/hora.png") no-repeat;background-position:center left;background-size:30px;padding:5px 30px}.date-list-item .image img{width:100%;max-width:150px;margin:0 auto;display:block}.date-list-item .text-type{color:#00520f;font-weight:bold}.date-list-item .text{color:#172938;padding-left:20px}.date-list-item h4{margin:5px 0}.btn-register{text-transform:uppercase;font-size:14pt;background:#3867b7;padding:8px 30px;color:#fff;font-family:"Open Sans", sans-serif;font-weight:lighter;border-radius:5px;display:block;margin:0 auto}.btn-submit{font-size:11pt;background:#3867b7;padding:5px 15px;color:#fff;font-family:"Open Sans", sans-serif;border-radius:5px;text-align:right}.btn-default{background:#7d7d7d;border:#7d7d7d;color:#fff;font-size:10pt;text-decoration:none;border-radius:5px;padding:3px 20px}.btn-large{font-size:11pt;text-transform:uppercase;padding:5px 15px}.element-box{background:#edeff1;margin-bottom:30px;padding:0}.element-box:after,.element-box:before{clear:both;display:table;content:' ';zoom:1}.element-box .header-box{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;padding-top:5px;padding-left:10px;padding-right:10px;min-height:55px;font-size:20pt;font-weight:lighter;text-transform:none}.element-box .element-container{padding:8px}.text-box{display:block;font-size:15px;margin-bottom:30px}.text-box:after,.text-box:before{clear:both;display:table;content:' ';zoom:1}.text-box .header-content-type{font-size:13pt;text-transform:uppercase;color:#00520f;margin-bottom:10px;display:inline-block}.text-box .header-title.large-size{font-size:26pt}.text-box .header-title.mid-size{font-size:16pt}.text-box .header-subtitle{margin-top:20px}.text-box-content:after,.text-box-content:before{clear:both;display:table;content:' ';zoom:1}.text-box-title{color:#172938}.text-box-title.large-size{font-size:26pt}.text-box-title.mid-size{font-size:18pt}.content-box{padding-bottom:30px}.content-box:after,.content-box:before{clear:both;display:table;content:' ';zoom:1}.content-box .header-box{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;padding-top:5px;padding-left:8px;min-height:64px;font-size:20pt;font-weight:lighter;text-transform:none;margin-bottom:20px}.content-box .header-box.default{border-color:#3867b7;color:#3867b7}.content-box .header-box.alert{border-color:#a41e22;color:#a41e22}.content-box .footer-box{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;font-size:8pt;text-align:right;padding:10px;margin-top:20px}.content-box .footer-box.alert{border-color:#a41e22;padding:0}.content-box .footer-box a{color:inherit;text-decoration:none;display:block;padding-right:20px}.content-box .footer-box .footer-content{background:url("../images/footer-seta.png") no-repeat;background-position:right;padding:5px}.content-box .footer-box .footer-pagination{display:inline-block;padding:0;margin:0}.content-box .footer-box .footer-pagination .item{display:inline-block;margin:0 8px}.content-box .footer-box .footer-pagination .item a{padding:0;text-decoration:underline}.content-box .footer-box .footer-pagination .item .first{padding-left:25px;background:url("../images/footer-seta.png") no-repeat;background-position:left center;text-decoration:none}.content-box .footer-box .footer-pagination .item .last{padding-right:25px;background:url("../images/footer-seta.png") no-repeat;background-position:right center;text-decoration:none}.content-box{color:#172938}.content-box h3{font-size:14pt}.content-box p{font-size:11pt;word-wrap:break-word}.content-box a{color:#172938;text-decoration:none}.content-box a:hover{text-decoration:none}.content-box .small-type{color:#00520f;font-size:9pt;font-weight:bold}.default-box{font-size:11pt;color:#454545;background:#edeff1;padding:10px;border-radius:5px}.default-box:after,.default-box:before{clear:both;display:table;content:' ';zoom:1}.default-box a{color:#454545}.default-box .text-right{text-align:right}.default-box .header-box{width:100%;display:block;background:#edeff1;font-size:11pt;border-bottom:1px solid #454545;text-transform:uppercase;padding-top:5px;margin-bottom:10px;font-weight:bold}.default-box .footer-box{width:100%;padding-top:10px;padding-bottom:5px;background:#edeff1;border-top:1px solid #d6dcd7}.default-box .footer-box .footer-title{font-size:11pt;text-transform:uppercase;font-weight:bold}.default-box fieldset{background:#edeff1;padding:5px 15px !important}.default-box fieldset input[type='checkbox']{margin:5px 5px 5px 0}.default-box fieldset .label-header{font-weight:bold}.form-control,.form-custom-search{display:block;font-size:11pt}.form-control:after,.form-custom-search:after,.form-control:before,.form-custom-search:before{clear:both;display:table;content:' ';zoom:1}.form-control fieldset,.form-custom-search fieldset{border:0;margin:0;padding-top:10px;padding-bottom:10px}.form-control fieldset legend,.form-custom-search fieldset legend{font-size:15pt;color:#172938;border-bottom:1px solid #d6dcd7;display:block;width:100%;padding-bottom:10px;margin-bottom:20px}.form-custom-search{padding:10px}.form-custom-search:after,.form-custom-search:before{clear:both;display:table;content:' ';zoom:1}.form-control-default{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;font-size:13pt;background:#edeff1;padding:10px;margin-bottom:20px}.form-control-default fieldset{padding:0;margin:0;display:block;width:100%;border:0}.form-control-default legend{font-weight:bold;padding:10px 0}.input-container:after,.input-container:before{clear:both;display:table;content:' ';zoom:1}.input-control,.input-inline{display:block;width:100%;padding:8px;margin-bottom:5px;border:1px solid #d6dcd7;-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px}.input-inline{padding-left:0;padding-right:0;margin-left:0.83333%;margin-right:0.83333%}.label-control-block{display:block}.label-control-right{text-align:right}.required:before{content:"*";color:#3867b7}.btn-search{color:#fff;font-size:10pt;text-transform:uppercase;background:#7d7d7d;border-color:#7d7d7d;padding:5px 15px}.form-login{font-size:9pt}.form-login label{font-size:9pt;margin-right:5px;margin-left:10px;display:block}@media (min-width: 768px){.form-login label{display:inline-block;width:37%}}.form-login input{color:#454545;padding:0 3px;margin:5px 0;font-size:9pt;border:0;outline:none;border-radius:10px;width:100%;display:block}@media (min-width: 768px){.form-login input{display:inline-block;width:75%;margin:0}}.form-login .btn-submit{background:#f0f0f0;color:inherit;border:0;border-radius:5px;padding:2px 10px;font-size:9pt}@media (min-width: 768px){.form-login{display:inline-block;margin-left:20px}}.portal .form-login .btn-submit{background:#fff;color:#00420c}.form-search-header{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;text-align:right;margin-top:20px;margin-bottom:5px;color:#454545;font-size:9pt}@media (min-width: 768px){.form-search-header{width:33.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}}.form-search-header:after,.form-search-header:before{clear:both;display:table;content:' ';zoom:1}.search-input-header{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;padding:10px;border-radius:5px;border:1px solid #00520f}@media (min-width: 768px){.search-input-header{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%}}.search-button{width:37px;background:url("../images/search-button.gif") no-repeat;background-position:center center;border:0;height:40px;margin-left:-40px}.form-custom-search{font-size:12pt;color:#000}.form-custom-search .input-control,.form-custom-search .input-inline{width:33.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%;padding-right:0;border-right:0;border-radius:5px 0 0 5px}@media (min-width: 768px){.form-custom-search .input-control,.form-custom-search .input-inline{width:66.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}}.form-custom-search a{color:#00520f;text-decoration:none}.form-custom-search legend{border:0 !important;margin-bottom:0 !important;padding-bottom:0 !important}.form-custom-search .control-block{border-bottom:1px solid #fff;margin-bottom:5px}.form-custom-search .control-block:after,.form-custom-search .control-block:before{clear:both;display:table;content:' ';zoom:1}.form-custom-search .list-input-custom{width:66.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%;border-top:1px solid #d6dcd7;border-bottom:1px solid #d6dcd7;border-right:1px solid #d6dcd7;border-left:0;display:block;margin:0;padding:8px 0;background:#fff;text-align:right;border-radius:0 5px 5px 0}@media (min-width: 768px){.form-custom-search .list-input-custom{width:33.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}}.form-custom-search .list-input-custom .item{display:inline-block;padding:0 10px;margin:0;border-left:1px solid #d6dcd7;font-weight:lighter}.form-custom-search .list-input-custom .item:first-child{padding-right:0}.form-custom-search .list-input-custom .item:last-child{padding:0 10px;margin:0}.form-custom-search .list-input-custom .item .button-search{background:url("../images/search-button.gif") no-repeat;background-position:center center;height:20px;width:20px;border:0}.form-custom-search .list-input-custom .item .search-type input[type="checkbox"]{display:none}.form-custom-search .list-input-custom .item .search-type input:checked ~ span{font-weight:bold;font-size:12pt}.form-custom-search .list-input-external{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;display:block;margin:0;font-size:10pt}.form-custom-search .list-input-external .item{display:inline-block;padding:0 10px;margin:0;font-weight:lighter}.form-custom-search .list-input-external .item a{color:#00520f;text-decoration:none}.form-custom-search .list-input-external .item .search-type input[type="checkbox"]{display:none}.form-custom-search .list-input-external .item .search-type input:checked ~ span{font-weight:bold;font-size:9pt}@media (max-width: 768px){.xs-hide{display:none}}.img-float-left{float:left;margin:10px}.img-frame{border:1px solid #d6dcd7}.border-box{padding-bottom:35px;border-bottom:5px solid #00520f}.border-title-light{border-bottom:1px solid #d6dcd7;padding-bottom:15px}.text-left{text-align:left}.text-right{text-align:right}.community-icons:after,.community-icons:before{clear:both;display:table;content:' ';zoom:1}.community-icons>div{padding-bottom:1.66666%}.community-icons img{display:block;margin:0 auto}.community-icons .community-active{display:block;background:#1A8A43}.community-icons .community-disabled{display:block;background:#aaa}.tool-bar{width:100%}.tool-bar:after,.tool-bar:before{clear:both;display:table;content:' ';zoom:1}.tool-bar .tool-align{padding-top:10px}.tool-bar .tool-item{display:block;font-size:10pt;color:#000;text-decoration:none;padding:10px 0 10px 25px;background-repeat:no-repeat;background-position:0% 50%}.tool-bar .tool-item.print{background-image:url("../images/impressora.png");padding-left:27px}.tool-bar .tool-item.metadata{background-image:url("../images/metadados.png")}.tool-bar .tool-item.document{background-image:url("../images/documento.png")}@media (min-width: 768px){.mid-12{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-12.last{width:100%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-11{width:91.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-11.last{width:91.66667%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-10{width:83.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-10.last{width:83.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-9{width:75%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-9.last{width:75%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-8{width:66.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-8.last{width:66.66667%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-7{width:58.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-7.last{width:58.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-6{width:50%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-6.first{width:50%;float:left;padding-left:0.83333%;padding-right:0.83333%;margin-left:0;padding-left:0}.mid-6.last{width:50%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-5{width:41.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-5.last{width:41.66667%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-4{width:33.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-4.last{width:33.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-3{width:25%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-3.last{width:25%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-2{width:16.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-2.last{width:16.66667%;float:right;padding-left:0.83333%;padding-right:0.83333%}.mid-1{width:8.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}.mid-1.last{width:8.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}div>.mid-4:nth-child(4n),section>.mid-4:nth-child(4n){clear:left}}@media (max-width: 768px){div>.xs-6:nth-child(2n){clear:right}.xs-6{width:50%;float:left;padding-left:0.83333%;padding-right:0.83333%}.xs-5{width:41.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.xs-4{width:33.33333%;float:left;padding-left:0.83333%;padding-right:0.83333%}.xs-3{width:25%;float:left;padding-left:0.83333%;padding-right:0.83333%}.xs-2{width:16.66667%;float:left;padding-left:0.83333%;padding-right:0.83333%}.xs-1{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%}}.magazine{color:#5d5d5d}.magazine a{color:inherit;text-decoration:none}.portal{color:#fff}.portal a{color:inherit;text-decoration:none}.repositorio{color:#195229}.repositorio a{color:inherit;text-decoration:none}.language-bar{width:100%;text-align:center;font-size:10pt}@media (min-width: 768px){.language-bar{width:50%;float:right;padding-left:0.83333%;padding-right:0.83333%;text-align:right;display:inline-block}}.accessibility-bar{width:100%;text-align:center;font-size:8pt}@media (min-width: 768px){.accessibility-bar{width:50%;float:left;padding-left:0.83333%;padding-right:0.83333%;text-align:left;display:inline-block}}.link-list{display:inline-block;margin:0 0 0 24px;padding:0}.link-list .item{display:inline-block;margin-left:13px;margin-right:0;padding:0}.link-list .item.first{margin:0}.link-list.first{margin:0}.media-container{margin-top:-20px}@media (min-width: 768px){.media-container{width:33.33333%;float:right;padding-left:0.83333%;padding-right:0.83333%}}.social{width:22px;height:22px;margin-left:5px;display:inline-block;margin-bottom:0;padding-bottom:0;float:right;background-position:center;background-size:cover}.facebook{background:url("../images/facebook.png") no-repeat}.twitter{background:url("../images/twitter.png") no-repeat}.youtube{background:url("../images/youtube-magazine.png") no-repeat}.flikr{background:url("../images/flikr-magazine.png") no-repeat}.portal .facebook{background:url("../images/facebook-portal.png") no-repeat}.portal .twitter{background:url("../images/twitter-portal.png") no-repeat}.portal .youtube{background:url("../images/youtube-portal.png") no-repeat}.portal .flikr{background:url("../images/flikr-portal.png") no-repeat}.repositorio .facebook{background:url("../images/icons/facebookrepo.png") no-repeat}.repositorio .twitter{background:url("../images/icons/twitterrepo.png") no-repeat}.repositorio .youtube{background:url("../images/icons/youtuberepo.png") no-repeat}.repositorio .feed{background:url("../images/icons/feedrepo.png") no-repeat}.page-header{padding-top:15px}.page-header:after,.page-header:before{clear:both;display:table;content:' ';zoom:1}.page-header.portal{background:linear-gradient(to top, #00510f, #17882c)}.page-header.magazine{background:#fff}.page-header.repositorio{background:#ECEDF1}.center-content{max-width:100%;margin-left:auto;margin-right:auto;padding-top:30px}.center-content:after{content:" ";display:block;clear:both}.center-content .header-logo{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;min-height:90px}@media (min-width: 768px){.center-content .header-logo{width:50%;float:left;padding-left:0.83333%;padding-right:0.83333%}}.header-logo span{font-size:9pt;text-transform:uppercase}.header-logo .page-name{font-size:36pt;line-height:36pt;margin:0}.header-logo .page-name.default{line-height:50pt}.actions-bar{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;padding:4px 0;margin-top:15px;font-size:9pt;text-align:center}@media (min-width: 768px){.actions-bar{text-align:right}}.portal .actions-bar{background:#01430c}.magazine .actions-bar{background-image:linear-gradient(to bottom, #e8e8ea, #cfcec9)}.repositorio .actions-bar{background:linear-gradient(to bottom, #DBDCE1, #DBDCE1 80%, #C4C6C5)}.actions-bar .list-menu{padding:0;margin:0;text-align:left;display:block}.actions-bar .list-menu .item{display:inline-block;border-right:1px solid #C4C6C5;padding:0 8px}.actions-bar .list-menu .item:first-child{padding-left:0}.actions-bar .list-menu .item:last-child{border:0;padding-right:0}.page-sidebar{display:none}.page-sidebar .sidebar-top{margin-bottom:40px}@media (min-width: 768px){.page-sidebar{max-width:220px;width:25%;float:left;padding-left:0.83333%;padding-right:0.83333%;display:block}}.page-sidebar .box{padding:0;margin:0;display:block;margin-bottom:40px}.page-sidebar .box .item{display:block;padding-left:8px;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #d6dcd7;font-size:12pt}.page-sidebar .box .item a{display:block;color:#5d5d5d;text-decoration:none}.page-sidebar .box .header{padding-top:5px;padding-bottom:25px;text-transform:uppercase;font-weight:bold}.page-sidebar .box .item.i-search{background:url(../images/icons/search.png)}.page-sidebar .box .item.i-books{background:url(../images/icons/books.png)}.page-sidebar .box .item.i-calendar{background:url(../images/icons/calendar.png)}.page-sidebar .box .item.i-science{background:url(../images/icons/calendar.png)}.page-sidebar .box .item.i-academic{background:url(../images/icons/calendar.png)}.page-sidebar .box .item.i-stackedbooks{background:url(../images/icons/stackedbooks.png)}.page-sidebar .box .item.i-home{background:url(../images/icons/home.png)}.page-sidebar .box .item.i-editions{background:url(../images/icons/editions.png)}.page-sidebar .box .item.i-search,.page-sidebar .box .item.i-books,.page-sidebar .box .item.i-calendar,.page-sidebar .box .item.i-science,.page-sidebar .box .item.i-academic,.page-sidebar .box .item.i-stackedbooks,.page-sidebar .box .item.i-home,.page-sidebar .box .item.i-editions{background-repeat:no-repeat;background-position:5px center;min-height:36px;padding-left:50px;padding-top:15px;padding-bottom:15px}@media (min-width: 768px){.main-content{width:75%;float:right;padding-left:0.83333%;padding-right:0.83333%}}@media (min-width: 768px){.main-content-block{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;margin-left:0;margin-right:0;padding-left:0;padding-right:0}}.page-footer{width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%;background:#00520f;color:#fff;padding:10px 0 0 0;margin-top:30px}.page-footer:after,.page-footer:before{clear:both;display:table;content:' ';zoom:1}.page-footer.repositorio{background:#ECEDF1;color:#195229}.sub-footer{background:#00420c;padding:15px 0}.sub-footer:after,.sub-footer:before{clear:both;display:table;content:' ';zoom:1}.sub-footer .left{float:left}.sub-footer .right{float:right}.footer-box{display:inline-block;width:100%;float:left;padding-left:0.83333%;padding-right:0.83333%}@media (min-width: 768px){.footer-box{width:25%;float:left;padding-left:0.83333%;padding-right:0.83333%;text-align:left}}.footer-box:after,.footer-box:before{clear:both;display:table;content:' ';zoom:1}.footer-box .title{font-size:14pt;font-weight:bold;margin-bottom:15px}.footer-box .title h4{margin:0;padding-top:0}.footer-box .title,.footer-box .item{list-style:none;display:block}.footer-box .title a,.footer-box .item a{color:inherit;text-decoration:none}.footer-box .title a:hover,.footer-box .item a:hover{text-decoration:underline}.footer-box .item{font-size:9pt;padding-bottom:5px;display:block}.footer-box .footer-box{width:100%;margin-top:20px}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}html,body{height:100%;font-size:62.5%;font-family:'Open Sans', Arial, sans-serif;padding:0;margin:0}a{color:#00520f;text-decoration:none}a:hover{text-decoration:underline}
-/* Stretch the links */
-.fotorama__html div,
-.fotorama__html a {
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+/* line 5, ../sass/core/helpers/_helpers.scss */
+.content-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  padding: 0 15px;
+}
+/* line 12, ../../../../../../../usr/local/rvm/gems/ruby-2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.content-container:after {
+  content: " ";
   display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 5, ../sass/core/helpers/_helpers.scss */
+  .content-container {
+    width: 960px;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 5, ../sass/core/helpers/_helpers.scss */
+  .content-container {
+    width: 960px;
+    padding: 0;
+  }
+}
+
+/*  Imagens
+=======================*/
+/* line 32, ../sass/core/helpers/_helpers.scss */
+.img-responsible {
+  max-width: 100%;
+}
+
+/* line 1, ../sass/core/modules/general/_breadcrumbs.scss */
+.page-breadcrumb {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 8pt;
+}
+/* line 12, ../../../../../../../usr/local/rvm/gems/ruby-2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.page-breadcrumb:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 7, ../sass/core/modules/general/_breadcrumbs.scss */
+.page-breadcrumb a {
+  color: #00520f;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/core/modules/general/_items.scss */
+.image-responsible {
+  width: 100%;
+}
+
+/* line 4, ../sass/core/modules/general/_items.scss */
+.banner-content {
+  width: 100%;
+  padding-bottom: 26px;
+}
+
+/* line 8, ../sass/core/modules/general/_items.scss */
+.slide-content {
+  padding-bottom: 30px;
+}
+
+/* Slide
+========================*/
+/* line 14, ../sass/core/modules/general/_items.scss */
+.fotorama__caption__wrap {
+  font-weight: bold;
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  width: 100%;
+  color: #fff;
+  padding: 15px;
+}
+
+/* line 24, ../sass/core/modules/general/_items.scss */
+.fotorama__nav--dots .fotorama__nav__frame {
+  background: #1f6012;
+  padding: 0 4px;
+}
+/* line 28, ../sass/core/modules/general/_items.scss */
+.fotorama__nav--dots .fotorama__nav__frame .fotorama__dot {
+  background: #fff;
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  top: 12px;
+  left: 6px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+}
+/* line 40, ../sass/core/modules/general/_items.scss */
+.fotorama__nav--dots .fotorama__nav__frame.fotorama__active {
+  background: #ffb400;
+}
+/* line 42, ../sass/core/modules/general/_items.scss */
+.fotorama__nav--dots .fotorama__nav__frame.fotorama__active .fotorama__dot {
+  background: #1f6012;
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  top: 12px;
+  left: 6px;
+  border-radius: 6px;
+  border: 1px solid #1f6012;
+}
+
+/* line 57, ../sass/core/modules/general/_items.scss */
+.fotorama__nav-wrap {
+  margin-top: -30px;
+  float: right;
+}
+
+/* line 62, ../sass/core/modules/general/_items.scss */
+.fotorama__nav .fotorama__nav--dots {
+  float: right;
+  width: auto !important;
+}
+
+/*  Barra padrão do governo
+===========================*/
+/* line 69, ../sass/core/modules/general/_items.scss */
+.government-bar {
+  background: #edeff1;
+  font-size: 9pt;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.government-bar:after, .government-bar:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 73, ../sass/core/modules/general/_items.scss */
+.government-bar.repositorio {
+  border-bottom: 1px solid #195229;
+}
+/* line 77, ../sass/core/modules/general/_items.scss */
+.government-bar a {
+  padding: 7px 5px;
+  color: #5d5d5d;
+  border-right: 1px solid #d6dcd7;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+/* line 85, ../sass/core/modules/general/_items.scss */
+.government-bar a:nth-child(1n+3) {
+  text-align: center;
+}
+/* line 90, ../sass/core/modules/general/_items.scss */
+.government-bar .brazil-flag {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAMAAAC5m+00AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACrUExURQCXSF27iQCWRQOWSQCWSRCdVACSSgCWRwCVSRKcVv/oAP/yAAIvh/bjBQKVTP/rAK3PF/3sARZBkg05ima2LCqiPg+ZRR9JoermBbGwLwEqkgCST1GwMRqdQZfIHdzgCSdSlTlYbEWrNyNKeouUPHOgtEJsn2WOrSClX2m/lF+6i3q8JsDVEBpCgWN2WefTD8i/IYSstzKmO3eIUaa2h3SOjfvlHjVfq6OmNShvDYIAAAFISURBVCjPbVHXksMgDNQBljC4l9iOndjp5VKv//+XnXByb7fDADO7rNAK9v4DngPv/h/24BHBuEhqB3pCeUxJIAWKtMZlIVCTciogH3yhWMpinM2t7ZctS5UgAR74kVICpMauNrfmaucTpMj5e+4VUNTOEvuzCoL8EvZLJCH1SIHAqKjtehowposwTmbIcqZIt+UpNV/3zWa3HYLp2sZ1gegoPXkNU5M238Ow3d132cIYEyel9MHDLo2NcX4519puPkPmbOIowrdTbGyTZXk2BEH1kZo4LPSjFgq2DFcVc3lWNZbt2rGWIIiwTOztzJZV9W77glCp8RsSNHdc1NfL6rxoxp5JCcmUC1cJjdx0GKZ1hxq0eqYBkuPlzLHrjXuiOAwaDUGQFJyWBpyU7EUaQI/xckGeA98jksqNQLmp8BnB4Xh8+ReHX640GNLt25uiAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/core/modules/general/_banners.scss */
+.page-banners {
+  padding-bottom: 30px;
+}
+
+/*  Itens reutilizaveis
+======================*/
+/*  Header box placeholder
+======================*/
+/* line 7, ../sass/core/modules/reusable/_reusables.scss */
+.element-box, .content-box .header-box, .page-sidebar .box .header {
+  color: #00520f;
+  background: #edeff1;
+  border-top: 5px solid #00520f;
+  padding-right: 10px;
+}
+
+/* line 14, ../sass/core/modules/reusable/_reusables.scss */
+.content-box .footer-box {
+  background: #edeff1;
+  border-top: 1px solid #00520f;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+/*  Formulários
+======================*/
+/* line 24, ../sass/core/modules/reusable/_reusables.scss */
+.label-control-block, .label-control, .label-control-right {
+  font-size: 11pt;
+  display: inline-block;
+}
+
+/*  Botões
+======================*/
+/* line 32, ../sass/core/modules/reusable/_reusables.scss */
+.btn-register, .btn-submit, .btn-default, .btn-search {
+  text-align: center;
+  border: 1px solid;
+  text-decoration: none;
+}
+
+/*  Formatação dos textos
+===============================*/
+/* line 3, ../sass/core/modules/reusable/_texts.scss */
+.text-box .header-title {
+  font-family: Arial, sans-serif;
+  color: #172938;
+  margin-top: 0;
+}
+
+/* line 9, ../sass/core/modules/reusable/_texts.scss */
+.text-box .header-subtitle {
+  font-size: 13pt;
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  color: #172938;
+}
+
+/*  Listas
+======================*/
+/* line 4, ../sass/core/modules/reusable/_lists.scss */
+.text-list {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: block;
+  font-size: 10pt;
+}
+
+/* line 10, ../sass/core/modules/reusable/_lists.scss */
+.text-list-menu {
+  display: block;
+  margin: 0 5px;
+}
+/* line 13, ../sass/core/modules/reusable/_lists.scss */
+.text-list-menu a {
+  color: #000;
+  display: block;
+}
+/* line 16, ../sass/core/modules/reusable/_lists.scss */
+.text-list-menu a.active {
+  color: #00520f;
+  font-size: 20pt;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  /* line 10, ../sass/core/modules/reusable/_lists.scss */
+  .text-list-menu {
+    display: inline-block;
+  }
+}
+
+/* line 27, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item, .text-list-item-header, .text-list-item-simple-header, .text-list-item-indent {
+  display: block;
+  margin: 5px 0;
+  color: #172938;
+}
+/* line 31, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item .file, .text-list-item-header .file, .text-list-item-simple-header .file, .text-list-item-indent .file {
+  float: right;
+}
+
+/* line 36, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-header {
+  font-weight: bold;
+  font-weight: 13pt;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d6dcd7;
+}
+
+/* line 45, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-simple-header {
+  font-weight: bold;
+  font-weight: 13pt;
+}
+
+/* line 51, ../sass/core/modules/reusable/_lists.scss */
+.text-list-item-indent {
+  padding-left: 20px;
+}
+
+/*  Listas com tempo
+======================*/
+/* line 58, ../sass/core/modules/reusable/_lists.scss */
+.date-list,
+.date-list-item {
+  display: block;
+  font-size: 11pt;
+  padding: 0;
+  margin: 0;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.date-list:after, .date-list:before,
+.date-list-item:after,
+.date-list-item:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 67, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d6dcd7;
+}
+/* line 71, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date {
+  padding: 30px 0;
+  text-align: left;
+  font-size: 9pt;
+  color: #5d5d5d;
+}
+@media (min-width: 768px) {
+  /* line 71, ../sass/core/modules/reusable/_lists.scss */
+  .date-list-item .date {
+    border-right: 1px solid #d6dcd7;
+  }
+}
+/* line 80, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date span {
+  display: block;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 9pt;
+}
+/* line 86, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date .year {
+  background: url("../images/data.png") no-repeat;
+  background-position: center left;
+  background-size: 30px;
+  padding: 5px 30px;
+}
+/* line 92, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .date .hour {
+  background: url("../images/hora.png") no-repeat;
+  background-position: center left;
+  background-size: 30px;
+  padding: 5px 30px;
+}
+/* line 101, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .image img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 109, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .text-type {
+  color: #00520f;
+  font-weight: bold;
+}
+/* line 113, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item .text {
+  color: #172938;
+  padding-left: 20px;
+}
+/* line 118, ../sass/core/modules/reusable/_lists.scss */
+.date-list-item h4 {
+  margin: 5px 0;
+}
+
+/* line 1, ../sass/core/modules/reusable/_buttons.scss */
+.btn-register {
+  text-transform: uppercase;
+  font-size: 14pt;
+  background: #3867b7;
+  padding: 8px 30px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 15, ../sass/core/modules/reusable/_buttons.scss */
+.btn-submit {
+  font-size: 11pt;
+  background: #3867b7;
+  padding: 5px 15px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* line 26, ../sass/core/modules/reusable/_buttons.scss */
+.btn-default {
+  background: #7d7d7d;
+  border: #7d7d7d;
+  color: #fff;
+  font-size: 10pt;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+
+/* line 37, ../sass/core/modules/reusable/_buttons.scss */
+.btn-large {
+  font-size: 11pt;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
+/*  Caixa para elemento interno
+=====================================*/
+/* line 3, ../sass/core/modules/reusable/_boxes.scss */
+.element-box {
+  background: #edeff1;
+  margin-bottom: 30px;
+  padding: 0;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.element-box:after, .element-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 9, ../sass/core/modules/reusable/_boxes.scss */
+.element-box .header-box {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 55px;
+  font-size: 20pt;
+  font-weight: lighter;
+  text-transform: none;
+}
+/* line 19, ../sass/core/modules/reusable/_boxes.scss */
+.element-box .element-container {
+  padding: 8px;
+}
+
+/*  Caixa de texto externa
+=====================================*/
+/* line 26, ../sass/core/modules/reusable/_boxes.scss */
+.text-box {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.text-box:after, .text-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 29, ../sass/core/modules/reusable/_boxes.scss */
+.text-box .header-content-type {
+  font-size: 13pt;
+  text-transform: uppercase;
+  color: #00520f;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+/* line 39, ../sass/core/modules/reusable/_boxes.scss */
+.text-box .header-title.large-size {
+  font-size: 26pt;
+}
+/* line 42, ../sass/core/modules/reusable/_boxes.scss */
+.text-box .header-title.mid-size {
+  font-size: 16pt;
+}
+/* line 46, ../sass/core/modules/reusable/_boxes.scss */
+.text-box .header-subtitle {
+  margin-top: 20px;
+}
+
+/*  Caixa de texto interna
+=====================================*/
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.text-box-content:after, .text-box-content:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 61, ../sass/core/modules/reusable/_boxes.scss */
+.text-box-title {
+  color: #172938;
+}
+/* line 63, ../sass/core/modules/reusable/_boxes.scss */
+.text-box-title.large-size {
+  font-size: 26pt;
+}
+/* line 66, ../sass/core/modules/reusable/_boxes.scss */
+.text-box-title.mid-size {
+  font-size: 18pt;
+}
+
+/*  Caixas de conteúdo reutilizável
+=====================================*/
+/* line 74, ../sass/core/modules/reusable/_boxes.scss */
+.content-box {
+  padding-bottom: 30px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.content-box:after, .content-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 77, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .header-box {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-top: 5px;
+  padding-left: 8px;
+  min-height: 64px;
+  font-size: 20pt;
+  font-weight: lighter;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+/* line 87, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .header-box.default {
+  border-color: #3867b7;
+  color: #3867b7;
+}
+/* line 91, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .header-box.alert {
+  border-color: #a41e22;
+  color: #a41e22;
+}
+/* line 97, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-size: 8pt;
+  text-align: right;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* line 105, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box.alert {
+  border-color: #a41e22;
+  padding: 0;
+}
+/* line 110, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding-right: 20px;
+}
+/* line 116, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-content {
+  background: url("../images/footer-seta.png") no-repeat;
+  background-position: right;
+  padding: 5px;
+}
+/* line 121, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+/* line 125, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-pagination .item {
+  display: inline-block;
+  margin: 0 8px;
+}
+/* line 128, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-pagination .item a {
+  padding: 0;
+  text-decoration: underline;
+}
+/* line 132, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-pagination .item .first {
+  padding-left: 25px;
+  background: url("../images/footer-seta.png") no-repeat;
+  background-position: left center;
+  text-decoration: none;
+}
+/* line 138, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .footer-box .footer-pagination .item .last {
+  padding-right: 25px;
+  background: url("../images/footer-seta.png") no-repeat;
+  background-position: right center;
+  text-decoration: none;
+}
+
+/*  Estilo da caixa de conteúdo
+=====================================*/
+/* line 151, ../sass/core/modules/reusable/_boxes.scss */
+.content-box {
+  color: #172938;
+}
+/* line 152, ../sass/core/modules/reusable/_boxes.scss */
+.content-box h3 {
+  font-size: 14pt;
+}
+/* line 155, ../sass/core/modules/reusable/_boxes.scss */
+.content-box p {
+  font-size: 11pt;
+  word-wrap: break-word;
+}
+/* line 159, ../sass/core/modules/reusable/_boxes.scss */
+.content-box a {
+  color: #172938;
+  text-decoration: none;
+}
+/* line 162, ../sass/core/modules/reusable/_boxes.scss */
+.content-box a:hover {
+  text-decoration: none;
+}
+/* line 167, ../sass/core/modules/reusable/_boxes.scss */
+.content-box .small-type {
+  color: #00520f;
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+/*  Caixa default reutilizavel
+=====================================*/
+/* line 178, ../sass/core/modules/reusable/_boxes.scss */
+.default-box {
+  font-size: 11pt;
+  color: #454545;
+  background: #edeff1;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.default-box:after, .default-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 186, ../sass/core/modules/reusable/_boxes.scss */
+.default-box a {
+  color: #454545;
+}
+/* line 190, ../sass/core/modules/reusable/_boxes.scss */
+.default-box .text-right {
+  text-align: right;
+}
+/* line 194, ../sass/core/modules/reusable/_boxes.scss */
+.default-box .header-box {
+  width: 100%;
+  display: block;
+  background: #edeff1;
+  font-size: 11pt;
+  border-bottom: 1px solid #454545;
+  text-transform: uppercase;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* line 207, ../sass/core/modules/reusable/_boxes.scss */
+.default-box .footer-box {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: #edeff1;
+  border-top: 1px solid #d6dcd7;
+}
+/* line 213, ../sass/core/modules/reusable/_boxes.scss */
+.default-box .footer-box .footer-title {
+  font-size: 11pt;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 220, ../sass/core/modules/reusable/_boxes.scss */
+.default-box fieldset {
+  background: #edeff1;
+  padding: 5px 15px !important;
+}
+/* line 224, ../sass/core/modules/reusable/_boxes.scss */
+.default-box fieldset input[type='checkbox'] {
+  margin: 5px 5px 5px 0;
+}
+/* line 228, ../sass/core/modules/reusable/_boxes.scss */
+.default-box fieldset .label-header {
+  font-weight: bold;
+}
+
+/*  Formulários
+======================*/
+/* line 3, ../sass/core/modules/forms/_forms.scss */
+.form-control, .form-custom-search {
+  display: block;
+  font-size: 11pt;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.form-control:after, .form-custom-search:after, .form-control:before, .form-custom-search:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 8, ../sass/core/modules/forms/_forms.scss */
+.form-control fieldset, .form-custom-search fieldset {
+  border: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 14, ../sass/core/modules/forms/_forms.scss */
+.form-control fieldset legend, .form-custom-search fieldset legend {
+  font-size: 15pt;
+  color: #172938;
+  border-bottom: 1px solid #d6dcd7;
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/*  Formulário (element-box)
+======================*/
+/* line 28, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search {
+  padding: 10px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.form-custom-search:after, .form-custom-search:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/*  Form-default color
+======================*/
+/* line 36, ../sass/core/modules/forms/_forms.scss */
+.form-control-default {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  font-size: 13pt;
+  background: #edeff1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 43, ../sass/core/modules/forms/_forms.scss */
+.form-control-default fieldset {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  border: 0;
+}
+/* line 51, ../sass/core/modules/forms/_forms.scss */
+.form-control-default legend {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/*  Inputs
+======================*/
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.input-container:after, .input-container:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 65, ../sass/core/modules/forms/_forms.scss */
+.input-control, .input-inline {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #d6dcd7;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 78, ../sass/core/modules/forms/_forms.scss */
+.input-inline {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+
+/*  Labels
+======================*/
+/* line 88, ../sass/core/modules/forms/_forms.scss */
+.label-control-block {
+  display: block;
+}
+
+/* line 97, ../sass/core/modules/forms/_forms.scss */
+.label-control-right {
+  text-align: right;
+}
+
+/* line 102, ../sass/core/modules/forms/_forms.scss */
+.required:before {
+  content: "*";
+  color: #3867b7;
+}
+
+/*  Botões
+======================*/
+/* line 109, ../sass/core/modules/forms/_forms.scss */
+.btn-search {
+  color: #fff;
+  font-size: 10pt;
+  text-transform: uppercase;
+  background: #7d7d7d;
+  border-color: #7d7d7d;
+  padding: 5px 15px;
+}
+
+/*  Formulário de login
+============================*/
+/* line 121, ../sass/core/modules/forms/_forms.scss */
+.form-login {
+  font-size: 9pt;
+}
+/* line 124, ../sass/core/modules/forms/_forms.scss */
+.form-login label {
+  font-size: 9pt;
+  margin-right: 5px;
+  margin-left: 10px;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 124, ../sass/core/modules/forms/_forms.scss */
+  .form-login label {
+    display: inline-block;
+    width: 37%;
+  }
+}
+/* line 135, ../sass/core/modules/forms/_forms.scss */
+.form-login input {
+  color: #454545;
+  padding: 0 3px;
+  margin: 5px 0;
+  font-size: 9pt;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 135, ../sass/core/modules/forms/_forms.scss */
+  .form-login input {
+    display: inline-block;
+    width: 75%;
+    margin: 0;
+  }
+}
+/* line 152, ../sass/core/modules/forms/_forms.scss */
+.form-login .btn-submit {
+  background: #f0f0f0;
+  color: inherit;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 9pt;
+}
+@media (min-width: 768px) {
+  /* line 121, ../sass/core/modules/forms/_forms.scss */
+  .form-login {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/* line 168, ../sass/core/modules/forms/_forms.scss */
+.portal .form-login .btn-submit {
+  background: #fff;
+  color: #00420c;
+}
+
+/*  Formulário de busca (header)
+============================*/
+/* line 176, ../sass/core/modules/forms/_forms.scss */
+.form-search-header {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #454545;
+  font-size: 9pt;
+}
+@media (min-width: 768px) {
+  /* line 176, ../sass/core/modules/forms/_forms.scss */
+  .form-search-header {
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.form-search-header:after, .form-search-header:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+
+/* line 189, ../sass/core/modules/forms/_forms.scss */
+.search-input-header {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00520f;
+}
+@media (min-width: 768px) {
+  /* line 189, ../sass/core/modules/forms/_forms.scss */
+  .search-input-header {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 199, ../sass/core/modules/forms/_forms.scss */
+.search-button {
+  width: 37px;
+  background: url("../images/search-button.gif") no-repeat;
+  background-position: center center;
+  border: 0;
+  height: 40px;
+  margin-left: -40px;
+}
+
+/*  Formulário de busca com icones no input
+=====================================*/
+/* line 210, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search {
+  font-size: 12pt;
+  color: #000;
+}
+/* line 213, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .input-control, .form-custom-search .input-inline {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding-right: 0;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+@media (min-width: 768px) {
+  /* line 213, ../sass/core/modules/forms/_forms.scss */
+  .form-custom-search .input-control, .form-custom-search .input-inline {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 223, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search a {
+  color: #00520f;
+  text-decoration: none;
+}
+/* line 228, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search legend {
+  border: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* line 234, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .control-block {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.form-custom-search .control-block:after, .form-custom-search .control-block:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 242, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom {
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border-top: 1px solid #d6dcd7;
+  border-bottom: 1px solid #d6dcd7;
+  border-right: 1px solid #d6dcd7;
+  border-left: 0;
+  display: block;
+  margin: 0;
+  padding: 8px 0;
+  background: #fff;
+  text-align: right;
+  border-radius: 0 5px 5px 0;
+}
+@media (min-width: 768px) {
+  /* line 242, ../sass/core/modules/forms/_forms.scss */
+  .form-custom-search .list-input-custom {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 258, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  border-left: 1px solid #d6dcd7;
+  font-weight: lighter;
+}
+/* line 265, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item:first-child {
+  padding-right: 0;
+}
+/* line 268, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item:last-child {
+  padding: 0 10px;
+  margin: 0;
+}
+/* line 273, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item .button-search {
+  background: url("../images/search-button.gif") no-repeat;
+  background-position: center center;
+  height: 20px;
+  width: 20px;
+  border: 0;
+}
+/* line 281, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item .search-type input[type="checkbox"] {
+  display: none;
+}
+/* line 285, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-custom .item .search-type input:checked ~ span {
+  font-weight: bold;
+  font-size: 12pt;
+}
+/* line 294, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-external {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: block;
+  margin: 0;
+  font-size: 10pt;
+}
+/* line 300, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-external .item {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0;
+  font-weight: lighter;
+}
+/* line 306, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-external .item a {
+  color: #00520f;
+  text-decoration: none;
+}
+/* line 311, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-external .item .search-type input[type="checkbox"] {
+  display: none;
+}
+/* line 315, ../sass/core/modules/forms/_forms.scss */
+.form-custom-search .list-input-external .item .search-type input:checked ~ span {
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+@media (max-width: 768px) {
+  /* line 3, ../sass/core/modules/misc/_state.scss */
+  .xs-hide {
+    display: none;
+  }
+}
+/*  Imagen
+======================*/
+/* line 3, ../sass/core/modules/misc/_generic.scss */
+.img-float-left {
+  float: left;
+  margin: 10px;
+}
+
+/* line 7, ../sass/core/modules/misc/_generic.scss */
+.img-frame {
+  border: 1px solid #d6dcd7;
+}
+
+/*  Bordas
+======================*/
+/* line 13, ../sass/core/modules/misc/_generic.scss */
+.border-box {
+  padding-bottom: 35px;
+  border-bottom: 5px solid #00520f;
+}
+
+/* line 17, ../sass/core/modules/misc/_generic.scss */
+.border-title-light {
+  border-bottom: 1px solid #d6dcd7;
+  padding-bottom: 15px;
+}
+
+/*  Textos em estado
+======================*/
+/* line 24, ../sass/core/modules/misc/_generic.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 27, ../sass/core/modules/misc/_generic.scss */
+.text-right {
+  text-align: right;
+}
+
+/*  Ícones de comunidades
+=====================================*/
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.community-icons:after, .community-icons:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 6, ../sass/core/modules/elements/_general.scss */
+.community-icons > div {
+  padding-bottom: 1.66666%;
+}
+/* line 10, ../sass/core/modules/elements/_general.scss */
+.community-icons img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 15, ../sass/core/modules/elements/_general.scss */
+.community-icons .community-active {
+  display: block;
+  background: #1A8A43;
+}
+/* line 19, ../sass/core/modules/elements/_general.scss */
+.community-icons .community-disabled {
+  display: block;
+  background: #AAAAAA;
+}
+
+/*  Barra de ferramentas (download/Ler/Citar)
+=====================================*/
+/* line 27, ../sass/core/modules/elements/_general.scss */
+.tool-bar {
+  width: 100%;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.tool-bar:after, .tool-bar:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 31, ../sass/core/modules/elements/_general.scss */
+.tool-bar .tool-align {
+  padding-top: 10px;
+}
+/* line 34, ../sass/core/modules/elements/_general.scss */
+.tool-bar .tool-item {
+  display: block;
+  font-size: 10pt;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 0 10px 25px;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+/* line 43, ../sass/core/modules/elements/_general.scss */
+.tool-bar .tool-item.print {
+  background-image: url("../images/impressora.png");
+  padding-left: 27px;
+}
+/* line 48, ../sass/core/modules/elements/_general.scss */
+.tool-bar .tool-item.metadata {
+  background-image: url("../images/metadados.png");
+}
+/* line 52, ../sass/core/modules/elements/_general.scss */
+.tool-bar .tool-item.document {
+  background-image: url("../images/documento.png");
+}
+
+/*  Colunas utilizaveis em caixas
+=====================================*/
+@media (min-width: 768px) {
+  /* line 4, ../sass/core/helpers/_grid.scss */
+  .mid-12 {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 6, ../sass/core/helpers/_grid.scss */
+  .mid-12.last {
+    width: 100%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 10, ../sass/core/helpers/_grid.scss */
+  .mid-11 {
+    width: 91.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 12, ../sass/core/helpers/_grid.scss */
+  .mid-11.last {
+    width: 91.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 16, ../sass/core/helpers/_grid.scss */
+  .mid-10 {
+    width: 83.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 18, ../sass/core/helpers/_grid.scss */
+  .mid-10.last {
+    width: 83.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 22, ../sass/core/helpers/_grid.scss */
+  .mid-9 {
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 24, ../sass/core/helpers/_grid.scss */
+  .mid-9.last {
+    width: 75%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 28, ../sass/core/helpers/_grid.scss */
+  .mid-8 {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 30, ../sass/core/helpers/_grid.scss */
+  .mid-8.last {
+    width: 66.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 34, ../sass/core/helpers/_grid.scss */
+  .mid-7 {
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 36, ../sass/core/helpers/_grid.scss */
+  .mid-7.last {
+    width: 58.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 40, ../sass/core/helpers/_grid.scss */
+  .mid-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 42, ../sass/core/helpers/_grid.scss */
+  .mid-6.first {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  /* line 47, ../sass/core/helpers/_grid.scss */
+  .mid-6.last {
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 51, ../sass/core/helpers/_grid.scss */
+  .mid-5 {
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 53, ../sass/core/helpers/_grid.scss */
+  .mid-5.last {
+    width: 41.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 57, ../sass/core/helpers/_grid.scss */
+  .mid-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 59, ../sass/core/helpers/_grid.scss */
+  .mid-4.last {
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 63, ../sass/core/helpers/_grid.scss */
+  .mid-3 {
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 65, ../sass/core/helpers/_grid.scss */
+  .mid-3.last {
+    width: 25%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 69, ../sass/core/helpers/_grid.scss */
+  .mid-2 {
+    width: 16.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 71, ../sass/core/helpers/_grid.scss */
+  .mid-2.last {
+    width: 16.66667%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 75, ../sass/core/helpers/_grid.scss */
+  .mid-1 {
+    width: 8.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 77, ../sass/core/helpers/_grid.scss */
+  .mid-1.last {
+    width: 8.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 82, ../sass/core/helpers/_grid.scss */
+  div > .mid-4:nth-child(4n),
+  section > .mid-4:nth-child(4n) {
+    clear: left;
+  }
+}
+@media (max-width: 768px) {
+  /* line 89, ../sass/core/helpers/_grid.scss */
+  div > .xs-6:nth-child(2n) {
+    clear: right;
+  }
+
+  /* line 92, ../sass/core/helpers/_grid.scss */
+  .xs-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 95, ../sass/core/helpers/_grid.scss */
+  .xs-5 {
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 98, ../sass/core/helpers/_grid.scss */
+  .xs-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 101, ../sass/core/helpers/_grid.scss */
+  .xs-3 {
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 104, ../sass/core/helpers/_grid.scss */
+  .xs-2 {
+    width: 16.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 107, ../sass/core/helpers/_grid.scss */
+  .xs-1 {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 2, ../sass/core/containers/_header.scss */
+.magazine {
+  color: #5d5d5d;
+}
+/* line 4, ../sass/core/containers/_header.scss */
+.magazine a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 9, ../sass/core/containers/_header.scss */
+.portal {
+  color: #fff;
+}
+/* line 11, ../sass/core/containers/_header.scss */
+.portal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/core/containers/_header.scss */
+.repositorio {
+  color: #195229;
+}
+/* line 19, ../sass/core/containers/_header.scss */
+.repositorio a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 26, ../sass/core/containers/_header.scss */
+.language-bar {
+  width: 100%;
+  text-align: center;
+  font-size: 10pt;
+}
+@media (min-width: 768px) {
+  /* line 26, ../sass/core/containers/_header.scss */
+  .language-bar {
+    width: 50%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    text-align: right;
+    display: inline-block;
+  }
+}
+
+/* line 39, ../sass/core/containers/_header.scss */
+.accessibility-bar {
+  width: 100%;
+  text-align: center;
+  font-size: 8pt;
+}
+@media (min-width: 768px) {
+  /* line 39, ../sass/core/containers/_header.scss */
+  .accessibility-bar {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+/* line 51, ../sass/core/containers/_header.scss */
+.link-list {
+  display: inline-block;
+  margin: 0 0 0 24px;
+  padding: 0;
+}
+/* line 56, ../sass/core/containers/_header.scss */
+.link-list .item {
+  display: inline-block;
+  margin-left: 13px;
+  margin-right: 0;
+  padding: 0;
+}
+/* line 61, ../sass/core/containers/_header.scss */
+.link-list .item.first {
+  margin: 0;
+}
+/* line 66, ../sass/core/containers/_header.scss */
+.link-list.first {
+  margin: 0;
+}
+
+/*
+Container das redes sociais
+============================*/
+/* line 75, ../sass/core/containers/_header.scss */
+.media-container {
+  margin-top: -20px;
+}
+@media (min-width: 768px) {
+  /* line 75, ../sass/core/containers/_header.scss */
+  .media-container {
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/*  Icones sociais
+===========================*/
+/* line 84, ../sass/core/containers/_header.scss */
+.social {
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: right;
+  background-position: center;
+  background-size: cover;
+}
+
+/*  Icones nas Revistas
+===========================*/
+/* line 97, ../sass/core/containers/_header.scss */
+.facebook {
+  background: url("../images/facebook.png") no-repeat;
+}
+
+/* line 100, ../sass/core/containers/_header.scss */
+.twitter {
+  background: url("../images/twitter.png") no-repeat;
+}
+
+/* line 103, ../sass/core/containers/_header.scss */
+.youtube {
+  background: url("../images/youtube-magazine.png") no-repeat;
+}
+
+/* line 107, ../sass/core/containers/_header.scss */
+.flikr {
+  background: url("../images/flikr-magazine.png") no-repeat;
+}
+
+/*  Icones no Portal
+===========================*/
+/* line 114, ../sass/core/containers/_header.scss */
+.portal .facebook {
+  background: url("../images/facebook-portal.png") no-repeat;
+}
+/* line 117, ../sass/core/containers/_header.scss */
+.portal .twitter {
+  background: url("../images/twitter-portal.png") no-repeat;
+}
+/* line 120, ../sass/core/containers/_header.scss */
+.portal .youtube {
+  background: url("../images/youtube-portal.png") no-repeat;
+}
+/* line 124, ../sass/core/containers/_header.scss */
+.portal .flikr {
+  background: url("../images/flikr-portal.png") no-repeat;
+}
+
+/*  Icones no Repositório
+===========================*/
+/* line 132, ../sass/core/containers/_header.scss */
+.repositorio .facebook {
+  background: url("../images/icons/facebookrepo.png") no-repeat;
+}
+/* line 135, ../sass/core/containers/_header.scss */
+.repositorio .twitter {
+  background: url("../images/icons/twitterrepo.png") no-repeat;
+}
+/* line 138, ../sass/core/containers/_header.scss */
+.repositorio .youtube {
+  background: url("../images/icons/youtuberepo.png") no-repeat;
+}
+/* line 142, ../sass/core/containers/_header.scss */
+.repositorio .feed {
+  background: url("../images/icons/feedrepo.png") no-repeat;
+}
+
+/*Container do header
+============================*/
+/* line 150, ../sass/core/containers/_header.scss */
+.page-header {
+  padding-top: 15px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.page-header:after, .page-header:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 154, ../sass/core/containers/_header.scss */
+.page-header.portal {
+  background: linear-gradient(to top, #00510f, #17882c);
+}
+/* line 158, ../sass/core/containers/_header.scss */
+.page-header.magazine {
+  background: #fff;
+}
+/* line 162, ../sass/core/containers/_header.scss */
+.page-header.repositorio {
+  background: #ECEDF1;
+}
+
+/*  Conteúdo central do header
+============================*/
+/* line 169, ../sass/core/containers/_header.scss */
+.center-content {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+/* line 12, ../../../../../../../usr/local/rvm/gems/ruby-2.2.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.center-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 173, ../sass/core/containers/_header.scss */
+.center-content .header-logo {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  min-height: 90px;
+}
+@media (min-width: 768px) {
+  /* line 173, ../sass/core/containers/_header.scss */
+  .center-content .header-logo {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 183, ../sass/core/containers/_header.scss */
+.header-logo span {
+  font-size: 9pt;
+  text-transform: uppercase;
+}
+/* line 187, ../sass/core/containers/_header.scss */
+.header-logo .page-name {
+  font-size: 36pt;
+  line-height: 36pt;
+  margin: 0;
+}
+/* line 191, ../sass/core/containers/_header.scss */
+.header-logo .page-name.default {
+  line-height: 50pt;
+}
+
+/*  Barra de Login-Logout
+============================*/
+/* line 199, ../sass/core/containers/_header.scss */
+.actions-bar {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  padding: 4px 0;
+  margin-top: 15px;
+  font-size: 9pt;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 199, ../sass/core/containers/_header.scss */
+  .actions-bar {
+    text-align: right;
+  }
+}
+
+/* line 209, ../sass/core/containers/_header.scss */
+.portal .actions-bar {
+  background: #01430c;
+}
+
+/* line 213, ../sass/core/containers/_header.scss */
+.magazine .actions-bar {
+  background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9);
+}
+
+/* line 217, ../sass/core/containers/_header.scss */
+.repositorio .actions-bar {
+  background: linear-gradient(to bottom, #DBDCE1, #DBDCE1 80%, #C4C6C5);
+}
+
+/*  Lista do menu superior (action)
+============================*/
+/* line 223, ../sass/core/containers/_header.scss */
+.actions-bar .list-menu {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: block;
+}
+/* line 229, ../sass/core/containers/_header.scss */
+.actions-bar .list-menu .item {
+  display: inline-block;
+  border-right: 1px solid #C4C6C5;
+  padding: 0 8px;
+}
+/* line 233, ../sass/core/containers/_header.scss */
+.actions-bar .list-menu .item:first-child {
+  padding-left: 0;
+}
+/* line 236, ../sass/core/containers/_header.scss */
+.actions-bar .list-menu .item:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+/* line 1, ../sass/core/containers/_sidebar.scss */
+.page-sidebar {
+  display: none;
+}
+/* line 3, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .sidebar-top {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/core/containers/_sidebar.scss */
+  .page-sidebar {
+    max-width: 220px;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+  }
+}
+
+/* line 14, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box {
+  padding: 0;
+  margin: 0;
+  display: block;
+  margin-bottom: 40px;
+}
+/* line 20, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item {
+  display: block;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6dcd7;
+  font-size: 12pt;
+}
+/* line 27, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item a {
+  display: block;
+  color: #5d5d5d;
+  text-decoration: none;
+}
+/* line 34, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .header {
+  padding-top: 5px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 46, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-home {
+  background: url(../images/icons/home.png);
+}
+/* line 49, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-editions {
+  background: url(../images/icons/editions.png);
+}
+/* line 52, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-search {
+  background: url(../images/icons/search.png);
+}
+/* line 55, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-books {
+  background: url(../images/icons/books.png);
+}
+/* line 58, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-calendar {
+  background: url(../images/icons/calendar.png);
+}
+/* line 61, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-science {
+  background: url(../images/icons/calendar.png);
+}
+/* line 64, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-academic {
+  background: url(../images/icons/calendar.png);
+}
+/* line 67, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-stackedbooks {
+  background: url(../images/icons/stackedbooks.png);
+}
+/* line 71, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-home, .page-sidebar .box .item.i-editions, .page-sidebar .box .item.i-search, .page-sidebar .box .item.i-books, .page-sidebar .box .item.i-calendar, .page-sidebar .box .item.i-science, .page-sidebar .box .item.i-academic, .page-sidebar .box .item.i-stackedbooks {
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  min-height: 36px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*  Caixa central (míolo)
+===============================*/
+@media (min-width: 768px) {
+  /* line 3, ../sass/core/containers/_content.scss */
+  .main-content {
+    width: 75%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 9, ../sass/core/containers/_content.scss */
+  .main-content-block {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 1, ../sass/core/containers/_footer.scss */
+.page-footer {
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  background: #00520f;
+  color: #fff;
+  padding: 10px 0 0 0;
+  margin-top: 30px;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.page-footer:after, .page-footer:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 9, ../sass/core/containers/_footer.scss */
+.page-footer.repositorio {
+  background: #ECEDF1;
+  color: #195229;
+}
+
+/* line 15, ../sass/core/containers/_footer.scss */
+.sub-footer {
+  background: #00420c;
+  padding: 15px 0;
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.sub-footer:after, .sub-footer:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 20, ../sass/core/containers/_footer.scss */
+.sub-footer .left {
+  float: left;
+}
+/* line 24, ../sass/core/containers/_footer.scss */
+.sub-footer .right {
+  float: right;
+}
+
+/* line 29, ../sass/core/containers/_footer.scss */
+.footer-box {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+@media (min-width: 768px) {
+  /* line 29, ../sass/core/containers/_footer.scss */
+  .footer-box {
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    text-align: left;
+  }
+}
+/* line 22, ../sass/core/helpers/_helpers.scss */
+.footer-box:after, .footer-box:before {
+  clear: both;
+  display: table;
+  content: ' ';
+  zoom: 1;
+}
+/* line 39, ../sass/core/containers/_footer.scss */
+.footer-box .title {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 43, ../sass/core/containers/_footer.scss */
+.footer-box .title h4 {
+  margin: 0;
+  padding-top: 0;
+}
+/* line 49, ../sass/core/containers/_footer.scss */
+.footer-box .title,
+.footer-box .item {
+  list-style: none;
+  display: block;
+}
+/* line 54, ../sass/core/containers/_footer.scss */
+.footer-box .title a,
+.footer-box .item a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 57, ../sass/core/containers/_footer.scss */
+.footer-box .title a:hover,
+.footer-box .item a:hover {
+  text-decoration: underline;
+}
+/* line 63, ../sass/core/containers/_footer.scss */
+.footer-box .item {
+  font-size: 9pt;
+  padding-bottom: 5px;
+  display: block;
+}
+/* line 70, ../sass/core/containers/_footer.scss */
+.footer-box .footer-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 21, ../../../../../../../usr/local/rvm/gems/ruby-2.2.0/gems/susy-2.2.5/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/core/_application.scss */
+html, body {
   height: 100%;
+  font-size: 62.5%;
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 17, ../sass/core/_application.scss */
+a {
+  color: #00520f;
+  text-decoration: none;
+}
+/* line 20, ../sass/core/_application.scss */
+a:hover {
+  text-decoration: underline;
 }

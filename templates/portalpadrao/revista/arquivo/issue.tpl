@@ -58,6 +58,7 @@
 				<li class="text-list-item">
 					{if !$hasAccess || $hasAbstract}
 						<a href="{url page="article" op="view" path=$articlePath}">{$article->getLocalizedTitle()|strip_unsafe_html}</a>
+						<a href="{url page="article" op="view" path=$articlePath}" class="file">PDF</a>
 					{else}
 						{$article->getLocalizedTitle()|strip_unsafe_html}
 
