@@ -1841,31 +1841,39 @@ Container das redes sociais
 }
 
 /* line 46, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-home {
+  background: url(../images/icons/home.png);
+}
+/* line 49, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-editions {
+  background: url(../images/icons/editions.png);
+}
+/* line 52, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-search {
   background: url(../images/icons/search.png);
 }
-/* line 49, ../sass/core/containers/_sidebar.scss */
+/* line 55, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-books {
   background: url(../images/icons/books.png);
 }
-/* line 52, ../sass/core/containers/_sidebar.scss */
+/* line 58, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-calendar {
   background: url(../images/icons/calendar.png);
 }
-/* line 55, ../sass/core/containers/_sidebar.scss */
+/* line 61, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-science {
   background: url(../images/icons/calendar.png);
 }
-/* line 58, ../sass/core/containers/_sidebar.scss */
+/* line 64, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-academic {
   background: url(../images/icons/calendar.png);
 }
-/* line 61, ../sass/core/containers/_sidebar.scss */
+/* line 67, ../sass/core/containers/_sidebar.scss */
 .page-sidebar .box .item.i-stackedbooks {
   background: url(../images/icons/stackedbooks.png);
 }
-/* line 65, ../sass/core/containers/_sidebar.scss */
-.page-sidebar .box .item.i-search, .page-sidebar .box .item.i-books, .page-sidebar .box .item.i-calendar, .page-sidebar .box .item.i-science, .page-sidebar .box .item.i-academic, .page-sidebar .box .item.i-stackedbooks {
+/* line 71, ../sass/core/containers/_sidebar.scss */
+.page-sidebar .box .item.i-home, .page-sidebar .box .item.i-editions, .page-sidebar .box .item.i-search, .page-sidebar .box .item.i-books, .page-sidebar .box .item.i-calendar, .page-sidebar .box .item.i-science, .page-sidebar .box .item.i-academic, .page-sidebar .box .item.i-stackedbooks {
   background-repeat: no-repeat;
   background-position: 5px center;
   min-height: 36px;
