@@ -17,6 +17,20 @@
     </ul>
   {/if}
 
+  <!-- Portal -->
+  <ul class="box">
+    <li class="item header">Sobre o Portal</li>
+    <li class="item">
+      <a href="/public/Portaria de Criação do Portal.pdf" target="_blank">Portaria de Criação</a>
+    </li>
+    <li class="item">
+      <a href="/public/Diretrizes Portal Periódicos IFPB.pdf" target="_blank">Diretrizes do Portal</a>
+    </li>
+    <li class="item">
+      <a href="/public/Diretrizes Portal Periódicos IFPB - APẼNDICES.pdf" target="_blank">Normas</a>
+    </li>
+  </ul>
+
   <!-- Usuário -->
   {if $isUserLoggedIn}
   <ul class="box">
@@ -34,20 +48,6 @@
     </li>
   </ul>
   {/if}
-
-  <!-- Portal -->
-  <ul class="box">
-    <li class="item header">Política do Portal</li>
-    <li class="item">
-      <a href="/ojs/index.php/praxis/pages/view/portaria-de-criacao">Portaria de Criação do Portal</a>
-    </li>
-    <li class="item">
-      <a href="#">Diretrizes do Portal</a>
-    </li>
-    <li class="item">
-      <a href="#">Normas</a>
-    </li>
-  </ul>
 
   <!-- Links uteis -->
   <ul class="box">
