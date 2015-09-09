@@ -11,7 +11,7 @@
         <img class="image-responsible" src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
       </div>
     {/if}
-    <div id="issueDescription">{$issue->getLocalizedDescription()|nl2br}</div>
+    <div id="issueDescription" class="text-box-section"><p>{$journalDescription|nl2br}</p></div>
     </a>
     <div class="footer-box">
       <div class="footer-content">

@@ -35,11 +35,10 @@
             </li>
           </ul>
           <ul class="footer-box">
-            <li class="title"><h4>Sobre</h4></li>
-            <li class="item"><a href="">Regimento</a></li>
-            <li class="item"><a href="">Saiba como publicar</a></li>
-            <li class="item"><a href="">Inscrição de Artigo</a></li>
-            
+            <li class="title"><h4>Sobre o Portal</h4></li>
+            <li class="item"><a href="/public/Portaria de Criação do Portal.pdf" target="_blank">Portaria de Criação</a></li>
+            <li class="item"><a href="/public/Diretrizes Portal Periódicos IFPB.pdf" target="_blank">Diretrizes do Portal</a></li>
+            <li class="item"><a href="/public/Diretrizes Portal Periódicos IFPB - APẼNDICES.pdf" target="_blank">Normas</a></li>
           </ul>
 
           <ul class="footer-box">

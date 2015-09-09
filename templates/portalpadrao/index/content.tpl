@@ -20,7 +20,7 @@
           <div class="slide-content">
             <div class="fotorama" data-autoplay="true" data-arrows="true" data-navwidth="15%" data-max-width="100%">
             {foreach from=$slideItems key=key item=item}
-              <div data-img="{$item.imagem}" data-caption="Bem vindo ao portal de periódicos do IFPB">
+              <div data-img="{$item.imagem}" data-caption="">
                 <a href="{$item.link}"></a>
               </div>
             {/foreach}

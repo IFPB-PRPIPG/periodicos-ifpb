@@ -21,7 +21,7 @@
     </div>
   <div class="footer-box">
     <div class="footer-content">
-      <a href="index.php/index/announcement/last">Mais notícias</a>
+      <a href="announcement/last">Mais notícias</a>
     </div>
   </div>
 </div>
