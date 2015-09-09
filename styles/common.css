@@ -208,6 +208,10 @@ table.announcementsMore td {
 	padding: 5px 0;
 }
 
+.tocPages {
+    font-size: 11px;
+}
+
 .tocArticleCoverImage {
 	display:none;
 }
