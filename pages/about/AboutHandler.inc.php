@@ -168,7 +168,7 @@ class AboutHandler extends Handler {
 			$templateMgr->assign_by_ref('layoutEditors', $layoutEditors);
 			$templateMgr->assign_by_ref('copyEditors', $copyEditors);
 			$templateMgr->assign_by_ref('proofreaders', $proofreaders);
-			// $templateMgr->display('about/editorialTeam.tpl');
+			//$templateMgr->display('about/editorialTeam.tpl');
 		} else {
 			// The Editorial Team feature has been enabled.
 			// Generate information using Group data.

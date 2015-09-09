@@ -11,6 +11,23 @@
 <div class="text-box-section border-box">
 		<h3 class="text-box-title large-size border-title-light">Equipe Editorial</h3>
     <!-- editores -->
+
+      {foreach from=$groups item=group}
+      <div id="group">
+        <h4>{$group->getLocalizedTitle()}</h4>
+        {assign var=groupId value=$group->getId()}
+        {assign var=members value=$teamInfo[$groupId]}
+
+        <ol class="editorialTeam">
+          {foreach from=$members item=member}
+            {assign var=user value=$member->getUser()}
+            <div class="member"><li><a href="javascript:openRTWindow('{url op="editorialTeamBio" path=$user->getId()}')">{$user->getFullName()|escape}</a>{if $user->getLocalizedAffiliation()}, {$user->getLocalizedAffiliation()|escape}{/if}{if $user->getCountry()}{assign var=countryCode value=$user->getCountry()}{assign var=country value=$countries.$countryCode}, {$country|escape}{/if}</li></div>
+          {/foreach}{* $members *}
+        </ol>
+      </div>
+      {/foreach}{* $groups *}
+
+
     {if count($editors) > 0}
   		<ul class="text-list">
   			{if count($editors) == 1}
@@ -23,7 +40,11 @@
           </li>			
   			{/if}
         {foreach from=$editors item=editor}
-  			<li class="text-list-item">{$editor->getFullName()|escape}</li>
+  			<li class="text-list-item"><a href="">{$editor->getFullName()|escape}</a>
+        
+        {$affiliation[$formLocale]|escape}
+        
+        </li>
         {/foreach}
   		</ul>
 		{/if}
