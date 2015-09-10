@@ -65,7 +65,7 @@
       <h3 class="text-box-title border-title-light">
         {translate key="article.abstract"}
       </h3>
-		<p>
+		<p style="text-align:justify;">
       {$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
     </p>
 	</div>

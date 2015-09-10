@@ -62,7 +62,7 @@
     <li class="item header">Usuário</li>
     {if $hasOtherJournals}
       <li class="item">
-        <a href="{url journal="index" page="user"}">{translate key="plugins.block.user.myJournals"}</a>
+        <a href="{url journal="index" page="user"}">{translate key="navigation.userHome"}</a>
       </li>
     {/if}
     <li class="item">
