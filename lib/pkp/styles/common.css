@@ -26,6 +26,10 @@ div {
 	text-align: left;
 }
 
+div.footer-content{	/* Conflito com CSS do Portal */
+	text-align: right;
+}
+
 p {
 	margin: 1em 0; /* Making default stylesheet explicit - fixes IE7 margin collapsing. */
 }
