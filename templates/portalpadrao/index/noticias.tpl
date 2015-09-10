@@ -12,7 +12,7 @@
           <a href="{url page="announcement" op="show" path=$announcement->getId()}">
           {/if}
             <h3>{$announcement->getLocalizedTitle()|escape}</h3>
-            <p>{$announcement->getLocalizedDescriptionShort()|nl2br}</p>
+            <p>{$announcement->getLocalizedDescriptionShort()|strip_tags|nl2br|truncate:250}</p>
           {if $announcement->getLocalizedDescription() != null}
           </a>
           {/if}
