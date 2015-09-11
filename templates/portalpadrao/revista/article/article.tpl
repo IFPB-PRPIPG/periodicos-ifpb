@@ -68,19 +68,19 @@
 			
 		{foreach from=$article->getAuthors() item=author name=authors}
 		<div class="authorBio">
-		<p>
+		
 			<!--<em>{$author->getFullName()|escape}</em>-->
 			{if $author->getData('orcid')}<a href="{$author->getData('orcid')|escape}" target="_blank">{translate key="user.orcid"}</a>{/if}
 			{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a>{/if}
 			{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
 			{if $authorAffiliation}{$authorAffiliation|escape}{/if}
 			{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
-		</p>
+		
 
 		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}
 		</div>
-			
-
+			<!--{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
+			-->
 		{/foreach}
 		</div>
 
