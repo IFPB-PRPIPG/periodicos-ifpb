@@ -32,22 +32,22 @@
  * Common HTML elements
  */
 
-a:link {
+/*a:link {	// Conflito com o CSS do Portal
 	color: #375;
-}
+}*/
 
-a:active {
+/*a:active {
 	color: #253;
-}
+}*/
 
-a:visited {
+/*a:visited {	// Conflito com o CSS do Portal
 	color: #375;
-}
+}*/
 
-a:hover {
+/*a:hover {
 	color: #253;
 	background: #CDC;
-}
+}*/
 
 
 /**

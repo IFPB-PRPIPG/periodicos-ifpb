@@ -12,7 +12,7 @@
           <a href="{url page="announcement" op="show" path=$announcement->getId()}">
           {/if}
             <h3>{$announcement->getLocalizedTitle()|escape}</h3>
-            <p>{$announcement->getLocalizedDescriptionShort()|nl2br}</p>
+            <p>{$announcement->getLocalizedDescriptionShort()|strip_tags|nl2br|truncate:250}</p>
           {if $announcement->getLocalizedDescription() != null}
           </a>
           {/if}
@@ -21,7 +21,7 @@
     </div>
   <div class="footer-box">
     <div class="footer-content">
-      <a href="index.php/index/announcement/last">Mais notícias</a>
+      <a href="announcement/last">Mais notícias</a>
     </div>
   </div>
 </div>

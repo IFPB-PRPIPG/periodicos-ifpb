@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Portal de Revistas Eletrônicas do IFPB</title>
+  <title>Portal de Periódicos Eletrônicos do IFPB</title>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <link rel="stylesheet" href="{$baseUrl}/templates/portalpadrao/assets/stylesheet/style.css">

@@ -17,7 +17,7 @@
       {/if}
       {if $site->getSetting('showDescription')}
         {if $journal->getLocalizedDescription()}
-        <p>{$journal->getLocalizedDescription()|strip_tags|nl2br|truncate:150}</p>
+        <p>{$journal->getLocalizedDescription()|strip_tags|nl2br|truncate:200}</p>
         {/if}
       {/if}
     </a>

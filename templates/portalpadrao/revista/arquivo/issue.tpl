@@ -5,7 +5,7 @@
 <h2 class="header-title large-size border-title-light">Editorial</h2>
 
 <!-- Section para ser utilizada como sub section em páginas de texto -->
-<div class="text-box-content border-box">
+<div class="text-box-content">
 
 {if $issue}
 	{if $issueId}
