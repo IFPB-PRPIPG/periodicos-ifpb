@@ -65,7 +65,7 @@
 	<h4 class="header-subtitle border-box">
 	  	
 		<div class="block" id="sidebarRTAuthorBios">
-			
+		<div>
 		{foreach from=$article->getAuthors() item=author name=authors}
 		<div class="authorBio">
 		
@@ -80,7 +80,7 @@
 		-->
 
 		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br},
-		</div>
+		</div></div>
 			<!--{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
 			-->
 		{/foreach}
