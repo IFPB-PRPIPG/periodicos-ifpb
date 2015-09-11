@@ -4,7 +4,7 @@
     	<img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
 	</a>
 
-	<h2 class="header-title large-size border-title-light">Publicações</h2>
+	<h2 class="header-title large-size border-title-light">{translate key="issue.issues"}</h2>
 
 	{iterate from=issues item=issue}
 		{if $issue->getYear() != $lastYear}
@@ -31,7 +31,7 @@
           <img src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $issue->getCoverPageAltText($locale) != ''} alt="{$issue->getCoverPageAltText($locale)|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
         {/if}
         </div>
-        <div class="text mid-8">
+        <div class="text mid-8" style="text-align:justify;">
           <h4 class="title">
           	<a class="title" href="{url op="view" path=$issue->getBestIssueId($currentJournal)}">{$issue->getIssueIdentification()|escape}</a>
           </h4>

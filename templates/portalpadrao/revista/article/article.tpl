@@ -67,7 +67,7 @@
 		<div class="block" id="sidebarRTAuthorBios">
 		<div>
 		{foreach from=$article->getAuthors() item=author name=authors}
-		<div class="authorBio">
+		<span class="authorBio">
 		
 			<!--<em>{$author->getFullName()|escape}</em>
 			{if $author->getData('orcid')}<a href="{$author->getData('orcid')|escape}" target="_blank">{translate key="user.orcid"}</a>{/if}
@@ -79,8 +79,8 @@
 			{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
 		-->
 
-		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br},
-		</div>
+		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}
+		</span>
 			<!--{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
 			-->
 		{/foreach}</div>
@@ -93,7 +93,7 @@
       <h3 class="text-box-title border-title-light">
         {translate key="article.abstract"}
       </h3>
-		<p>
+		<p style="text-align:justify;">
       {$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
     </p>
 	</div>
@@ -103,7 +103,7 @@
 		<div id="articleSubject">
 		<h4>{translate key="article.subject"}</h4>
 		<br />
-		<div>{$article->getLocalizedSubject()|escape}</div>
+		<div><p style="text-align:justify;">{$article->getLocalizedSubject()|escape}</p></div>
 		<br />
 		</div>
 	{/if}

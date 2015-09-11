@@ -5,7 +5,7 @@
 <h2 class="header-title large-size border-title-light">Editorial</h2>
 
 <!-- Section para ser utilizada como sub section em páginas de texto -->
-<div class="text-box-content">
+<div class="text-box-content" style="text-align:justify;">
 
 {if $issue}
 	{if $issueId}
@@ -14,7 +14,7 @@
 		{url|assign:"currentUrl" page="issue" op="current" path="showToc"}
 	{/if}
 
-	{if $coverPagePath}
+	{if $coverPagePath} <!-- && !$issue->getHideCoverPageCover($locale) -->
 	<div class="xs-1 mid-6">
 		<img class="image-responsible" src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
 	{/if}

@@ -1,4 +1,4 @@
-{strip}
+ {strip}
 {assign var="helpTopicId" value="user.registerAndProfile"}
 {assign var="registerOp" value="register"}
 {assign var="registerLocaleKey" value="user.login.registerNewAccount"}
@@ -22,6 +22,21 @@
 
       <p>O cadastro no sistema e posterior acesso são obrigatórios para a publicação de trabalhos, bem como para acompanhar o processo editorial em curso. Caso não tenha cadastrado, preencha o formulário para se cadastrar no sistema e submeter trabalhos.</p>
     </div>
+	<div class="content-box mid-4" style="float:right;">
+	  <div class="header-box default">Tenho cadastro</div>
+	  <form action="{$userBlockLoginUrl}" method="post" class="form-control-default">
+	    <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
+	    <fieldset>
+	      <legend>Acesso do usuário</legend>
+	      <label for="login-sub" class="label-control">{translate key="user.username"}</label>
+	      <input type="text" id="login-sub" class="input-control" name="username">
+	      <label for="password-sub" class="label-control">{translate key="user.password"}</label>
+	      <input type="password" id="password-sub" class="input-control" name="password" value="{$password|escape}">
+	    </fieldset>
+	    <button class="btn-submit">Acessar</button>
+	  </form>
+	</div>
+
 	<div class="content-box mid-8">
 		<div class="header-box default">Não tenho cadastro</div>
 			<form class="form-control" id="registerForm" method="post" action="{url page="user" op="registerUser"}">
@@ -273,18 +288,4 @@
 			</form>
 </div> <!-- fecha a div do form -->
 
-<div class="content-box mid-4">
-  <div class="header-box default">Tenho cadastro</div>
-  <form action="{$userBlockLoginUrl}" method="post" class="form-control-default">
-    <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
-    <fieldset>
-      <legend>Acesso do usuário</legend>
-      <label for="login-sub" class="label-control">{translate key="user.username"}</label>
-      <input type="text" id="login-sub" class="input-control" name="username">
-      <label for="password-sub" class="label-control">{translate key="user.password"}</label>
-      <input type="password" id="password-sub" class="input-control" name="password" value="{$password|escape}">
-    </fieldset>
-    <button class="btn-submit">Acessar</button>
-  </form>
-</div>
 {/if}

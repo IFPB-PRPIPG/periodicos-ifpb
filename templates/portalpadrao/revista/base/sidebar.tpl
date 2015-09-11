@@ -12,7 +12,7 @@
       <a href="{url page="index"}">{translate key="navigation.home"}</a>
     </li>
     <li class="item i-editions">
-      <a href="{url page="issue" op="archive"}">{translate key="navigation.archives"}</a>
+      <a href="{url page="issue" op="archive"}">{translate key="issue.issues"}</a>
     </li>
     <li class="item i-search">
       <a href="{url page="search"}">{translate key="navigation.search"}</a>
