@@ -74,8 +74,9 @@
 			{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a>{/if}
 			{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
 			{if $authorAffiliation}{$authorAffiliation|escape}{/if}
+			<!--
 			{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
-		
+		-->
 
 		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}
 		</div>
