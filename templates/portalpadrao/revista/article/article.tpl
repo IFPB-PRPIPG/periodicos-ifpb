@@ -79,7 +79,7 @@
 
 		<p>{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}</p>
 		</div>
-			{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
+			{if !$smarty.foreach.authors.last}{/if}
 
 		{/foreach}
 		</div>
