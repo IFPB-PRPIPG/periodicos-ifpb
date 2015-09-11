@@ -56,20 +56,42 @@
   <h2 class="header-title border-title-light mid-size">
     {$article->getLocalizedTitle()|strip_unsafe_html}
   </h2>
-  <h4 class="header-subtitle border-box">
-    {$article->getAuthorString()|escape}
-  </h4>
+	  <h4 id="name-autor">
+	  		{$article->getAuthorString()|escape}
+	  		<div class="separator"></div>
+	  </h4>
+
   <!-- exibição da(s) instituição(ões) do(s) autor(es)-->
-  <h4 class="header-subtitle border-box">
-  	instituicao
-  </h4>
+	<h4 class="header-subtitle border-box">
+	  	
+		<div class="block" id="sidebarRTAuthorBios">
+			
+		{foreach from=$article->getAuthors() item=author name=authors}
+		<div class="authorBio">
+		<p>
+			<!--<em>{$author->getFullName()|escape}</em>--><br />
+			{if $author->getData('orcid')}<a href="{$author->getData('orcid')|escape}" target="_blank">{translate key="user.orcid"}</a>{/if}
+			{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a><br/>{/if}
+			{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
+			{if $authorAffiliation}{$authorAffiliation|escape}{/if}
+			{if $author->getCountry()}<br/>{$author->getCountryLocalized()|escape}{/if}
+		</p>
+
+		<p>{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}</p>
+		</div>
+			{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
+
+		{/foreach}
+		</div>
+
+	</h4>
 	
 	{if $article->getLocalizedAbstract()}
     <div class="text-box-content border-box">
       <h3 class="text-box-title border-title-light">
         {translate key="article.abstract"}
       </h3>
-		<p style="text-align:justify;">
+		<p>
       {$article->getLocalizedAbstract()|strip_unsafe_html|nl2br}
     </p>
 	</div>
