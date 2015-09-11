@@ -59,6 +59,10 @@
   <h4 class="header-subtitle border-box">
     {$article->getAuthorString()|escape}
   </h4>
+  <!-- exibição da(s) instituição(ões) do(s) autor(es)-->
+  <h4 class="header-subtitle border-box">
+  	instituicao
+  </h4>
 	
 	{if $article->getLocalizedAbstract()}
     <div class="text-box-content border-box">
