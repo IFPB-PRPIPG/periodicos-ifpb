@@ -1744,6 +1744,7 @@ Container das redes sociais
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   padding: 4px 0;
+  float: right;
   margin-top: 15px;
   font-size: 9pt;
   text-align: center;
@@ -1754,42 +1755,46 @@ Container das redes sociais
     text-align: right;
   }
 }
-
 /* line 209, ../sass/core/containers/_header.scss */
+.actions-bar .content-container {
+  text-align: right;
+}
+
+/* line 213, ../sass/core/containers/_header.scss */
 .portal .actions-bar {
   background: #01430c;
 }
 
-/* line 213, ../sass/core/containers/_header.scss */
+/* line 217, ../sass/core/containers/_header.scss */
 .magazine .actions-bar {
   background-image: linear-gradient(to bottom, #e8e8ea, #cfcec9);
 }
 
-/* line 217, ../sass/core/containers/_header.scss */
+/* line 221, ../sass/core/containers/_header.scss */
 .repositorio .actions-bar {
   background: linear-gradient(to bottom, #DBDCE1, #DBDCE1 80%, #C4C6C5);
 }
 
 /*  Lista do menu superior (action)
 ============================*/
-/* line 223, ../sass/core/containers/_header.scss */
+/* line 227, ../sass/core/containers/_header.scss */
 .actions-bar .list-menu {
   padding: 0;
   margin: 0;
   text-align: left;
   display: block;
 }
-/* line 229, ../sass/core/containers/_header.scss */
+/* line 233, ../sass/core/containers/_header.scss */
 .actions-bar .list-menu .item {
   display: inline-block;
   border-right: 1px solid #C4C6C5;
   padding: 0 8px;
 }
-/* line 233, ../sass/core/containers/_header.scss */
+/* line 237, ../sass/core/containers/_header.scss */
 .actions-bar .list-menu .item:first-child {
   padding-left: 0;
 }
-/* line 236, ../sass/core/containers/_header.scss */
+/* line 240, ../sass/core/containers/_header.scss */
 .actions-bar .list-menu .item:last-child {
   border: 0;
   padding-right: 0;
