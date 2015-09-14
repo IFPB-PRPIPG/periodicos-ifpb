@@ -16,7 +16,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #FBFBF3;
+	background-color: #FFF;
 	color: #111;
 	font-family: Verdana,Arial,Helvetica,sans-serif;
 	text-align: center;
@@ -88,7 +88,7 @@ input.button {
 
 input.defaultButton {
 	background-color: #375;
-	color: #FBFBF3;
+	color: #FFF;
 	font-weight: bold;
 }
 
