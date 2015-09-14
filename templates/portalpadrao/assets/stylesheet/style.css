@@ -557,7 +557,11 @@
   border-color: #a41e22;
   color: #a41e22;
 }
-/* line 97, ../sass/core/modules/reusable/_boxes.scss */
+/* line 96, ../sass/core/modules/reusable/_boxes.scss */
+.content-box span {
+  font-size: 11pt;
+}
+/* line 99, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box {
   width: 100%;
   float: left;
@@ -568,48 +572,48 @@
   padding: 10px;
   margin-top: 20px;
 }
-/* line 105, ../sass/core/modules/reusable/_boxes.scss */
+/* line 107, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box.alert {
   border-color: #a41e22;
   padding: 0;
 }
-/* line 110, ../sass/core/modules/reusable/_boxes.scss */
+/* line 112, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box a {
   color: inherit;
   text-decoration: none;
   display: block;
   padding-right: 20px;
 }
-/* line 116, ../sass/core/modules/reusable/_boxes.scss */
+/* line 118, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-content {
   background: url("../images/footer-seta.png") no-repeat;
   background-position: right;
   padding: 5px;
 }
-/* line 121, ../sass/core/modules/reusable/_boxes.scss */
+/* line 123, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-pagination {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-/* line 125, ../sass/core/modules/reusable/_boxes.scss */
+/* line 127, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-pagination .item {
   display: inline-block;
   margin: 0 8px;
 }
-/* line 128, ../sass/core/modules/reusable/_boxes.scss */
+/* line 130, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-pagination .item a {
   padding: 0;
   text-decoration: underline;
 }
-/* line 132, ../sass/core/modules/reusable/_boxes.scss */
+/* line 134, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-pagination .item .first {
   padding-left: 25px;
   background: url("../images/footer-seta.png") no-repeat;
   background-position: left center;
   text-decoration: none;
 }
-/* line 138, ../sass/core/modules/reusable/_boxes.scss */
+/* line 140, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .footer-box .footer-pagination .item .last {
   padding-right: 25px;
   background: url("../images/footer-seta.png") no-repeat;
@@ -619,29 +623,29 @@
 
 /*  Estilo da caixa de conteúdo
 =====================================*/
-/* line 151, ../sass/core/modules/reusable/_boxes.scss */
+/* line 153, ../sass/core/modules/reusable/_boxes.scss */
 .content-box {
   color: #172938;
 }
-/* line 152, ../sass/core/modules/reusable/_boxes.scss */
+/* line 154, ../sass/core/modules/reusable/_boxes.scss */
 .content-box h3 {
   font-size: 14pt;
 }
-/* line 155, ../sass/core/modules/reusable/_boxes.scss */
+/* line 157, ../sass/core/modules/reusable/_boxes.scss */
 .content-box p {
   font-size: 11pt;
   word-wrap: break-word;
 }
-/* line 159, ../sass/core/modules/reusable/_boxes.scss */
+/* line 161, ../sass/core/modules/reusable/_boxes.scss */
 .content-box a {
   color: #172938;
   text-decoration: none;
 }
-/* line 162, ../sass/core/modules/reusable/_boxes.scss */
+/* line 164, ../sass/core/modules/reusable/_boxes.scss */
 .content-box a:hover {
   text-decoration: none;
 }
-/* line 167, ../sass/core/modules/reusable/_boxes.scss */
+/* line 169, ../sass/core/modules/reusable/_boxes.scss */
 .content-box .small-type {
   color: #00520f;
   font-size: 9pt;
@@ -650,7 +654,7 @@
 
 /*  Caixa default reutilizavel
 =====================================*/
-/* line 178, ../sass/core/modules/reusable/_boxes.scss */
+/* line 180, ../sass/core/modules/reusable/_boxes.scss */
 .default-box {
   font-size: 11pt;
   color: #454545;
@@ -665,15 +669,15 @@
   content: ' ';
   zoom: 1;
 }
-/* line 186, ../sass/core/modules/reusable/_boxes.scss */
+/* line 188, ../sass/core/modules/reusable/_boxes.scss */
 .default-box a {
   color: #454545;
 }
-/* line 190, ../sass/core/modules/reusable/_boxes.scss */
+/* line 192, ../sass/core/modules/reusable/_boxes.scss */
 .default-box .text-right {
   text-align: right;
 }
-/* line 194, ../sass/core/modules/reusable/_boxes.scss */
+/* line 196, ../sass/core/modules/reusable/_boxes.scss */
 .default-box .header-box {
   width: 100%;
   display: block;
@@ -685,7 +689,7 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
-/* line 207, ../sass/core/modules/reusable/_boxes.scss */
+/* line 209, ../sass/core/modules/reusable/_boxes.scss */
 .default-box .footer-box {
   width: 100%;
   padding-top: 10px;
@@ -693,22 +697,22 @@
   background: #edeff1;
   border-top: 1px solid #d6dcd7;
 }
-/* line 213, ../sass/core/modules/reusable/_boxes.scss */
+/* line 215, ../sass/core/modules/reusable/_boxes.scss */
 .default-box .footer-box .footer-title {
   font-size: 11pt;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 220, ../sass/core/modules/reusable/_boxes.scss */
+/* line 222, ../sass/core/modules/reusable/_boxes.scss */
 .default-box fieldset {
   background: #edeff1;
   padding: 5px 15px !important;
 }
-/* line 224, ../sass/core/modules/reusable/_boxes.scss */
+/* line 226, ../sass/core/modules/reusable/_boxes.scss */
 .default-box fieldset input[type='checkbox'] {
   margin: 5px 5px 5px 0;
 }
-/* line 228, ../sass/core/modules/reusable/_boxes.scss */
+/* line 230, ../sass/core/modules/reusable/_boxes.scss */
 .default-box fieldset .label-header {
   font-weight: bold;
 }
