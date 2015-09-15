@@ -53,7 +53,7 @@
   <ul class="box">
     <li class="item header">Links Úteis</li>
     <li class="item">
-      <a href="http://www.ifpb.edu.br">Portal IPFB</a>
+      <a href="http://www.ifpb.edu.br">Portal IFPB</a>
     </li>
     <li class="item">
       <a href="http://repositorio.ifpb.edu.br">Repositório Digital</a>
