@@ -17,8 +17,8 @@
 	{if $coverPagePath && !$issue->getHideCoverPageCover($locale)}
 	<div class="xs-1 mid-6">
 		<img class="image-responsible" src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
-	{/if}
 	</div>
+	{/if}
 {/if}
   <p>{$issue->getLocalizedDescription()|strip_unsafe_html}</p>
 </div>
