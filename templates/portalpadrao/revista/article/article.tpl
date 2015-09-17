@@ -56,37 +56,41 @@
   <h2 class="header-title border-title-light mid-size">
     {$article->getLocalizedTitle()|strip_unsafe_html}
   </h2>
-	  <h4 id="name-autor">
-	  		{$article->getAuthorString()|escape}
-	  		<div class="separator"></div>
-	  </h4>
+	  
+	  		
+			{**	{$article->getAuthorString()|escape} *}
+			<!-- Exibição dos autores e respectivas instituições-->
+				<div class="block" id="sidebarRTAuthorBios">
+					<span class="blockTitle">
+						{**
+						{if count($article->getAuthors()) gt 1}
+							{translate key="plugins.block.authorBios.aboutTheAuthors"}
+						{else}
+							{translate key="plugins.block.authorBios.aboutTheAuthor"}
+						{/if} *}
+					</span>
+						{foreach from=$article->getAuthors() item=author name=authors}
+						<div class="authorBio">
+						
+							<h4 id="name-autor" class="_nome-autor">
+							<em>{$author->getFullName()|escape}</em>
+							</h4>
+							{if $author->getData('orcid')}<a href="{$author->getData('orcid')|escape}" target="_blank">{translate key="user.orcid"}</a>{/if}
+							{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a>{/if}
+							{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
+							{if $authorAffiliation}{$authorAffiliation|escape}{/if}
+							{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
+						
 
-  <!-- exibição da(s) instituição(ões) do(s) autor(es)-->
-	<h4 class="header-subtitle border-box">
-	  	
-		<div class="block" id="sidebarRTAuthorBios">
-		<div>
-		{foreach from=$article->getAuthors() item=author name=authors}
-		<span class="authorBio">
-		
-			<!--<em>{$author->getFullName()|escape}</em>
-			{if $author->getData('orcid')}<a href="{$author->getData('orcid')|escape}" target="_blank">{translate key="user.orcid"}</a>{/if}
-			{if $author->getUrl()}<a href="{$author->getUrl()|escape:"quotes"}">{$author->getUrl()|escape}</a>
-			{/if}-->
-			{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
-			{if $authorAffiliation}{$authorAffiliation|escape}{/if}
-			<!--
-			{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
-		-->
+						<p>{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}</p>
+						</div>
+						{if !$smarty.foreach.authors.last}<!--<div class="separator"></div>-->{/if}
 
-		{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}
-		</span>
-			<!--{if !$smarty.foreach.authors.last}<div class="separator"></div>{/if}
-			-->
-		{/foreach}</div>
-		</div>
+						{/foreach}
+				</div>
 
-	</h4>
+
+	<h4 class="header-subtitle border-box"></h4>
 	
 	{if $article->getLocalizedAbstract()}
     <div class="text-box-content border-box">

@@ -2057,3 +2057,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
+._nome-autor {
+  margin: 1px;
+}
