@@ -2,29 +2,28 @@
 	<a href="{url journal="index" page="index"}">
       <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
     </a>
-<h2 class="header-title large-size border-title-light">Editorial</h2>
+{if $issue->getLocalizedDescription()}
+	<h2 class="header-title large-size border-title-light">Editorial</h2>
+	<!-- Section para ser utilizada como sub section em páginas de texto -->
+	<div class="text-box-content" style="text-align:justify;">
+	{if $issue}
+		{if $issueId}
+			{url|assign:"currentUrl" page="issue" op="view" path=$issueId|to_array:"showToc"}
+		{else}
+			{url|assign:"currentUrl" page="issue" op="current" path="showToc"}
+		{/if}
 
-<!-- Section para ser utilizada como sub section em páginas de texto -->
-<div class="text-box-content" style="text-align:justify;">
-
-{if $issue}
-	{if $issueId}
-		{url|assign:"currentUrl" page="issue" op="view" path=$issueId|to_array:"showToc"}
-	{else}
-		{url|assign:"currentUrl" page="issue" op="current" path="showToc"}
+		{if $coverPagePath && !$issue->getHideCoverPageCover($locale)}
+		<div class="xs-1 mid-6">
+			<img class="image-responsible" src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
+		</div>
+		{/if}
 	{/if}
-
-	{if $coverPagePath && !$issue->getHideCoverPageCover($locale)}
-	<div class="xs-1 mid-6">
-		<img class="image-responsible" src="{$coverPagePath|escape}{$issue->getFileName($locale)|escape}"{if $coverPageAltText != ''} alt="{$coverPageAltText|escape}"{else} alt="{translate key="issue.coverPage.altText"}"{/if}/>
+	  <p>{$issue->getLocalizedDescription()|strip_unsafe_html}</p>
 	</div>
-	{/if}
 {/if}
-  <p>{$issue->getLocalizedDescription()|strip_unsafe_html}</p>
-</div>
-
 <div class="text-box-content">
-  <h3 class="text-box-title large-size border-title-light">{translate key="issue.toc"}</h3>
+  <h2 class="header-title large-size border-title-light">{translate key="issue.toc"}</h2>
 
 {foreach name=sections from=$publishedArticles item=section key=sectionId}
 {if $section.title}<h4 class="tocSectionTitle">{$section.title|escape}</h4>{/if}
