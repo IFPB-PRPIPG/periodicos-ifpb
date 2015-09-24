@@ -2,10 +2,10 @@
   <a href="{url journal="index" page="index"}">
       <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
     </a>
-	<h2 class="header-title large-size">{$journalTitle}</h2>
+	<h2 class="header-title large-size">{translate key="about.focusAndScope"}</h2>
 	<!-- Section Utilizada para descrição -->
-	<div class="text-box-section border-box">
-		<p>{$journalDescription}</p>
+	<div class="text-box-section border-box" style="text-align:justify;">
+		<p>{$currentJournal->getLocalizedSetting('focusScopeDesc')|strip_unsafe_html|nl2br}</p>
 	</div>
 
 <div class="text-box-section border-box">
