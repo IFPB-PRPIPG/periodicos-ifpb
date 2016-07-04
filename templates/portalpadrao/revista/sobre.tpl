@@ -55,7 +55,8 @@
 
   {foreach key=key from=$currentJournal->getLocalizedSetting('customAboutItems') item=customAboutItem name=customAboutItems}
     {if !empty($customAboutItem.title)}
-      <div class="text-box-section border-box"><h2 class="header-title large-size border-title-light">{$customAboutItem.title|escape}</h2>
+      <div class="text-box-section border-box">
+        <h2 class="header-title large-size border-title-light" id="item-{$key}">{$customAboutItem.title|escape}</h2>
         <p>{$customAboutItem.content|nl2br}</p>
       </div>
     {/if}
