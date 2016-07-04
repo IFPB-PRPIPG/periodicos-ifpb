@@ -94,6 +94,14 @@ class LoginHandler extends PKPLoginHandler {
 	 * @param $request PKPRequest
 	 */
 	function _getLoginUrl($request) {
+		$templateMgr =& TemplateManager::getManager();
+
+		// Adicionadas opções sobre sexo e país na página de login
+		$countryDao =& DAORegistry::getDAO('CountryDAO');
+		$countries =& $countryDao->getCountries();
+		$templateMgr->assign_by_ref('countries', $countries);
+		$userDao =& DAORegistry::getDAO('UserDAO');
+		$templateMgr->assign('genderOptions', $userDao->getGenderOptions());
 		return $request->url(null, 'login', 'signIn');
 	}
 
