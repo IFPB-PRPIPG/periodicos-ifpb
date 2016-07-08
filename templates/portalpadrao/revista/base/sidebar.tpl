@@ -53,13 +53,15 @@
     </li>
     <li class="item"><a href="{url page="about"}">{translate key="about.editorialTeam"}</a></li>    
     <!-- Mostra itens adicionados a política da revista -->
-    {foreach key=key from=$currentJournal->getLocalizedSetting('customAboutItems') item=customAboutItem name=customAboutItems}
-      {if !empty($customAboutItem.title)}
-        <li class="item">
-          <a href="{url page="about"}/#item-{$key}">{$customAboutItem.title|nl2br}</a>
-        </li>
-      {/if}
-    {/foreach}
+    {if $currentJournal}
+      {foreach key=key from=$currentJournal->getLocalizedSetting('customAboutItems') item=customAboutItem name=customAboutItems}
+        {if !empty($customAboutItem.title)}
+          <li class="item">
+            <a href="{url page="about"}/#item-{$key}">{$customAboutItem.title|nl2br}</a>
+          </li>
+        {/if}
+      {/foreach}
+    {/if}
     {if not (empty($journalSettings.mailingAddress) && empty($journalSettings.contactName) && empty($journalSettings.contactAffiliation) && empty($journalSettings.contactMailingAddress) && empty($journalSettings.contactPhone) && empty($journalSettings.contactFax) && empty($journalSettings.contactEmail) && empty($journalSettings.supportName) && empty($journalSettings.supportPhone) && empty($journalSettings.supportEmail))}
       <li class="item"><a href="{url page="about"}">{translate key="about.contact"}</a></li>
     {/if}
