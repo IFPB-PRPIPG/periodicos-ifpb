@@ -34,7 +34,7 @@
 	<tr>
 		<td colspan="8" class="headseparator">&nbsp;</td>
 	</tr>
-	
+
 	{iterate from=submissions item=submission}
 	{assign var="highlightClass" value=$submission->getHighlightClass()}
 	{assign var="fastTracked" value=$submission->getFastTracked()}
@@ -75,7 +75,7 @@
 			{foreach from=$submission->getDecisions() item=decisions}
 				{foreach from=$decisions item=decision name=decisionList}
 					{if $smarty.foreach.decisionList.last}
-							{$decision.dateDecided|date_format:$dateFormatTrunc}				
+							{$decision.dateDecided|date_format:$dateFormatTrunc}
 					{/if}
 				{foreachelse}
 					&mdash;
@@ -108,4 +108,3 @@
 {/if}
 </table>
 </div>
-

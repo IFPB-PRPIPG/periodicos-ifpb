@@ -1,0 +1,32 @@
+body{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.header-content{
+  border-left-style: solid;
+  border-bottom-style: solid;
+  padding: 10px;
+  border-color:#3fa14c;
+  border-width: 1px;
+}
+
+.content{
+  text-align: justify;
+  margin-top: 150px;
+}
+
+img{
+  width: 100px;
+  float: right;
+  position: absolut;
+  top: 0;
+  right: 0;
+
+}
+
+
+.footer-content{
+  margin-top: 200px;
+}

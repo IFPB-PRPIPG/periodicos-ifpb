@@ -33,6 +33,12 @@ class ReviewerHandler extends Handler {
 	}
 
 	function certificado($args, $request, $reviewId = null) {
+		setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+		date_default_timezone_set('America/Sao_Paulo');
+
+		$today = strftime('%d de %B de %Y', strtotime('today'));
+
+
 		$page = isset($args[0]) ? $args[0] : '';
 
 
@@ -55,6 +61,7 @@ class ReviewerHandler extends Handler {
 		$fullName = $firstName." ".$middleName." ".$lastName;
 
 
+		$templateMgr->assign('data',$today);
 		$templateMgr->assign('nome', $fullName);
 		$templateMgr->assign('titulo', $title);
 		$templateMgr->assign('review', $review);
