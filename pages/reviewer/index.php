@@ -3,7 +3,7 @@
 /**
  * @defgroup pages_reviewer
  */
- 
+
 /**
  * @file pages/reviewer/index.php
  *
@@ -12,7 +12,7 @@
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @ingroup pages_reviewer
- * @brief Handle requests for reviewer functions. 
+ * @brief Handle requests for reviewer functions.
  *
  */
 
@@ -51,6 +51,10 @@ switch ($op) {
 		import('pages.reviewer.SubmissionCommentsHandler');
 		break;
 	case 'index':
+		define('HANDLER_CLASS', 'ReviewerHandler');
+		import('pages.reviewer.ReviewerHandler');
+		break;
+	case 'certificado':
 		define('HANDLER_CLASS', 'ReviewerHandler');
 		import('pages.reviewer.ReviewerHandler');
 		break;

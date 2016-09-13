@@ -18,8 +18,10 @@
 		<td width="35%">{sort_heading key="article.title" sort="title"}</td>
 		<td width="20%">{sort_heading key="submission.review" sort="review"}</td>
 		<td width="20%">{sort_heading key="submission.editorDecision" sort="decision"}</td>
+    <td width="20%">Certificado</td>
 	</tr>
-	<tr><td colspan="6" class="headseparator">&nbsp;</td></tr>
+	<tr>
+    <td colspan="6" class="headseparator">&nbsp;</td></tr>
 {iterate from=submissions item=submission}
 	{assign var="articleId" value=$submission->getId()}
 	{assign var="reviewId" value=$submission->getReviewId()}
@@ -63,8 +65,9 @@
 			{/foreach}
 			{/if}
 		</td>
-	</tr>
-
+    <!-- Certificado -->
+    <td>
+      <a href="{url op="certificado" path=$reviewId}" class="action">Certificado</tr>
 	<tr>
 		<td colspan="6" class="{if $submissions->eof()}end{/if}separator">&nbsp;</td>
 	</tr>
@@ -84,4 +87,3 @@
 {/if}
 </table>
 </div>
-

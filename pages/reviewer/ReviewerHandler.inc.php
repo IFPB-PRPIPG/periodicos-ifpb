@@ -32,6 +32,36 @@ class ReviewerHandler extends Handler {
 		$this->addCheck(new HandlerValidatorJournal($this));
 	}
 
+	function certificado($args, $request, $reviewId = null) {
+		$page = isset($args[0]) ? $args[0] : '';
+
+
+		$this->validate($request);
+		$this->setupTemplate();
+		$templateMgr =& TemplateManager::getManager();
+
+		$journal =& $request->getJournal();
+		$user =& $request->getUser();
+
+
+		$reviewerSubmissionDao =& DAORegistry::getDAO('ReviewerSubmissionDAO');
+
+		$review = $reviewerSubmissionDao->getReviewerSubmission($args[0]);
+
+		$title = $journal->getLocalizedTitle();
+		$firstName = $user->getFirstName();
+		$middleName = $user->getMiddleName();
+		$lastName = $user->getLastName();
+		$fullName = $firstName." ".$middleName." ".$lastName;
+
+
+		$templateMgr->assign('nome', $fullName);
+		$templateMgr->assign('titulo', $title);
+		$templateMgr->assign('review', $review);
+		$templateMgr->display('reviewer/certificado.tpl');
+
+	}
+
 	/**
 	 * Display reviewer index page.
 	 */
@@ -45,6 +75,7 @@ class ReviewerHandler extends Handler {
 		$rangeInfo = $this->getRangeInfo('submissions');
 
 		$page = isset($args[0]) ? $args[0] : '';
+
 		switch($page) {
 			case 'completed':
 				$active = false;
@@ -65,6 +96,7 @@ class ReviewerHandler extends Handler {
 			$submissionsArray = $submissions->toArray();
 			$compare = create_function('$s1, $s2', 'return strcmp($s1->getMostRecentDecision(), $s2->getMostRecentDecision());');
 			usort ($submissionsArray, $compare);
+
 			if($sortDirection == SORT_DIRECTION_DESC) {
 				$submissionsArray = array_reverse($submissionsArray);
 			}
@@ -78,6 +110,8 @@ class ReviewerHandler extends Handler {
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('reviewerRecommendationOptions', ReviewAssignment::getReviewerRecommendationOptions());
 		$templateMgr->assign('pageToDisplay', $page);
+
+
 		$templateMgr->assign_by_ref('submissions', $submissions);
 
 		import('classes.submission.reviewAssignment.ReviewAssignment');
@@ -86,7 +120,7 @@ class ReviewerHandler extends Handler {
 		import('classes.issue.IssueAction');
 		$issueAction = new IssueAction();
 		$templateMgr->register_function('print_issue_id', array($issueAction, 'smartyPrintIssueId'));
-		$templateMgr->assign('helpTopicId', 'editorial.reviewersRole.submissions');
+			$templateMgr->assign('helpTopicId', 'editorial.reviewersRole.submissions');
 		$templateMgr->assign('sort', $sort);
 		$templateMgr->assign('sortDirection', $sortDirection);
 		$templateMgr->display('reviewer/index.tpl');
