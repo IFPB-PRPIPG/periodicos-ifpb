@@ -1,10 +1,10 @@
-body{
+body {
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 50px;
 }
 
-.header-content{
+.header-content {
   border-left-style: solid;
   border-bottom-style: solid;
   padding: 10px;
@@ -12,12 +12,12 @@ body{
   border-width: 1px;
 }
 
-.content{
+.content {
   text-align: justify;
   margin-top: 150px;
 }
 
-img{
+img {
   width: 100px;
   float: right;
   position: absolut;
@@ -26,7 +26,39 @@ img{
 
 }
 
+.fig {
+  width: 35px;
+  float: left;
+}
+
+.revista {
+  width: 500px;
+  float:none;
+  margin-right: 150px;
+  margin-left: 200px;
+  padding-top: 70px;
+}
+
+.signature img {
+  width: 300px;
+  float:none;
+  margin-right: 100px;
+  margin-left: 300px;
+}
+
+.signature p {
+    text-align: center;
+}
+
+b {
+  font-weight: bold;
+}
 
 .footer-content{
   margin-top: 200px;
+}
+
+.footer-content p{
+  padding-top: 20px;
+  padding-left: 50px;
 }

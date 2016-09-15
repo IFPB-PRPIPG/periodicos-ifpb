@@ -15,6 +15,9 @@
 
 import('classes.submission.reviewer.ReviewerAction');
 import('classes.handler.Handler');
+import('classes.file.PublicFileManager');
+import('lib.pkp.classes.template.PKPTemplateManager');
+
 
 class ReviewerHandler extends Handler {
 	/** user associated with the request **/
@@ -32,6 +35,9 @@ class ReviewerHandler extends Handler {
 		$this->addCheck(new HandlerValidatorJournal($this));
 	}
 
+	/*
+	* metodo do certificado de avaliador
+	*/
 	function certificado($args, $request, $reviewId = null) {
 		setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 		date_default_timezone_set('America/Sao_Paulo');
@@ -41,30 +47,41 @@ class ReviewerHandler extends Handler {
 
 		$page = isset($args[0]) ? $args[0] : '';
 
-
 		$this->validate($request);
 		$this->setupTemplate();
-		$templateMgr =& TemplateManager::getManager();
 
+		$templateMgr =& TemplateManager::getManager();
+		$router =& $request->getRouter();
+		$journalContext =& $router->getContext($request);
 		$journal =& $request->getJournal();
 		$user =& $request->getUser();
-
+		$journalId = $journal->getId();
 
 		$reviewerSubmissionDao =& DAORegistry::getDAO('ReviewerSubmissionDAO');
-
 		$review = $reviewerSubmissionDao->getReviewerSubmission($args[0]);
 
-		$title = $journal->getLocalizedTitle();
+		$publicFileManager = new PublicFileManager();
+		$publicFilesDir = Config::getVar('files', 'public_files_dir');
+		$siteFilesDir =& $request->getBaseUrl() . '/' . $publicFileManager->getSiteFilesPath();
+		$urlSite =& $request->getBaseUrl();
+
+
+		$title = strtoupper($journal->getLocalizedTitle());
 		$firstName = $user->getFirstName();
 		$middleName = $user->getMiddleName();
 		$lastName = $user->getLastName();
 		$fullName = $firstName." ".$middleName." ".$lastName;
 
-
 		$templateMgr->assign('data',$today);
 		$templateMgr->assign('nome', $fullName);
 		$templateMgr->assign('titulo', $title);
 		$templateMgr->assign('review', $review);
+		$templateMgr->assign('journalId', $journalId);
+		$templateMgr->assign('urlSite', $urlSite);
+		$templateMgr->assign('publicFilesDir', $siteFilesDir);
+		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getLocalizedPageHeaderLogo(true));
+		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
+
 		$templateMgr->display('reviewer/certificado.tpl');
 
 	}
