@@ -36,7 +36,7 @@ class ReviewerHandler extends Handler {
 	}
 
 	/*
-	* metodo do certificado de avaliador
+	* Certificado de avaliador
 	*/
 	function certificado($args, $request, $reviewId = null) {
 		setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
@@ -79,7 +79,7 @@ class ReviewerHandler extends Handler {
 		$templateMgr->assign('journalId', $journalId);
 		$templateMgr->assign('urlSite', $urlSite);
 		$templateMgr->assign('publicFilesDir', $siteFilesDir);
-		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getLocalizedPageHeaderLogo(true));
+		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getJournalPageHeaderLogo(true));
 		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
 
 		$templateMgr->display('reviewer/certificado.tpl');
