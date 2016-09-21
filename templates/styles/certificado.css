@@ -1,0 +1,113 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.header-content {
+  border-left-style: solid;
+  border-bottom-style: solid;
+  padding: 10px;
+  border-color:#3fa14c;
+  border-width: 1px;
+}
+
+.content {
+  text-align: justify;
+  margin-top: 150px;
+}
+
+.ifpb-logo {
+  width: 100px;
+  float: right;
+}
+
+.fig {
+  width: 35px;
+  float: left;
+}
+
+.revista {
+  max-width: 700px;
+  width: 100%;
+  display: block;
+}
+
+.tittle-declaration {
+  text-align: center;
+}
+
+.date-declaration {
+  text-align: right;
+}
+
+.signature .img-container img {
+  width: 100%;
+  display: block;
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+.img-container {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.signature p {
+    text-align: center;
+}
+
+b {
+  font-weight: bold;
+}
+
+.footer-content{
+  margin-top: 100px;
+}
+
+.footer-content p{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+@media print {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .footer-content{
+    /*margin-top: 100px;*/
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer-content p{
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 20px 15px;
+  }
+
+  .img-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  body {
+    width: 1115px;
+    margin: 0 auto;
+  }
+}

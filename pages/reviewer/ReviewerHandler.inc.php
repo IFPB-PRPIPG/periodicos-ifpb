@@ -101,7 +101,7 @@ class ReviewerHandler extends Handler {
 			$dompdf->stream(
 			    "certificado", /* Nome do arquivo de saída */
 			    array(
-			        "Attachment" => false /* Para download, altere para true */
+			        "Attachment" => true /* Para download, altere para true */
 			    )
 			);
 
