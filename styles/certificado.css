@@ -4,27 +4,6 @@ body {
   margin-top: 50px;
 }
 
-@media print {
-  body {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  body {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1115px) {
-  body {
-    width: 1115px;
-    margin: 0 auto;
-  }
-}
-
 .header-content {
   border-left-style: solid;
   border-bottom-style: solid;
@@ -38,7 +17,7 @@ body {
   margin-top: 150px;
 }
 
-img.ifpb-logo {
+.ifpb-logo {
   width: 100px;
   float: right;
 }
@@ -50,13 +29,8 @@ img.ifpb-logo {
 
 .revista {
   max-width: 700px;
-  width: 30%;
-  float: none;
-  /* margin-right: 150px; */
-  /* margin-left: 200px; */
-  /* padding-top: 70px; */
+  width: 100%;
   display: block;
-  margin: 0 auto;
 }
 
 .tittle-declaration {
@@ -67,12 +41,15 @@ img.ifpb-logo {
   text-align: right;
 }
 
-.signature img {
-  width: 300px;
-  float:none;
-  /*margin-right: 100px;
-  margin-left: 300px;*/
+.signature .img-container img {
+  width: 100%;
   display: block;
+  /*margin: 0 auto;*/
+  text-align: center;
+}
+
+.img-container {
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -91,4 +68,46 @@ b {
 .footer-content p{
   padding-top: 20px;
   padding-left: 50px;
+}
+
+@media print {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .footer-content{
+    /*margin-top: 100px;*/
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer-content p{
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 20px 15px;
+  }
+
+  .img-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  body {
+    width: 1115px;
+    margin: 0 auto;
+  }
 }

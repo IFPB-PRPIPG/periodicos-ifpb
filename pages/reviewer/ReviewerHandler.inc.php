@@ -18,6 +18,8 @@ import('classes.handler.Handler');
 import('classes.file.PublicFileManager');
 import('lib.pkp.classes.template.PKPTemplateManager');
 
+require_once 'lib/dompdf/autoload.inc.php';
+use Dompdf\Dompdf;
 
 class ReviewerHandler extends Handler {
 	/** user associated with the request **/
@@ -82,7 +84,30 @@ class ReviewerHandler extends Handler {
 		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getJournalPageHeaderLogo(true));
 		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
 
-		$templateMgr->display('reviewer/certificado.tpl');
+		if (isset($args[1]) && $args[1] == 'pdf')  {
+			$conteudo = $templateMgr->fetch('reviewer/certificado.tpl');
+
+			/* Cria a instância */
+			$dompdf = new DOMPDF();
+			$dompdf->set_option('isHtml5ParserEnabled', true);
+			$dompdf->set_option('defaultMediaType', 'print');
+			$dompdf->set_option('isRemoteEnabled', true);
+
+			/* Carrega seu HTML */
+			$dompdf->load_html($conteudo);
+			$dompdf->render();
+
+			/* Exibe */
+			$dompdf->stream(
+			    "certificado", /* Nome do arquivo de saída */
+			    array(
+			        "Attachment" => false /* Para download, altere para true */
+			    )
+			);
+
+		} else {
+			$templateMgr->display('reviewer/certificado.tpl');
+		}
 
 	}
 
