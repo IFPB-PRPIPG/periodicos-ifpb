@@ -84,7 +84,7 @@ class ReviewerHandler extends Handler {
 		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getJournalPageHeaderLogo(true));
 		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
 
-		if (isset($args[1]) && $args[1] == 'pdf')  {
+		if (isset($request->getQueryArray()['value']) && $request->getQueryArray()['value'] == 'pdf')  {
 			$conteudo = $templateMgr->fetch('reviewer/certificado.tpl');
 
 			/* Cria a instância */

@@ -67,7 +67,10 @@
 		</td>
     <!-- Certificado -->
     <td>
-      <a href="{url op="certificado" path=$reviewId}" class="action">Certificado</tr>
+      <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
+      <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
+    </td>
+  </tr>
 	<tr>
 		<td colspan="6" class="{if $submissions->eof()}end{/if}separator">&nbsp;</td>
 	</tr>
