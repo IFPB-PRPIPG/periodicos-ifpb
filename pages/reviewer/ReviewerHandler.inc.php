@@ -106,8 +106,25 @@ class ReviewerHandler extends Handler {
 			);
 
 		} else {
-			$templateMgr->display('reviewer/certificado.tpl');
-		}
+			$conteudo = $templateMgr->fetch('reviewer/certificado.tpl');
+
+			/* Cria a instância */
+			$dompdf = new DOMPDF();
+			$dompdf->set_option('isHtml5ParserEnabled', true);
+			$dompdf->set_option('defaultMediaType', 'print');
+			$dompdf->set_option('isRemoteEnabled', true);
+
+			/* Carrega seu HTML */
+			$dompdf->load_html($conteudo);
+			$dompdf->render();
+
+			/* Exibe */
+			$dompdf->stream(
+					"certificado", /* Nome do arquivo de saída */
+					array(
+							"Attachment" => false /* Para download, altere para true */
+					)
+			);		}
 
 	}
 
