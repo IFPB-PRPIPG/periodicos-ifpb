@@ -46,7 +46,6 @@ class ReviewerHandler extends Handler {
 
 		$today = strftime('%d de %B de %Y', strtotime('today'));
 
-
 		$page = isset($args[0]) ? $args[0] : '';
 
 		$this->validate($request);
@@ -84,7 +83,18 @@ class ReviewerHandler extends Handler {
 		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getJournalPageHeaderLogo(true));
 		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
 
+		$dataGeracao = time();
+
+		$autenticacao = md5($dataGeracao);
+
+		if (isset($autenticacao)) {
+			$templateMgr->assign('chave_autenticacao', $autenticacao);
+
+		}
+
+
 		if (isset($request->getQueryArray()['value']) && $request->getQueryArray()['value'] == 'pdf')  {
+
 			$conteudo = $templateMgr->fetch('reviewer/certificado.tpl');
 
 			/* Cria a instância */
@@ -124,7 +134,8 @@ class ReviewerHandler extends Handler {
 					array(
 							"Attachment" => false /* Para download, altere para true */
 					)
-			);		}
+			);
+		}
 
 	}
 

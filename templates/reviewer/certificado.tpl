@@ -9,22 +9,21 @@
   <img class="ifpb-logo" src="{$urlSite}/img-certificado/ifpb-1.png" alt="logo-ifpb"/>
   <div class="header-content">
     <h3>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DA PARAÍBA</h3>
-    <p>Pró-Reitoria de Pesquisa, Inovação e Pós-Graduação</p>
-    <p>Conselho Editorial</p>
   </div>
   <div class="content">
     <h1 class="tittle-declaration">Declaração</h1>
-    <p>Declaro, para os devidos fins, que <strong>{$nome}</strong> exerceu atividade de avaliador ad hoc de 1 (um) artigo científico, a convite do Conselho Editorial da Revista <b>{$titulo}</b>, no dia {$review->getDateCompleted()|date_format:"%d de %B de %Y"}, veículo de divulgação científica e tecnológica do <b>Instituto Federal de Educação, Ciência e Tecnologia da Paraíba.</b></p>
-    <br><br>
+    <p>Declaro, para os devidos fins, que {$nome} exerceu atividade de avaliador(a) ad hoc de 1 (um) artigo científico, a convite do Conselho Editorial da Revista {$titulo}, no dia {$review->getDateCompleted()|date_format:"%d de %B de %Y"}, veículo de divulgação do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba.</p>
+    <br>
     <p class="date-declaration">João Pessoa, {$data}.</p>
-    <br><br><br>
+
   </div>
   <div class="signature">
     <div class="img-container">
       <img src="{$urlSite}/img-certificado/assinatura.png"/>
     </div>
     <p>Carlos Danilo Miranda Regis</p>
-    <p><b>Editor Científico</b></p>
+    <p>Editor Científico</p>
+    <br>
   </div>
   {if $displayPageHeaderLogo != NULL}
   <div class="img-container">
@@ -33,7 +32,9 @@
   {/if}
   <div class="footer-content">
     <img class="fig" src="{$urlSite}/img-certificado/fig1.png" alt="" />
-    <p>IFPB/PRPIPG - Av. João da Mata, 256 - Jaguaribe - João Pessoa - Paraíba - CEP: 58.015-020 - Fone: (83) 9184-4721 </p>
+    <p>IFPB/PRPIPG - Av. João da Mata, 256 - Jaguaribe - João Pessoa - Paraíba - CEP: 58.015-020 - Fone: (83) 99184-4721 </p><br>
+    <p>Autenticação: {$chave_autenticacao}</p>
   </div>
+
 </body>
 </html>
