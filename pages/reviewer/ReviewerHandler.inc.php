@@ -86,6 +86,7 @@ class ReviewerHandler extends Handler {
 		$dataGeracao = time();
 
 		$autenticacao = md5($dataGeracao);
+		$autenticacao = substr($autenticacao, 0, 8);
 
 		if (isset($autenticacao)) {
 			$templateMgr->assign('chave_autenticacao', $autenticacao);
