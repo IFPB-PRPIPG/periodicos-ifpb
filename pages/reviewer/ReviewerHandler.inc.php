@@ -75,6 +75,25 @@ class ReviewerHandler extends Handler {
 
 		$dataAvaliacao = $review->getDateCompleted();
 
+		$autenticacao = md5(time());
+		$autenticacao = substr($autenticacao, 0, 8);
+
+		// Verificando se o certificado já foi emitido
+		$certificadoDAO =& DAORegistry::getDAO('CertificadoDAO');
+		$certificado = $certificadoDAO->getByUserAndReview($user->getId(), $review->getReviewId());
+
+		if (isset($certificado)) {
+			// Capturamos as informações do banco para exibir na view
+			$today = $certificado['created_at'];
+			$dataAvaliacao = $certificado['reviewed_at'];
+			$title = $certificado['titulo'];
+			$autenticacao = $certificado['hash_code'];
+			$fullName = $certificado['nome'];
+		} else {
+			// Geramos um novo certificado
+			$certificadoDAO->create($user->getId(), $review->getReviewId(), $autenticacao, $title, $fullName, $dataAvaliacao, $today);
+		}
+
 		$templateMgr->assign('data',$today);
 		$templateMgr->assign('dataAvaliacao',$dataAvaliacao);
 		$templateMgr->assign('nome', $fullName);
@@ -85,17 +104,9 @@ class ReviewerHandler extends Handler {
 		$templateMgr->assign('publicFilesDir', $siteFilesDir);
 		$templateMgr->assign('displayPageHeaderLogo', $journalContext->getJournalPageHeaderLogo(true));
 		$templateMgr->assign('displayPageHeaderLogoAltText', $journalContext->getLocalizedSetting('homeHeaderLogoImageAltText'));
-
-		$dataGeracao = time();
-
-		$autenticacao = md5($dataGeracao);
-		$autenticacao = substr($autenticacao, 0, 8);
-
 		if (isset($autenticacao)) {
 			$templateMgr->assign('chave_autenticacao', $autenticacao);
-
 		}
-
 
 		if (isset($request->getQueryArray()['value']) && $request->getQueryArray()['value'] == 'pdf')  {
 
