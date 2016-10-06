@@ -73,7 +73,10 @@ class ReviewerHandler extends Handler {
 		$lastName = $user->getLastName();
 		$fullName = $firstName." ".$middleName." ".$lastName;
 
+		$dataAvaliacao = $review->getDateCompleted();
+
 		$templateMgr->assign('data',$today);
+		$templateMgr->assign('dataAvaliacao',$dataAvaliacao);
 		$templateMgr->assign('nome', $fullName);
 		$templateMgr->assign('titulo', $title);
 		$templateMgr->assign('review', $review);
