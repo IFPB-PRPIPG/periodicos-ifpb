@@ -66,7 +66,7 @@
 			{/if}
 		</td>
     <!-- Certificado -->
-    {if $journal->getLocalizedTitle() == "Principia"}
+    {if $journal->getLocalizedTitle() == "Revista Principia - Divulgação Científica e Tecnológica do IFPB"}
       <td>
         <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
         <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
