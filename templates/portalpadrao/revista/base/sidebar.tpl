@@ -49,9 +49,9 @@
   <ul class="box">
     <li class="item header">Sobre</li>
     <li class="item">
-      <a href="{url page="about"}">{translate key="about.focusAndScope"}</a>
+      <a href="{url page="about"}#scope">{translate key="about.focusAndScope"}</a>
     </li>
-    <li class="item"><a href="{url page="about"}">{translate key="about.editorialTeam"}</a></li>    
+    <li class="item"><a href="{url page="about"}#time">{translate key="about.editorialTeam"}</a></li>
     <!-- Mostra itens adicionados a política da revista -->
     {if $currentJournal}
       {foreach key=key from=$currentJournal->getLocalizedSetting('customAboutItems') item=customAboutItem name=customAboutItems}

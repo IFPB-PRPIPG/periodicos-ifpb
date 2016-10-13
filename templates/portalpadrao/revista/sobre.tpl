@@ -2,7 +2,7 @@
   <a href="{url journal="index" page="index"}">
       <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
     </a>
-	<h2 class="header-title large-size border-title-light">{translate key="about.focusAndScope"}</h2>
+	<h2 id="scope" class="header-title large-size border-title-light">{translate key="about.focusAndScope"}</h2>
 	<!-- Section Utilizada para descrição -->
 	<div class="text-box-section" style="text-align:justify;">
 		<p>{$currentJournal->getLocalizedSetting('focusScopeDesc')|strip_unsafe_html|nl2br}</p><br>
@@ -21,23 +21,23 @@
       <p>{$currentJournal->getLocalizedSetting('pubFreqPolicy')|nl2br}</p><br>
     </div>
   {/if}
-  
-  {if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_OPEN && $currentJournal->getLocalizedSetting('openAccessPolicy') != ''} 
+
+  {if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_OPEN && $currentJournal->getLocalizedSetting('openAccessPolicy') != ''}
   <h2 class="header-title large-size border-title-light">{translate key="about.openAccessPolicy"}</h2>
   <div class="text-box-section" style="text-align:justify;">
     <p>{$currentJournal->getLocalizedSetting('openAccessPolicy')|nl2br}</p><br>
   </div>
   {/if}
-  
+
   {if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $currentJournal->getSetting('enableAuthorSelfArchive')}
   <h2 class="header-title large-size border-title-light">{translate key="about.authorSelfArchive"}</h2>
-  <div class="text-box-section" style="text-align:justify;"> 
+  <div class="text-box-section" style="text-align:justify;">
     <p>{$currentJournal->getLocalizedSetting('authorSelfArchivePolicy')|nl2br}</p><br>
   </div>
   {/if}
 
   {if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION && $currentJournal->getSetting('enableDelayedOpenAccess')}
-  <h2 class="header-title large-size border-title-light">{translate key="about.delayedOpenAccess"}</h2> 
+  <h2 class="header-title large-size border-title-light">{translate key="about.delayedOpenAccess"}</h2>
   <div class="text-box-section">
     <p>{translate key="about.delayedOpenAccessDescription1"} {$currentJournal->getSetting('delayedOpenAccessDuration')} {translate key="about.delayedOpenAccessDescription2"}</p>
     {if $currentJournal->getLocalizedSetting('delayedOpenAccessPolicy') != ''}
@@ -64,7 +64,7 @@
 
 <!-- Equipe Editorial -->
 <div class="text-box-section border-box">
-		<h3 class="text-box-title large-size border-title-light">Equipe Editorial</h3>
+		<h3 id="time" class="text-box-title large-size border-title-light">Equipe Editorial</h3>
     <!-- editores -->
 
       {foreach from=$groups item=group}
@@ -92,13 +92,13 @@
   			{else}
   				<li class="text-list-item-simple-header">
             {translate key="user.role.editors"}
-          </li>			
+          </li>
   			{/if}
         {foreach from=$editors item=editor}
   			<li class="text-list-item"><a href="">{$editor->getFullName()|escape}</a>
-        
+
         {$affiliation[$formLocale]|escape}
-        
+
         </li>
         {/foreach}
   		</ul>
@@ -114,14 +114,14 @@
         {else}
           <li class="text-list-item-simple-header">
             {translate key="user.role.sectionEditors"}
-          </li>     
+          </li>
         {/if}
         {foreach from=$sectionEditors item=sectionEditor}
         <li class="text-list-item">{$sectionEditors->getFullName()|escape}</li>
         {/foreach}
       </ul>
     {/if}
-    
+
     <!-- editores de de layout (?) -->
     {if count($layoutEditors) > 0}
       <ul class="text-list">
@@ -132,7 +132,7 @@
         {else}
           <li class="text-list-item-simple-header">
             {translate key="user.role.layoutEditors"}
-          </li>     
+          </li>
         {/if}
         {foreach from=$layoutEditors item=layoutEditor}
         <li class="text-list-item">{$layoutEditors->getFullName()|escape}</li>
@@ -150,7 +150,7 @@
         {else}
           <li class="text-list-item-simple-header">
             {translate key="user.role.copyEditors"}
-          </li>     
+          </li>
         {/if}
         {foreach from=$copyEditors item=copyEditor}
         <li class="text-list-item">{$copyEditors->getFullName()|escape}</li>
@@ -168,7 +168,7 @@
         {else}
           <li class="text-list-item-simple-header">
             {translate key="user.role.proofreaders"}
-          </li>     
+          </li>
         {/if}
         {foreach from=$proofreaders item=proofreader}
         <li class="text-list-item">{$proofreaders->getFullName()|escape}</li>
