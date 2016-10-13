@@ -166,6 +166,8 @@ class ReviewerHandler extends Handler {
 		$reviewerSubmissionDao =& DAORegistry::getDAO('ReviewerSubmissionDAO');
 		$rangeInfo = $this->getRangeInfo('submissions');
 
+
+
 		$page = isset($args[0]) ? $args[0] : '';
 
 		switch($page) {
@@ -202,6 +204,8 @@ class ReviewerHandler extends Handler {
 		$templateMgr =& TemplateManager::getManager();
 		$templateMgr->assign('reviewerRecommendationOptions', ReviewAssignment::getReviewerRecommendationOptions());
 		$templateMgr->assign('pageToDisplay', $page);
+
+		$templateMgr->assign('journal',$journal);
 
 
 		$templateMgr->assign_by_ref('submissions', $submissions);

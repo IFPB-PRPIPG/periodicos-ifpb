@@ -66,10 +66,12 @@
 			{/if}
 		</td>
     <!-- Certificado -->
-    <td>
-      <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
-      <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
-    </td>
+    {if $journal->getLocalizedTitle() == "Principia"}
+      <td>
+        <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
+        <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
+      </td>
+    {/if}
   </tr>
 	<tr>
 		<td colspan="7" class="{if $submissions->eof()}end{/if}separator">&nbsp;</td>
