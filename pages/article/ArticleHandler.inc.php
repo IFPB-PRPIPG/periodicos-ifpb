@@ -226,7 +226,44 @@ class ArticleHandler extends Handler {
 		// $templateMgr->display('article/article.tpl');
 		// adicionada chamada para o portal padrão
 		$templateMgr->assign('journalArticle', true);
+
+		//Contador de acessos do artigo
+
+		$journalId = $journal->getId();
+
+		$counterAccessDAO =& DAORegistry::getDAO('CountAccessArtDAO');
+		$counterAccessArticle = $counterAccessDAO->getAccessById($journalId,$articleId);
+
+		$user =& $request->getUser();
+		$userId = $user->getId();
+
+		// setcookie("usuario", $userId, 60*60*24);
+		//
+		// var_dump($_COOKIE['usuario']);
+
+
+		if(isset($counterAccessArticle)){
+			$newCount = (int)$counterAccessArticle + 1;
+
+
+			// Adiciona nova entrada de acesso
+			$updateCount = $counterAccessDAO->setUpdateAccess($journalId, $articleId, $newCount);
+			//Traz a contagem dos acessos atualizada
+			$finalcount = $counterAccessDAO->getAccessById($journalId,$articleId);
+
+			$templateMgr->assign('counterAccessArticle',$finalcount);
+
+		} else {
+			$counterAccessDAO->create($journalId, $articleId);
+		}
+
+
+		// var_dump($userId);
+
 		$templateMgr->display('portalpadrao/revista/layout.tpl');
+
+
+
 
 	}
 

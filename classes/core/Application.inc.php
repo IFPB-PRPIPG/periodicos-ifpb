@@ -138,7 +138,8 @@ class Application extends PKPApplication {
 			'SuppFileDAO' => 'classes.article.SuppFileDAO',
 			'UserDAO' => 'classes.user.UserDAO',
 			'UserSettingsDAO' => 'classes.user.UserSettingsDAO',
-			'CertificadoDAO' => 'classes.submission.reviewer.CertificadoDAO'
+			'CertificadoDAO' => 'classes.submission.reviewer.CertificadoDAO',
+			'CountAccessArtDAO' => 'classes.article.CountAccessArtDAO'
 		));
 	}
 
