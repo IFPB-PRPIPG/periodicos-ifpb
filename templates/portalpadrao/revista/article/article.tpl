@@ -48,16 +48,16 @@
 	{/if}
 	{call_hook name="Templates::Article::Article::ArticleCoverImage"}
   <!-- titulo e sub titulo -->
-  
+
 	<a href="{url journal="index" page="index"}">
       <img src="{$baseUrl}/templates/portalpadrao/assets/images/banner_periodicos_site.png" alt="" class="image-responsible banner-content">
-    </a>	
+    </a>
 
   <h2 class="header-title border-title-light mid-size">
     {$article->getLocalizedTitle()|strip_unsafe_html}
   </h2>
-	  
-	  		
+
+
 			{**	{$article->getAuthorString()|escape} *}
 			<!-- Exibição dos autores e respectivas instituições-->
 				<div class="block" id="sidebarRTAuthorBios">
@@ -71,7 +71,7 @@
 					</span>
 						{foreach from=$article->getAuthors() item=author name=authors}
 						<div class="authorBio">
-						
+
 							<h4 id="name-autor" class="_nome-autor">
 							<em>{$author->getFullName()|escape}</em>
 							</h4>
@@ -80,7 +80,7 @@
 							{assign var=authorAffiliation value=$author->getLocalizedAffiliation()}
 							{if $authorAffiliation}{$authorAffiliation|escape}{/if}
 							{if $author->getCountry()}{$author->getCountryLocalized()|escape}{/if}
-						
+
 
 						<p>{$author->getLocalizedBiography()|strip_unsafe_html|nl2br}</p>
 						</div>
@@ -91,7 +91,7 @@
 
 
 	<h4 class="header-subtitle border-box"></h4>
-	
+
 	{if $article->getLocalizedAbstract()}
     <div class="text-box-content border-box">
       <h3 class="text-box-title border-title-light">
@@ -231,3 +231,7 @@
 </div>
 {/if}
 
+<div class="contador">
+  <p> Visitantes </p>
+  <p>{$counterAccessArticle}</p>
+</div>

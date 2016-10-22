@@ -228,42 +228,40 @@ class ArticleHandler extends Handler {
 		$templateMgr->assign('journalArticle', true);
 
 		//Contador de acessos do artigo
-
 		$journalId = $journal->getId();
 
 		$counterAccessDAO =& DAORegistry::getDAO('CountAccessArtDAO');
+		// Pega a quantidade de acessos daquele artigo
 		$counterAccessArticle = $counterAccessDAO->getAccessById($journalId,$articleId);
 
-		$user =& $request->getUser();
-		$userId = $user->getId();
+		// Se já existir um cookie ele só passa o valor pro template
+		if(isset($_COOKIE['cookie_count'])) {
+			$templateMgr->assign('counterAccessArticle',$counterAccessArticle);
 
-		// setcookie("usuario", $userId, 60*60*24);
-		//
-		// var_dump($_COOKIE['usuario']);
+		}else{
+			if(isset($counterAccessArticle)) {
+				// Setando o cookie na página por 24 hrs
+				setcookie("cookie_count","cookie_count", time()+60*60*24);
 
+				// Adicionando mais uma visita ao contador
+				$newCount = (int)$counterAccessArticle + 1;
 
-		if(isset($counterAccessArticle)){
-			$newCount = (int)$counterAccessArticle + 1;
+				// Adiciona nova entrada de acesso
+				$updateCount = $counterAccessDAO->setUpdateAccess($journalId, $articleId, $newCount);
+				//Traz a contagem dos acessos atualizada
+				$finalcount = $counterAccessDAO->getAccessById($journalId,$articleId);
 
-
-			// Adiciona nova entrada de acesso
-			$updateCount = $counterAccessDAO->setUpdateAccess($journalId, $articleId, $newCount);
-			//Traz a contagem dos acessos atualizada
-			$finalcount = $counterAccessDAO->getAccessById($journalId,$articleId);
-
-			$templateMgr->assign('counterAccessArticle',$finalcount);
-
-		} else {
-			$counterAccessDAO->create($journalId, $articleId);
+				// Passando a contagem final pra página
+				$templateMgr->assign('counterAccessArticle',$finalcount);
+			} else {
+				//Se não existir uma entrada na tabela ele cria
+				$counterAccessDAO->create($journalId, $articleId);
+			}
 		}
 
 
-		// var_dump($userId);
 
 		$templateMgr->display('portalpadrao/revista/layout.tpl');
-
-
-
 
 	}
 
