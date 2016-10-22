@@ -231,7 +231,7 @@
 </div>
 {/if}
 
-<div class="contador">
-  <p> Visitantes </p>
+<div class="contador" style="font-size:13px; ">
+  <p>Visitas</p>
   <p>{$counterAccessArticle}</p>
 </div>
