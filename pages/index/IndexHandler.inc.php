@@ -40,8 +40,8 @@ class IndexHandler extends Handler {
 		$templateMgr->assign('helpTopicId', 'user.home');
 		$journal =& $router->getContext($request);
 
-		//Como as sessões não são globais, foi necessário colocar 
-		//Esse trecho de código que permite verificar as sessões 
+		//Como as sessões não são globais, foi necessário colocar
+		//Esse trecho de código que permite verificar as sessões
 		//E passar a URL de login para o formulário da Index (Custom)
 		if (!defined('SESSION_DISABLE_INIT')) {
 			$session =& Request::getSession();
@@ -53,7 +53,7 @@ class IndexHandler extends Handler {
 			}
 			$templateMgr->assign('userBlockLoginUrl', $loginUrl);
 		}
-		
+
 		if ($journal) {
 			// Assign header and content for home page
 			$templateMgr->assign('displayPageHeaderTitle', $journal->getLocalizedPageHeaderTitle(true));
@@ -96,7 +96,7 @@ class IndexHandler extends Handler {
 
 			/*
 			* $locale, $coverPagePath, $issue (artigo)
-			* Adicionados para conseguirmos buscar a 
+			* Adicionados para conseguirmos buscar a
 			* imagem do ultimo artigo
 			*/
 			import('classes.file.PublicFileManager');
@@ -106,7 +106,7 @@ class IndexHandler extends Handler {
 			$coverPagePath = $request->getBaseUrl() . '/';
 			$coverPagePath .= $publicFileManager->getJournalFilesPath($journalId) . '/';
 			$templateMgr->assign('coverPagePath', $coverPagePath);
-			
+
 			/*
 			* $issue = Versão da revista
 			*/
@@ -188,7 +188,7 @@ class IndexHandler extends Handler {
     $xml->load('slideconfig.xml');
     $items = $xml->getElementsByTagName('item');
     $container = $xml->getElementsByTagName('container');
-    
+
     if ($items->length > 0) {
     	foreach($items as $key => $item) {
     		$data[$key] = Array(

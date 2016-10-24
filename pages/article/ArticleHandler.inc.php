@@ -237,7 +237,6 @@ class ArticleHandler extends Handler {
 		// Se já existir um cookie ele só passa o valor pro template
 		if(isset($_COOKIE['cookie_count'])) {
 			$templateMgr->assign('counterAccessArticle',$counterAccessArticle);
-
 		}else{
 			if(isset($counterAccessArticle)) {
 				// Setando o cookie na página por 24 hrs
