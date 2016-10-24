@@ -11,7 +11,29 @@ class ValidacaoHandler extends Handler {
   }
 
   function validacao($args, &$request) {
-    echo "Olar";
+
+
+
+    $this->validate();
+    $this->setupTemplate();
+    $templateMgr =& TemplateManager::getManager();
+
+
+    $codigoAut = $_GET['codigoAut'];
+
+    $certificadoDAO =& DAORegistry::getDAO('CertificadoDAO');
+
+
+    if(isset($codigoAut)){
+      $certificado = $certificadoDAO->getByHashCode($codigoAut);
+      
+
+      var_dump($certificado);
+    }
+
+
+
+    $templateMgr->display('validacao/validacao.tpl');
   }
 
 }
