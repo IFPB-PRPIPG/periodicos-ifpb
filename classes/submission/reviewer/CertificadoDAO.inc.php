@@ -61,6 +61,21 @@ class CertificadoDAO extends DAO {
 
 		return NULL;
 	}
+
+	function getByHashCode($hash_code) {
+		$result =& $this->retrieve(
+
+			'SELECT * from certificado WHERE hash_code = ?', array((int)$hash_code)
+		);
+		if ($result->RecordCount() != 0) {
+			return $result->GetRowAssoc(false);
+		}
+
+		return NULL;
+
+	}
+
+
 }
 
 ?>
