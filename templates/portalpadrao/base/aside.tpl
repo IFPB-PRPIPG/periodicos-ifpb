@@ -65,7 +65,7 @@
       <a href="#">Web Qualis</a>
     </li>
     <li class="item">
-      <a href="index.php/index/validacao/validacao">Validação de certificado</a>
+      <a href="{url page="validacao" op="validacao"}">Validação de certificado</a>
     </li>
   </ul>
 </sidebar>

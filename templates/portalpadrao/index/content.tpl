@@ -45,7 +45,10 @@
         {include file="portalpadrao/admin/index.tpl"}
       {/if}
 
+      {if $pageValidacao}
+        {include file="validacao/validacao.tpl"}
+      {/if}
+
     </main> <!-- /main-container -->
   </div>
 </div>
-
