@@ -234,13 +234,16 @@ class ArticleHandler extends Handler {
 		// Pega a quantidade de acessos daquele artigo
 		$counterAccessArticle = $counterAccessDAO->getAccessById($journalId,$articleId);
 
+		// Criando cookie do contador
+		$cookieID = "cookie-" . $articleId . "-" . $journalId;
+
 		// Se já existir um cookie ele só passa o valor pro template
-		if(isset($_COOKIE['cookie_count'])) {
+		if(isset($_COOKIE[$cookieID])) {
 			$templateMgr->assign('counterAccessArticle',$counterAccessArticle);
 		}else{
 			if(isset($counterAccessArticle)) {
 				// Setando o cookie na página por 24 hrs
-				setcookie("cookie_count","cookie_count", time()+60*60*24);
+				setcookie($cookieID, "cookie_count", time()+60*60*24);
 
 				// Adicionando mais uma visita ao contador
 				$newCount = (int)$counterAccessArticle + 1;
@@ -255,6 +258,8 @@ class ArticleHandler extends Handler {
 			} else {
 				//Se não existir uma entrada na tabela ele cria
 				$counterAccessDAO->create($journalId, $articleId);
+				$finalcount = $counterAccessDAO->getAccessById($journalId,$articleId);
+				$templateMgr->assign('counterAccessArticle',$finalcount);
 			}
 		}
 
