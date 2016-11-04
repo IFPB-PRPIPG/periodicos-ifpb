@@ -84,7 +84,8 @@ class ReviewerHandler extends Handler {
 
 		if (isset($certificado)) {
 			// Capturamos as informações do banco para exibir na view
-			$today = $certificado['created_at'];
+
+			$today = date('F j, Y');
 			$dataAvaliacao = $certificado['reviewed_at'];
 			$title = $certificado['titulo'];
 			$autenticacao = $certificado['hash_code'];

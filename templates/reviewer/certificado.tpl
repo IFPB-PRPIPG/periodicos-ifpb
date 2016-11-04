@@ -14,7 +14,7 @@
     <h1 class="tittle-declaration">Declaração</h1>
     <p>Declaro, para os devidos fins, que {$nome} exerceu atividade de avaliador(a) ad hoc de 1 (um) artigo científico, a convite do Conselho Editorial da Revista {$titulo}, no dia {$dataAvaliacao|date_format:"%d de %B de %Y"}, veículo de divulgação do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba.</p>
     <br>
-    <p class="date-declaration">João Pessoa, {$data}.</p>
+    <p class="date-declaration">João Pessoa, {$data|date_format:"%d de %B de %Y"}.</p>
 
   </div>
   <div class="signature">
