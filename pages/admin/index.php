@@ -101,6 +101,12 @@ switch ($op) {
 		define('HANDLER_CLASS', 'AdminCategoriesHandler');
 		import('pages.admin.AdminCategoriesHandler');
 		break;
+	case 'files':
+	case 'upload':
+	case 'excluir':
+		define('HANDLER_CLASS', 'ArquivoHandler');
+		import('pages.admin.ArquivoHandler');
+		break;
 	case 'index':
 		define('HANDLER_CLASS', 'AdminHandler');
 		import('pages.admin.AdminHandler');

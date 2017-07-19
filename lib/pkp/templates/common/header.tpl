@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
   <link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
+  <link rel="stylesheet" href="{$baseUrl}/lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- Base Jquery -->
   {if $allowCDN}<script type="text/javascript" src="//www.google.com/jsapi"></script>
     <script type="text/javascript">{literal}
