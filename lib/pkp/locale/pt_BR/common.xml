@@ -388,4 +388,5 @@
 	<message key="search.indexTermsLong">Todos os campos de termos de indexação</message>
 	<message key="grid.action.downloadFile">Baixar este arquivo</message>
 	<message key="common.notice">Notificação</message>
+	<message key="common.files">Arquivos</message>
 </locale>

@@ -13,14 +13,15 @@
  * @brief Handle requests for site administration functions. 
  */
 
-import('classes.handler.Handler');
+import('pages.admin.AdminHandler');
 
-class ArquivoHandler extends Handler {
+class ArquivoHandler extends AdminHandler {
 	/**
 	 * Display admin files index page.
 	 */
 	function files() {
-		
+		$this->validate();
+		$this->setupTemplate();
 		$templateMgr =& TemplateManager::getManager();
 
 		//carregar lista de arquivos:
@@ -29,6 +30,8 @@ class ArquivoHandler extends Handler {
 	}
 
 	function upload() {
+		$this->validate();
+		$this->setupTemplate();
 		$uploadOk = 1;
 		$templateMgr =& TemplateManager::getManager();
 		$file_tmp = $_FILES['newfile']['tmp_name'];
@@ -78,6 +81,8 @@ class ArquivoHandler extends Handler {
 	}
 
 	function excluir($args, $request) {
+		$this->validate();
+		$this->setupTemplate();
 		$templateMgr =& TemplateManager::getManager();
 		$fileName = $request->getUserVar('file');
 
