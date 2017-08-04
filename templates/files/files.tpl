@@ -22,19 +22,18 @@
 	    <!-- MAX_FILE_SIZE deve preceder o campo input -->
 	    <input type="hidden" name="MAX_FILE_SIZE" value="9999999" />
 	    <!-- O Nome do elemento input determina o nome da array $_FILES -->
-	    <h4>Incluir arquivo no sistema:</h4>
+	    <h3>Incluir arquivo no sistema:</h3>
 	    <input name="newfile" type="file" /><br /><br />
 	    <input type="submit" value="Enviar arquivo" />
 	</form>
 
 
 	<br/>
-	<hr>
 	
 	<!-- Mostrar lista de arquivos -->
 	{if $files}
 		<div style="width: 80%;height: auto;">
-		<h4>Lista de arquivos:</h4>
+		<h3>Lista de arquivos:</h3>
 		<br />
 		
 		{foreach from=$files item=file}	
