@@ -231,6 +231,12 @@ switch ($op) {
 	case 'email':
 		define('HANDLER_CLASS', 'ManagerHandler');
 		import('pages.manager.ManagerHandler');
+	case 'arquivos':
+	case 'upload':
+	case 'excluir':
+		define('HANDLER_CLASS', 'ArquivoHandler');
+		import('pages.manager.ArquivoHandler');
+		break;
 }
 
 ?>

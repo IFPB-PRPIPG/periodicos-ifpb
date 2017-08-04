@@ -31,6 +31,9 @@
 	{assign var="journalPath" value=$journal->getPath()}
 	<table width="100%" class="info">
 		{if $isValid.JournalManager.$journalId}
+			{assign var="isGerente" value=true}
+			{assign var="CJournalPath" value=$journalPath}
+			{assign var="CId" value=$journalId}
 			<tr>
 				<td><a href="{url journal=$journalPath page="manager"}">{translate key="user.role.manager"}</a></td>
 				<td></td>
@@ -163,10 +166,16 @@
 			<td width="39%"></td>
 		</tr>
 	</table>
+	
 	{call_hook name="Templates::User::Index::Journal" journal=$journal}
 	</div>
 {/foreach}
 </div>
+
+{if $isGerente}
+	<h3>Gerente</h3>
+	<a href="{url page="manager" journal="$CJournalPath" path="$CId" op="arquivos"}">Arquivos do sistema</a>
+{/if}
 
 {if !$hasRole}
 	{if $currentJournal}
@@ -202,6 +211,7 @@
 		</div>
 	{/if}{* $currentJournal *}
 {/if}{* !$hasRole *}
+
 
 <div id="myAccount">
 <h3>{translate key="user.myAccount"}</h3>
