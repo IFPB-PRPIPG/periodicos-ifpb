@@ -55,8 +55,7 @@ class ArquivoHandler extends ManagerHandler {
 		if ($uploadOk == 0) {
 			$templateMgr->assign('msg', 'Ocorreu um erro na inclusão do arquivo!');
 		} else {
-			// move_uploaded_file($file_tmp, "/var/www/ojs/novo/files/".$file_name);
-			move_uploaded_file($file_tmp, "/home/rafael/Documentos/ifpb/periodicos/periodicos-alteracao-link/periodicos-ifpb/files/".$file_name);
+			move_uploaded_file($file_tmp, "/var/www/ojs/novo/files/".$file_name);
 			$templateMgr->assign('msg', 'O arquivo foi incluído com sucesso!');
 		}
 
@@ -69,8 +68,8 @@ class ArquivoHandler extends ManagerHandler {
 		$lista = array();
 		
 		$types = array( 'png', 'jpg', 'jpeg', 'gif', 'txt', 'doc', 'docx', 'odt', 'pdf', 'csv' );
-		// if ($handle = opendir("/var/www/ojs/novo/files/")) {
-		if ($handle = opendir("/home/rafael/Documentos/ifpb/periodicos/periodicos-alteracao-link/periodicos-ifpb/files/")) {
+
+		if ($handle = opendir("/var/www/ojs/novo/files/") {
 		    while ($entry = readdir($handle)) {
 		        $ext = strtolower(pathinfo($entry, PATHINFO_EXTENSION));
 		        if(in_array($ext, $types)) {
@@ -88,8 +87,7 @@ class ArquivoHandler extends ManagerHandler {
 		$templateMgr =& TemplateManager::getManager();
 		$fileName = $request->getUserVar('file');
 
-		// $file = "/var/www/ojs/novo/files/".$fileName;
-		$file = "/home/rafael/Documentos/ifpb/periodicos/periodicos-alteracao-link/periodicos-ifpb/files/".$fileName;
+		$file = "/var/www/ojs/novo/files/".$fileName;
 		if (unlink($file)) {
 			$templateMgr->assign('msg', 'Arquivo excluído com sucesso!');
 		} else {
