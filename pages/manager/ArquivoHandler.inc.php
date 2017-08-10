@@ -69,7 +69,7 @@ class ArquivoHandler extends ManagerHandler {
 		
 		$types = array( 'png', 'jpg', 'jpeg', 'gif', 'txt', 'doc', 'docx', 'odt', 'pdf', 'csv' );
 
-		if ($handle = opendir("/var/www/ojs/novo/files/") {
+		if ($handle = opendir("/var/www/ojs/novo/files/")) {
 		    while ($entry = readdir($handle)) {
 		        $ext = strtolower(pathinfo($entry, PATHINFO_EXTENSION));
 		        if(in_array($ext, $types)) {
