@@ -389,4 +389,5 @@
 	<message key="grid.action.downloadFile">Baixar este arquivo</message>
 	<message key="common.notice">Notificação</message>
 	<message key="common.files">Arquivos</message>
+	<message key="common.dados">Dados do sistema</message>
 </locale>

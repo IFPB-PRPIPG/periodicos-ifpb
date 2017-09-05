@@ -174,7 +174,11 @@
 
 {if $isGerente}
 	<h3>Gerente</h3>
-	<a href="{url page="manager" journal="$CJournalPath" path="$CId" op="arquivos"}">Arquivos do sistema</a>
+	<ul>
+		<li><a href="{url page="manager" journal="$CJournalPath" path="$CId" op="arquivos"}">Arquivos do sistema</a></li>
+
+		<li><a href="{url page="manager" journal="$CJournalPath" path="$CId" op="dados"}">Dados do sistema</a></li>
+	</ul>
 {/if}
 
 {if !$hasRole}
