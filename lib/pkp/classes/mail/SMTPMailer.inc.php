@@ -93,6 +93,9 @@ class SMTPMailer {
 				$sender = get_current_user() . '@' . $serverHost;
 		}
 
+		//GET CONFIG.INC EMAIL SENDER
+		$sender = Config::getVar('email', 'smtp_username');
+
 		if (!$this->send('MAIL', 'FROM:<' . $sender . '>'))
 			return $this->disconnect('Could not send sender');
 
