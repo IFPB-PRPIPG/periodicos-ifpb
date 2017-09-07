@@ -234,16 +234,20 @@ class ArticleHandler extends Handler {
 		// Pega a quantidade de acessos daquele artigo
 		$counterAccessArticle = $counterAccessDAO->getAccessById($journalId,$articleId);
 
-		// Criando cookie do contador
-		$cookieID = "cookie-" . $articleId . "-" . $journalId;
+		// Id único do artigo
+		$articleVisit = "article-" . $articleId . "-" . $journalId;
 
-		// Se já existir um cookie ele só passa o valor pro template
-		if(isset($_COOKIE[$cookieID])) {
-			$templateMgr->assign('counterAccessArticle',$counterAccessArticle);
-		}else{
-			if(isset($counterAccessArticle)) {
-				// Setando o cookie na página por 24 hrs
-				setcookie($cookieID, "cookie_count", time()+60*60*24);
+		// Carrega o manager de Session
+		$sessionManager =& SessionManager::getManager();
+		$session =& $sessionManager->getUserSession();
+
+		// Se já existir o id na session ele só passa o valor pro template
+		if (isset($sesson->getSessionVar($articleVisit))) {
+			$templateMgr->assign('counterAccessArticle', $counterAccessArticle);
+		} else {
+			if (isset($counterAccessArticle)) {
+				// Setando a visita ao artigo na session
+				$session->setSessionVar('articleVisit', $articleVisit);
 
 				// Adicionando mais uma visita ao contador
 				$newCount = (int)$counterAccessArticle + 1;
