@@ -41,8 +41,9 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 1%;
+  /*padding-top: 35px;*/
+  /*padding-bottom: 25px;*/
   text-transform: uppercase;
   font-size: 8pt;
 }
@@ -185,9 +186,9 @@
 ======================*/
 /* line 7, ../sass/core/modules/reusable/_reusables.scss */
 .element-box, .content-box .header-box, .page-sidebar .box .header {
-  color: #00520f;
-  background: #edeff1;
-  border-top: 5px solid #00520f;
+  color: #00520f; /*Cor da letra do head dos boxes.*/
+  background: #edeff1; /*Cor de fundo do head das boxes */
+  border-top: 5px solid #00520f; /*Cor da borda dos boxes */
   padding-right: 10px;
 }
 
@@ -1806,12 +1807,24 @@ Container das redes sociais
 
 /* line 1, ../sass/core/containers/_sidebar.scss */
 .page-sidebar {
-  display: none;
+  /*display: none;*/
 }
 /* line 3, ../sass/core/containers/_sidebar.scss */
+
 .page-sidebar .sidebar-top {
   margin-bottom: 40px;
 }
+
+@media (max-width: 767px){
+  .page-sidebar .sidebar-top {
+    margin-bottom: 1%;
+  }
+
+  .sidebar-top{
+    /*O que ta fora dos boxes, por exemplo o simbolo do ifpb com o link para o portal se mexe aqui*/
+  }
+}
+
 @media (min-width: 768px) {
   /* line 1, ../sass/core/containers/_sidebar.scss */
   .page-sidebar {

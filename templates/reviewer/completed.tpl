@@ -65,13 +65,18 @@
 			{/foreach}
 			{/if}
 		</td>
-    <!-- Certificado -->
-    {if strpos($journal->getLocalizedTitle(), 'Principia') != false }
-      <td>
-        <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
-        <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
-      </td>
-    {/if}
+  {if strpos($journal->getLocalizedTitle(), 'Principia') != false }
+      <!-- Certificado -->
+	  {assign var=recommendation value=$submission->getRecommendation()}
+          {if $recommendation === '' || $recommendation === null}
+            <td>&mdash;</td>
+            {else}
+        	<td>
+	            <a href="{url op="certificado" path=$reviewId}" class="action">Visualizar</a>
+        	    <a href="{url op="certificado" path=$reviewId value='pdf'}" class="action">Baixar</a>
+	          </td>
+	{/if}
+  {/if}
   </tr>
 	<tr>
 		<td colspan="7" class="{if $submissions->eof()}end{/if}separator">&nbsp;</td>

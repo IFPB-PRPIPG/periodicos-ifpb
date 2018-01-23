@@ -21,8 +21,8 @@
     <div class="img-container">
       <img src="{$urlSite}/img-certificado/assinatura.png"/>
     </div>
-    <p>Carlos Danilo Miranda Regis</p>
-    <p>Editor Científico</p>
+    <p>Carlos Danilo Miranda Regis
+    <br>Editor Científico</p>
     <br><br>
   </div>
   {if $displayPageHeaderLogo != NULL}

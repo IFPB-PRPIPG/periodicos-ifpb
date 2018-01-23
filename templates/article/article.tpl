@@ -101,11 +101,11 @@
 		<div id="articleCitations">
 		<h4>{translate key="submission.citations"}</h4>
 		<br />
-		<div>
-			{iterate from=citationFactory item=citation}
-				<p>{$citation->getRawCitation()|strip_unsafe_html}</p>
-			{/iterate}
-		</div>
+		<ol style="display: block; list-style-type:none; margin: 0; padding: 0;">
+            {iterate from=citationFactory item=citation}
+				<li style="margin: 1em 0;">{$citation->getRawCitation()|strip_unsafe_html}</li>
+            {/iterate}
+		</ol>
 		<br />
 		</div>
 	{/if}
@@ -123,10 +123,6 @@
 		{$pubIdPlugin->getPubIdDisplayType()|escape}: {if $pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}<a id="pub-id::{$pubIdPlugin->getPubIdType()|escape}" href="{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}">{$pubIdPlugin->getResolvingURL($currentJournal->getId(), $pubId)|escape}</a>{else}{$pubId|escape}{/if}
 	{/if}
 {/foreach}
-
-
-
-
 {call_hook name="Templates::Article::MoreInfo"}
 {include file="article/comments.tpl"}
 
