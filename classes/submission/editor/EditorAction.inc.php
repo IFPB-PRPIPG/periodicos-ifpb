@@ -30,7 +30,6 @@ class EditorAction extends SectionEditorAction {
 	 * @return boolean true iff ready for redirect
 	 */
 	function assignEditor($articleId, $sectionEditorId, $isEditor, $send, $request) {
-
 		$editorSubmissionDao =& DAORegistry::getDAO('EditorSubmissionDAO');
 		$editAssignmentDao =& DAORegistry::getDAO('EditAssignmentDAO'); /* @var $editAssignmentDao EditAssignmentDAO */
 		$userDao =& DAORegistry::getDAO('UserDAO');
@@ -89,7 +88,6 @@ class EditorAction extends SectionEditorAction {
 					'submissionEditingUrl' => $request->url(null, $isEditor?'editor':'sectionEditor', 'submissionReview', $articleId)
 				);
 				$email->assignParams($paramArray);
-
 			}
 			$email->displayEditForm($request->url(null, null, 'assignEditor', 'send'), array('articleId' => $articleId, 'editorId' => $sectionEditorId));
 			return false;
@@ -131,7 +129,6 @@ class EditorAction extends SectionEditorAction {
 			$reviewFile = $sectionEditorSubmission->getReviewFile();
 			SectionEditorAction::setCopyeditFile($sectionEditorSubmission, $reviewFile->getFileId(), $reviewFile->getRevision(), $request);
 		}
-
 
 		// 3. Add a galley.
 		$sectionEditorSubmission =& $sectionEditorSubmissionDao->getSectionEditorSubmission($article->getId());

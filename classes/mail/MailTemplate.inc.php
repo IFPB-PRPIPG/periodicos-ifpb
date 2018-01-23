@@ -42,7 +42,8 @@ class MailTemplate extends PKPMailTemplate {
 		$userSig = '';
 		$user =& Request::getUser();
 		if ($user && $includeSignature) {
-			$userSig = $user->getLocalizedSignature();
+			//$userSig = $user->getLocalizedSignature();
+			$userSig = null;
 			if (!empty($userSig)) $userSig = "\n" . $userSig;
 		}
 

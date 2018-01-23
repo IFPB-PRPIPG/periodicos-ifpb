@@ -3,7 +3,6 @@
 
 <!--
   * locale/pt_BR/common.xml
-  *
   * Copyright (c) 2013-2015 Simon Fraser University Library
   * Copyright (c) 2000-2015 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
@@ -388,6 +387,6 @@
 	<message key="search.indexTermsLong">Todos os campos de termos de indexação</message>
 	<message key="grid.action.downloadFile">Baixar este arquivo</message>
 	<message key="common.notice">Notificação</message>
+
 	<message key="common.files">Arquivos</message>
-	<message key="common.dados">Dados do sistema</message>
 </locale>

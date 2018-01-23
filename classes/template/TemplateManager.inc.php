@@ -61,7 +61,7 @@ class TemplateManager extends PKPTemplateManager {
 			$this->assign('siteCategoriesEnabled', $site->getSetting('categoriesEnabled'));
 
 			//Global!
-			//Como uma mesma variável não pode ser iterada duas vezes,
+			//Como uma mesma variável não pode ser iterada duas vezes, 
 			//Foi necessário criar uma copia dos Jornauls (eu em),
 			//Assim o $revistas é utilizado na barra lateral
 			$searchInitial = Request::getUserVar('searchInitial');
@@ -80,7 +80,7 @@ class TemplateManager extends PKPTemplateManager {
 
 			/*
 			* Adicionada chamada global para login (userBlockLoginURL)
-			*/
+			*/			
 			if (!defined('SESSION_DISABLE_INIT')) {
 				$session =& Request::getSession();
 				$this->assign_by_ref('userSession', $session);

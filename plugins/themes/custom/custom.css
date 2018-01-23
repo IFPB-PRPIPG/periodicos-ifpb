@@ -1,13 +1,13 @@
-#header {background-color: #cccccc;}
-#footer {background-color: #cccccc;}
-table.listing tr.fastTracked {background-color: #cccccc;}
-a {color: #669900;}
-a:link {color: #669900;}
-a:active {color: #669900;}
-a:visited {color: #669900;}
-a:hover {color: #669900;}
-input.defaultButton {color: #669900;}
-body {background-color: #ffffff;}
-input.defaultButton {background-color: #ffffff;}
-body {color: #009999;}
-input.defaultButton {color: #009999;}
+#header {background-color: #00cc33;}
+#footer {background-color: #00cc33;}
+table.listing tr.fastTracked {background-color: #00cc33;}
+a {color: ;}
+a:link {color: ;}
+a:active {color: ;}
+a:visited {color: ;}
+a:hover {color: ;}
+input.defaultButton {color: ;}
+body {background-color: ;}
+input.defaultButton {background-color: ;}
+body {color: ;}
+input.defaultButton {color: ;}

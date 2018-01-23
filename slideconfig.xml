@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-15"?>
 <container showslide="true">
-  <item img="http://portalpadrao.gov.br/links/chamadas-banner-rotativo/fique-por-dentro-dos-elementos-e-produtos-que-compoem-a-identidade-padrao-de-comunicacao-digital-do-governo-federal/@@images/41d1a5c8-5678-4ba6-9399-b1df3b711a66.jpeg" link="http://google.com.br"/>
-  <item img="http://portalpadrao.gov.br/links/chamadas-banner-rotativo/saiba-como-usar-a-pagina-de-destaque-para-explorar-uma-campanha-institucional/@@images/d0284e66-39c4-402b-9d61-ed3453609e6c.jpeg" link="http://uol.com.br"/>
-  <item img="http://portalpadrao.gov.br/links/chamadas-banner-rotativo/conheca-os-templates-para-informativos-da-identidade-padrao/@@images/9463d7ee-8c76-4bb0-8253-88309bc47e58.jpeg" link="http://g1.globo.com"/>
+  <item img="/public/banner digital principia.jpg" link="http://periodicos.ifpb.edu.br/index.php/principia"/>
+  <item img="/public/BANNER-(Praxis).png" link="http://periodicos.ifpb.edu.br/index.php/praxis"/>
+  <item img="/public/banner digital regor.jpg" link="http://periodicos.ifpb.edu.br/index.php/rgo"/>
 </container>

@@ -540,6 +540,7 @@ class FileManager {
 			$fileExtension = 'txt';
 		}
 
+
 		return $fileExtension;
 	}
 }

@@ -17,7 +17,6 @@
 </head>
 <body>
 
-
 {include file="portalpadrao/revista/base/header.tpl"}
 	{include file="portalpadrao/revista/body.tpl"}
 {include file="portalpadrao/base/footer.tpl"}

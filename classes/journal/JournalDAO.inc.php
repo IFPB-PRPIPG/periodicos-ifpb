@@ -427,29 +427,6 @@ class JournalDAO extends DAO {
 	function getInsertJournalId() {
 		return $this->getInsertId('journals', 'journal_id');
 	}
-
-	/**
-	 * Obter numero de acessos por dia de uma revista
-	 */
-	function getAcessosDia($journalId) {
-		$dataSource = $this->getDataSource();
-		$p1 = 'title';
-		$p2 = 'pt_BR';
-
-		$result =& $dataSource->execute('SELECT DISTINCT acc.articleId, aset.setting_value as title, acc.dataAcesso, acc.numAcessos 
-			FROM acessosDia acc JOIN (article_settings aset) ON acc.articleId = aset.article_id
-			WHERE acc.journalId = ? AND aset.setting_name like ? AND aset.locale = ?',
-			array(
-				intval($journalId),
-				$p1,
-				$p2
-			));
-
-		$sql .= ' ORDER BY acc.dataAcesso';
-		DBConnection::logQuery($sql);
-		return $result;
-	}
-
 }
 
 ?>

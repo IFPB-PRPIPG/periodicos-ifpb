@@ -237,11 +237,6 @@ switch ($op) {
 		define('HANDLER_CLASS', 'ArquivoHandler');
 		import('pages.manager.ArquivoHandler');
 		break;
-	case 'dados':
-	case 'acessosDia':
-		define('HANDLER_CLASS', 'DadosHandler');
-		import('pages.manager.DadosHandler');
-		break;
 }
 
 ?>
